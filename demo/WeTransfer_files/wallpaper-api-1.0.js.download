@@ -1,0 +1,181 @@
+var wetransfer = (function(){
+  var origin = window.location.search.match(/(?:\?|\&)_origin\=([^\&]+)/);
+  if (!origin || origin.length != 2) return false; // no api available.
+
+  var Server = {
+    'started': false,
+    'destination': false,
+    'endpoint': origin[1],
+    'callbacks': [],
+    'properties': {}
+  };
+
+  Server.send = function(command/*, arguments*/)
+  {
+    var payload = {
+      'command': command,
+      'data': Array.prototype.slice.call(arguments, 1)
+    };
+
+    parent.postMessage(JSON.stringify(payload), Server.endpoint);
+  };
+
+  Server.receive = function(e)
+  {
+    // Verify origin
+    if (e.origin != Server.endpoint) return false;
+
+    // Try to parse JSON.
+    try {
+      var payload = JSON.parse(e.data);
+    } catch(e){ return false; }
+
+    // Did we get a command?
+    if (!payload.command) return;
+
+    // Is the comment start?
+    if (payload.command == 'start') {
+      Server.started = true;
+      Server.properties = payload.data[0] || {};
+      if (typeof(Server.properties['_click']) == 'string') {
+        Server['destination'] = Server.properties['_click'];
+      }
+
+      // If there are callbacks waiting, execute!
+      for (var i = 0; i < Server.callbacks.length; i++) {
+        Server.callbacks[i].apply(window);
+      }
+
+      return; // done
+    }
+
+    if (payload.command == 'update') {
+      Server.properties = payload.data[0] || {};
+      if (!Server.properties['requester']) return;
+      Listeners.trigger(Server.properties['requester']);
+      return; // done
+    }
+  };
+
+
+  // Start listening for commands
+  var method = window.addEventListener || window.attachEvent;
+  var type = 'addEventListener' in window ? 'message' : 'onmessage';
+  method.call(window, type, function(e){
+    Server.receive(e);
+  });
+
+  // Disable the contextual menu.
+  var method = document.addEventListener || document.attachEvent;
+  var type = 'addEventListener' in document ? 'contextmenu' : 'oncontextmenu';
+  method.call(document, type, function(e){
+    e.stopPropagation();
+    e.preventDefault();
+    return false;
+  });
+
+  var body = document.querySelector('body');
+  var method = body.addEventListener || body.attachEvent;
+  var type = 'addEventListener' in body ? 'dragover' : 'ondragover';
+  method.call(body, type, function(e){
+    if (!e || !e.dataTransfer) return;
+    if (!e.dataTransfer.types) return;
+
+    // .types is not always an Array so does not always have .indexOf support
+    let types = Array.prototype.slice.call(e.dataTransfer.types);
+    if (types.indexOf('Files') === -1) return;
+
+    Server.send('toggleDragOver');
+  });
+
+  var Listeners = {
+    'position': [],
+    'language': [],
+    'remaining': [],
+
+    'trigger': function(requester) {
+      if (!Listeners[requester]) return;
+      var cb;
+      while (cb = Listeners[requester].shift()) {
+        cb(Server.properties[requester]);
+      }
+    }
+  };
+
+  // Expose API.
+  return {
+    // Register a ready handler.
+    'ready': function(callback){
+      if (typeof(callback) != 'function') return;
+      if (Server.started) return callback();
+      Server.callbacks.push(callback);
+    },
+
+    // Get position
+    'appPosition': function(cb)
+    {
+      Server.send('getState', 'position');
+      Listeners['position'].push(cb);
+    },
+
+    // Get language
+    'language': function(cb)
+    {
+      if (Server.properties['language']) {
+        cb(Server.properties['language']);
+        return;
+      }
+
+      Server.send('getState', 'language');
+      Listeners['language'].push(cb);
+    },
+
+    // Get remaining time
+    'remainingTime': function(cb)
+    {
+      Server.send('getState', 'remaining');
+      Listeners['remaining'].push(cb);
+    },
+
+    'appHide': function()
+    {
+      Server.send('hide');
+    },
+
+    'appShow': function()
+    {
+      Server.send('show');
+    },
+
+    'click': function()
+    {
+      if (!Server['destination']) return;
+      window.open(Server['destination'], '_blank');
+    },
+
+    'pauseTimer': function()
+    {
+      Server.send('pauseTimer');
+    },
+
+    'resumeTimer': function()
+    {
+      Server.send('resumeTimer');
+    },
+
+    'resetTimer': function()
+    {
+      Server.send('resetTimer');
+    },
+
+    'change': function()
+    {
+      Server.send('change');
+    },
+
+    'vast': function(name, filename)
+    {
+      Server.send('vast', name, filename);
+    }
+  };
+})();
