@@ -56,7 +56,7 @@
 
 <body id="page-top" class="index">
 
-     <!-- Navigation -->
+    <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -64,7 +64,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top" alt="UNSIST Data Science"><b>UNSIST</b> </a>
+                <a class="navbar-brand page-scroll" href="/#page-top" alt="UNSIST Data Science"><b>UNSIST</b> </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -74,38 +74,24 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#page-top"><b>Home</b></a>
+                        <a class="page-scroll" href="/#page-top"><b>Home</b></a>
                     </li>                    
                     <li>
-                        <a class="page-scroll" href="#about"><b>About</b></a>
+                        <a class="page-scroll" href="/#about"><b>About</b></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services"><b>Services</b></a>
+                        <a class="page-scroll" href="/#services"><b>Services</b></a>
                     </li>                    
                     <li>
-                        <a class="page-scroll" href="#blog"><b>Blog</b></a>
+                        <a class="page-scroll" href="/#blog"><b>Blog</b></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact"><b>Contact</b></a>
+                        <a class="page-scroll" href="/#contact"><b>Contact</b></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#newsletter"><b>Newsletter</b></a>
+                        <a class="page-scroll" href="/#newsletter"><b>Newsletter</b></a>
                     </li>
-                    <li>
-                          <a class="page-scroll" type="button" data-toggle="dropdown"><b>Operators</b>
-                          </a>
-                        <ul class="dropdown-menu" >
-                            <li><a href="#"><span class="text-muted">ARC</span></a></li>
-                            <li><a href="#"><span class="text-muted">CREW</span></a></li>
-                            <li><a href="#"><span class="text-muted">BIRCHCLIFF</span></a></li>
-                            <li><a href="#"><span class="text-muted">ENCANA</span></a></li>
-                            <li><a href="#"><span class="text-muted">CONOCO</span></a></li>
-                            <li><a href="/operator/shell.html"><span class="text-muted">SHELL</span></a></li>
-                        </ul>
-                    </li>
-            
                 </ul>
-
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -120,7 +106,19 @@
             <img class="img-portfolio img-responsive" src="/img/operator/shell.jpg">     
         </div>
 
-<br>
+        <div class="col-sm-1 col-sm-offset-3" >
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Operators
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">ARC</a></li>
+                <li><a href="#">CREW</a></li>
+                <li><a href="#">BIRCHCLIFF</a></li>
+                <li><a href="#">ENCANA</a></li>
+                <li><a href="#">CONOCO</a></li>
+              </ul>
+            </div>
+        </div>
 
         <div class="container">
             <div class="row">
@@ -155,21 +153,11 @@
                 </div>
                 
                 <div class="col-xs-6">
-                       <div class='tableauPlaceholder' id='viz1519757390638'>
-                          <noscript>
-                            <a href='#'><img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fo&#47;Formationperformancecomparison&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a>
-                          </noscript>
-                          <object class='tableauViz' width='100' height='50' style='display:none;'>
-                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;Formationperformancecomparison&#47;Dashboard2?:embed=y&amp;:display_count=y&amp;publish=yes' /> <param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fo&#47;Formationperformancecomparison&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' />
-                          </object>
-                      </div>                
+                       <script type='text/javascript' src='https://us-east-1.online.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1004px; height: 536px;margin:auto;'><object class='tableauViz' width='500' height='300' style='display:none;'><param name='host_url' value='https%3A%2F%2Fus-east-1.online.tableau.com%2F' /> <param name='site_root' value='&#47;t&#47;unsist' /><param name='name' value='Formationperformancecomparison&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /><param name='showShareOptions' value='true' /></object></div>
                 </div>
             </div>
         </div>
         
-        <br>
-        &nbsp;
-
     <!-- About Section -->
          <div class="container">
             <div class="row">
@@ -306,15 +294,6 @@
   dfRef.on('value', snap => bigOne.innerText = snap.val());
 
 
-</script>
-
-<script type='text/javascript'>                    
-  var divElement = document.getElementById('viz1519757390638');                    
-  var vizElement = divElement.getElementsByTagName('object')[0];                    
-  vizElement.style.width='500px';vizElement.style.height='300px';                    
-  var scriptElement = document.createElement('script');                    
-  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-  vizElement.parentNode.insertBefore(scriptElement, vizElement);               
 </script>
 
 
