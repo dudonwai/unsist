@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="UNSIST Data Science - Creating technology for Oil &amp; Gas that never stops.">
+    <meta name="author" content="Dudon Wai">
+    <meta name="keywords" content="UNSIST Data Science Calgary Alberta Canada Oil Gas Energy Technology NextAI Dudon Wai">
+
+    <meta property="og:site_name" content="UNSIST Data Science">
+    <meta property="og:title" content="UNSIST Data Science">
+    <meta property="og:description" content="UNSIST Data Science - Creating technology for Oil &amp; Gas that never stops.">
+    <meta property="og:url" content="http://www.unsist.com/">
+    <meta property="og:image" content="http://www.unsist.com/img/blog/oil-price-2018-02.jpg">
+
+    <title>UNSIST Data Science - Data Science Spotlight - NEB &amp; EIA</title>
+
+      <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../../favicon.png?">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="../../css/agency.min.css" rel="stylesheet">
+
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+            
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-85617324-3', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="/#page-top" alt="UNSIST Data Science"><b>UNSIST</b> </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="/#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#page-top"><b>Home</b></a>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="/#about"><b>About</b></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#services"><b>Services</b></a>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="/#blog"><b>Blog</b></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#contact"><b>Contact</b></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#newsletter"><b>Newsletter</b></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Page Content -->
+    <section id="about" class="about">
+    <div class="container">
+
+        <!-- Content Row -->
+        <div class="row">
+
+            <!-- Header -->
+            <div class="col-lg-8 col-lg-offset-2">
+                <h1>Data Science Spotlight - NEB &amp; EIA</h1>
+            </div>
+
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8 col-lg-offset-2">
+
+                <!-- Date/Time -->
+                <p><i class="fa fa-clock-o"></i> Posted on March 2 at 10:47am</p>
+
+                <!-- Post Content -->
+
+<div class="col-lg-12">
+    <a href="https://www.em360tech.com/wp-content/files_mf/1407250286DAMAUKDQDimensionsWhitePaperR37.pdf" target="_blank"><img class="img-responsive img-centered" style="margin:4; padding:4" src="../../img/blog/data-science-spotlight-neb-eia-data-dimensions.JPG" alt="Data Science Spotlight - NEB &amp; EIA - Data Dimensions"></a>
+    <br>
+</div>
+
+<div class="col-lg-12">
+    <p>In our <a href="http://www.unsist.com/blog/2018/embracing-change-with-data.html"><strong>last article</a></strong>, we looked into the short-term history of Canadian Oil &amp; Gas to point out substantial change over the last few years. Now, with that as context, <strong>let’s look forward</strong> 20 years to understand where we’re headed.</p>
+
+    <p>Canadian oil production grew 18% from 2014 to 2018, all amid several headwinds - the collapse in oil price, blazing forest fires, slow growth in export capacity and an increasingly competitive global market. Current oil production of 4.5 Mbpd translates into roughly <strong>$65B in annual revenue</strong> for Canada, and production is forecasted to <strong>grow another 40% by 2040</strong> (see Analysis below). When a forecast suggests 40% growth, or an additional $26B in oil revenue, the credibility of the sources and their assumptions becomes extremely important.
+    Forecasts are critical for decision-makers to establish with some degree of confidence where the market is going, to determine how much capital to spend, where to spend it, and when the investment will produce a return. In our <strong>Data Science Spotlight</strong>, we showcase 2 credible sources that both forecast 40% growth. The <a href="https://apps2.neb-one.gc.ca/dvs/?page=landingPage&language=en" target="_blank"><strong>National Energy Board (NEB)</strong></a> and the <a href="https://www.eia.gov/beta/international/" target="_blank"><strong>Energy Information Administration (EIA)</strong></a> are government agencies for Canada and the United States respectively, responsible for providing energy information that supports public policy and the private sector as well.</p>
+
+    <h2><strong>Data Science Spotlight</h2></strong>
+
+    <p>What is the Data Science Spotlight? This is the first of a series of articles where Unsist explores data sources from a data science perspective. We evaluate the quality of the data, insightfulness of the analysis, and the usability of their websites.</p>
+
+    <p>Canada and US currently represent <a href="https://www.eia.gov/outlooks/ieo/pdf/0484(2017).pdf" target="_blank"><strong>roughly 20%</strong></a> of global oil production, and growth in Shale and the Oil Sands have positive implications for how North American businesses can view the future and plan accordingly. We’ve chosen NEB and EIA to compare forecasts of the future because of the comprehensiveness and openness of their platforms. In the following article, we will evaluate both platforms in the follow 3 areas: <strong>data, analysis and usability.</strong></p>
+
+    <h2><strong>#1 - Data</h2></strong>
+
+    <p>NEB and EIA provide very useful data about the energy markets across similar areas such as production and consumption, exports and imports, inventories and commodity prices. However, EIA provides more <Strong>breadth and depth</strong> because its data covers nearly all energy producing countries while NEB primarily focuses on Canada. In addition, both deliver data on an annual or monthly basis, but EIA often provides weekly and daily data as well.</p>
+
+    <p>Since we’re handling so much data across so many different areas, it’s helpful to have a checklist to determine that we’re working with the highest <strong>quality of data</strong> possible. DAMA UK provides an excellent guide on <a href="https://www.em360tech.com/wp-content/files_mf/1407250286DAMAUKDQDimensionsWhitePaperR37.pdf" target="_blank"><strong>data dimensions</strong></a> that can be used to decide on data quality.</p>
+
+</div>
+
+<div class="col-lg-12">
+    <a href="https://www.em360tech.com/wp-content/files_mf/1407250286DAMAUKDQDimensionsWhitePaperR37.pdf" target="_blank"><img class="img-responsive img-centered" style="margin:4; padding:4" src="../../img/blog/data-science-spotlight-neb-eia-data-dimensions.JPG" alt="Data Science Spotlight - NEB &amp; EIA - Data Dimensions"></a>
+    <br>
+</div>
+
+<div class="col-lg-12">
+    <p>Their data quality dimensions include:</p>
+
+    <ul>
+        <li><strong>Completeness</strong> – a percentage of data that includes one or more values. </li>
+        <li><strong>Uniqueness</strong> – When measured against other data sets, there is only one entry of its kind.</li>
+        <li><strong>Timeliness</strong> – How much of an impact does date and time have on the data? </li>
+        <li><strong>Validity</strong> – Does the data conform to the respective standards set for it?</li>
+        <li><strong>Accuracy</strong> – How well does the data reflect the reality that is identified by it?</li>
+        <li><strong>Consistency</strong> – How well does the data align with a preconceived pattern? </li>
+    </ul>
+
+    <p>While we can dive much further into each of these metrics, the purpose here is to highlight that NEB and EIA score very well against all metrics. We can be assured of the data availability and quality since both organizations are responsible for supporting policy (royalties, taxes, infrastructure investments) and informing financial markets (investors heavily rely on the <a href="https://www.eia.gov/petroleum/supply/weekly/" target="_blank"><strong>weekly EIA inventory reports</strong></a></p>.
+
+    <h2><strong>#2 - Analysis</h2></strong>
+
+    <p>The analysis category covers breadth and depth, while also including insightfulness and value. The NEB and EIA explore industry activity and trends and provide forecasts into 2040 or 2050. Both organizations look nationally and individually by province/state, however EIA goes a step further to provide a <a href="https://www.eia.gov/beta/international/analysis.cfm" target="_blank"><strong>Country Analysis Brief</strong></a> for nearly 100 countries or regions of interest. We strongly recommend giving some of these a read - <a href="https://www.eia.gov/beta/international/analysis.cfm?iso=CAN" target="_blank"><strong>particularly for Canada</a></strong>!</p>
+
+    <p>We introduced this article with oil production forecasts up to 2040. <strong>Forecasts are data about the future, but are built on an understanding of data about the past and present.</strong> Since NEB and EIA have strong understandings of the past and present, their outlooks into the future become very interesting. Both organizations approach their forecasts with a reference case, and then evaluate several high/low scenarios for technology development, energy sustainability, economic growth and commodity prices. We also recommend these scenario studies, and focus on the reference case in this article.</p>
+
+    <p>In the charts below, <strong><a href="https://apps2.neb-one.gc.ca/dvs/?page=viz4&mainSelection=oilProduction&unit=kilobarrels&scenarios=hcp,technology,reference&province=all&dataset=oct2017&language=en" target="_blank">NEB reference case</strong></a> forecasts Canadian oil production of <strong>6.3Mbpd</strong> by 2040 while <strong><a href="https://www.eia.gov/outlooks/aeo/data/browser/#/?id=19-AEO2018&region=0-0&cases=ref2018~highmacro~lowmacro~highprice~lowprice~highrt~lowrt~ref_cpp~hm_cpp~lm_cpp~hp_cpp~lp_cpp~hr_cpp~lr_cpp~aeo2017no~aeo2017cpp&start=2016&end=2050&f=A&linechart=~~~~~~~~~~~~~~~~ref2018-d121317a.45-19-AEO2018~~~highprice-d122017a.45-19-AEO2018~lowprice-d121317a.45-19-AEO2018~~~~~~~~~~~aeo2017cpp-d120816a.45-19-AEO2018&map=&ctype=linechart&sourcekey=0 " target="_blank">EIA</strong></a> predicts <strong>6.1Mbpd</strong>, both a substantial increase from 2018 levels of <strong>4.5Mbpd</strong>.</p>
+
+    <h3>NEB Oil Production Forecast</h3>
+</div>
+
+<div class="col-lg-12">
+    <a href="https://apps2.neb-one.gc.ca/dvs/?page=viz4&mainSelection=oilProduction&unit=kilobarrels&scenarios=hcp,technology,reference&province=all&dataset=oct2017&language=en" target="_blank"><img class="img-responsive img-centered" style="margin:4; padding:4" src="../../img/blog/data-science-spotlight-neb-eia-neb-oil-forecast.JPG" alt="Data Science Spotlight - NEB &amp; EIA - NEB Oil" width="100%"></a>
+    <br>
+</div>
+
+<div class="col-lg-12">
+    <h3>EIA Oil Production Forecast</h3>
+</div>
+
+<div class="col-lg-12">
+    <a href="https://www.eia.gov/outlooks/aeo/data/browser/#/?id=19-AEO2018&region=0-0&cases=ref2018~highmacro~lowmacro~highprice~lowprice~highrt~lowrt~ref_cpp~hm_cpp~lm_cpp~hp_cpp~lp_cpp~hr_cpp~lr_cpp~aeo2017no~aeo2017cpp&start=2016&end=2050&f=A&linechart=~~~~~~~~~~~~~~~~ref2018-d121317a.45-19-AEO2018~~~highprice-d122017a.45-19-AEO2018~lowprice-d121317a.45-19-AEO2018~~~~~~~~~~~aeo2017cpp-d120816a.45-19-AEO2018&map=&ctype=linechart&sourcekey=0 " target="_blank"><img class="img-responsive img-centered" style="margin:4; padding:4" src="../../img/blog/data-science-spotlight-neb-eia-eia-oil-forecast.JPG" alt="Data Science Spotlight - NEB &amp; EIA - EIA Oil" width="100%"></a>
+    <br>
+</div>
+
+<div class="col-lg-12">
+    <p>And let’s not forget gas production. <Strong><a href="https://apps2.neb-one.gc.ca/dvs/?page=viz4&mainSelection=gasProduction&unit=cubicFeet&scenarios=hcp,technology,reference&province=all&dataset=oct2017&language=en" target="_blank">NEB reference case</a></strong> forecasts Canadian gas production of <strong>6.2 Tcf</strong> annually by 2040 while <strong><a href="https://www.eia.gov/outlooks/aeo/data/browser/#/?id=41-IEO2017&region=0-0&cases=Reference&start=2010&end=2050&f=A&linechart=~Reference-d082317.4-41-IEO2017~~Reference-d082317.3-41-IEO2017&ctype=linechart&sourcekey=0 " target="_blank">EIA</strong></a> predicts <strong>7.1 Tcf annually</strong>, from 2018 levels of <strong>5.5 Tcf</strong> annually.</p>
+</div>
+
+<div class="col-lg-12">
+    <h3>NEB Gas Production Forecast</h3>
+</div>
+
+<div class="col-lg-12">
+    <a href="https://apps2.neb-one.gc.ca/dvs/?page=viz4&mainSelection=gasProduction&unit=cubicFeet&scenarios=hcp,technology,reference&province=all&dataset=oct2017&language=en" target="_blank"><img class="img-responsive img-centered" style="margin:4; padding:4" src="../../img/blog/data-science-spotlight-neb-eia-neb-gas-forecast.JPG" alt="Data Science Spotlight - NEB &amp; EIA - NEB Gas" width="100%"></a>
+    <br>
+</div>
+
+<div class="col-lg-12">
+    <h3>EIA Gas Production Forecast</h3>
+</div>
+
+<div class="col-lg-12">
+    <a href="https://www.eia.gov/outlooks/aeo/data/browser/#/?id=41-IEO2017&region=0-0&cases=Reference&start=2010&end=2050&f=A&linechart=~Reference-d082317.4-41-IEO2017~~Reference-d082317.3-41-IEO2017&ctype=linechart&sourcekey=0 " target="_blank"><img class="img-responsive img-centered" style="margin:4; padding:4" src="../../img/blog/data-science-spotlight-neb-eia-eia-gas-forecast.jpg" alt="Data Science Spotlight - NEB &amp; EIA - EIA Gas" width="100%"></a>
+    <br>
+</div>
+
+<div class="col-lg-12">
+    <p>The takeaway here is that <strong><a href="https://www.eia.gov/outlooks/aeo/data/browser/#/?id=2-IEO2017&region=0-0&cases=Reference&start=2010&end=2050&f=A&linechart=~~~~~~Reference-d082317.76-2-IEO2017~Reference-d082317.78-2-IEO2017~Reference-d082317.77-2-IEO2017~Reference-d082317.79-2-IEO2017~Reference-d082317.80-2-IEO2017~&ctype=linechart&sourcekey=0" target="_blank">petroleum continues to play a significant role in the energy mix</strong></a>, globally accounting for <strong>54%</strong> (82% including coal) and forecasted to <strong>55%</strong> in 2040.</p>
+</div>
+
+<div class="col-lg-12">
+    <a href="https://www.eia.gov/outlooks/aeo/data/browser/#/?id=2-IEO2017&region=0-0&cases=Reference&start=2010&end=2050&f=A&linechart=~~~~~~Reference-d082317.76-2-IEO2017~Reference-d082317.78-2-IEO2017~Reference-d082317.77-2-IEO2017~Reference-d082317.79-2-IEO2017~Reference-d082317.80-2-IEO2017~&ctype=linechart&sourcekey=0" target="_blank"><img class="img-responsive" style="margin:4; padding:4" src="../../img/blog/data-science-spotlight-neb-eia-energy-mix.JPG" alt="" width="100%"></a>
+</div>
+
+<div class="col-lg-12">
+    <h2><strong>#3 - Usability</h2></strong>
+
+    <p>In the usability category, we evaluate the platforms based on functionality and user experience. </p>
+
+    <p>From a <strong>functionality perspective</strong>, we’re interested to know what users are able to do on the platform, such as downloading a variety of files, connecting directly to an online database or having a developer API for custom programming (<a href="https://www.mulesoft.com/resources/api/what-is-an-api" target="_blank"><strong>API: application programming interface</a></strong>). </p>
+
+    <p>For <strong>user experience</strong>, we look at the intuitiveness for users to understand the value of the platform, to learn about the features, and to find the data or analysis they want. For example, many users find it valuable when the platform curates and prepares key resources to access conveniently. On the other hand, many users also seek the ability to sort, filter and interact with the data before download to access relevant data only. Platforms deliver the user experience by making it <strong>easy to gain value from Big Data, and the granular data too</strong>.</p>
+
+    <p>Comparing NEB and EIA in this last category, we see that EIA provides better functionality and user experience. While both platforms provide many datasets and reports to download, <a href="https://www.eia.gov/opendata/" target="_blank"><strong>EIA Open Data</a></strong> provides data extensions for <strong>Microsoft Excel</strong> and <strong>Google Sheets</strong>, and even an API for data scientists like ourselves.</p>
+
+    <h2><strong>Innovation doesn’t happen when you collect data, it’s when you use it</h2></strong>
+
+    <p>In this Data Science Spotlight, we evaluated the data platforms for NEB and EIA, and <strong>identified EIA as the better platform across all 3 categories</strong>. However, both platforms provide substantial value in different ways, and we recommend using both. In fact, there are many other sources of energy data that we recommend including, especially when comparing long-term production forecasts into 2040. </p>
+
+    <p>Among others, we recommend the following sources too: </p>
+
+    <ul>
+        <li><a href="https://www.iea.org/weo/" target="_blank"><strong>IEA World Energy Outlook</a></strong></li>
+        <li><a href="https://www.worldenergy.org/data/" target="_blank"><strong>World Energy Council</a></strong></li>
+        <li><a href="http://www.opec.org/opec_web/en/publications/340.htm" target="_blank"><strong>OPEC World Outlook</a></strong></li>
+        <li><a href="https://www.capp.ca/publications-and-statistics/crude-oil-forecast" target="_blank"><strong>CAPP Forecasts</a></strong></li>
+        <li><a href="https://www.bp.com/content/dam/bp/pdf/energy-economics/energy-outlook-2017/bp-energy-outlook-2017.pdf" target="_blank"><strong>BP Energy Outlook</a></strong></li>
+        <li><a href="https://www.shell.com/content/dam/royaldutchshell/documents/corporate/scenarios-newdoc.pdf" target="_blank"><strong>Shell New Lens Scenarios</a></strong> </li>
+        <li><a href="http://cdn.exxonmobil.com/~/media/global/files/outlook-for-energy/2017/2017-outlook-for-energy.pdf" target="_blank"><strong>Exxon Outlook for Energy</a></strong></li>
+    </ul>
+
+    <p>We’ve demonstrated how we evaluate data at Unsist. Our evaluation method is not limited to the data we have access to, but also to the <strong>data that we provide access to</strong>, through our own data platform. When you evaluate data platforms in the future, think about the data, the analysis and the usability - <strong>because innovation doesn’t happen when you collect data, it’s when you use it</strong>.</p>
+
+    <p>If you have an idea for our next Data Science Spotlight, feel free to <a href="http://www.unsist.com/#contact" target="_blank"><strong>contact us</a></strong> and let us know! </p>
+
+
+                <br>
+
+</div>
+                <div class="col-lg-12">
+                    <br>
+                    <div class="text-center">
+                        <a href="/#blog" class="btn btn-primary">Back to Blog</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.row -->
+    </section>
+
+
+    <!-- Newsletter Section -->
+    
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3">
+        
+                <!-- Begin MailChimp Signup Form -->
+                <style type="text/css">
+                    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+                    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                </style>
+                <div id="mc_embed_signup">
+                <form action="//unsist.us15.list-manage.com/subscribe/post?u=1478e54a2c2d3770626dd0ee2&amp;id=6cb90bf55d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                    <h2>Get Updates for AI Meets Oil &amp; Gas</h2>
+                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                <div class="mc-field-group">
+                    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                </label>
+                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                </div>
+                <div class="mc-field-group">
+                    <label for="mce-FNAME">First Name </label>
+                    <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                </div>
+                <div class="mc-field-group">
+                    <label for="mce-LNAME">Last Name </label>
+                    <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                </div>
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1478e54a2c2d3770626dd0ee2_6cb90bf55d" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                    </div>
+                </form>
+                </div>
+
+                <!--End mc_embed_signup-->
+            </div>
+        </div>
+               
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Unsist Inc. 2018</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="http://www.linkedin.com/company/unsist" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="http://www.facebook.com/unsist" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>   
+                        <li><a href="http://www.twitter.com/UnsistDS" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://medium.com/unsist" target="_blank"><i class="fa fa-medium"></i></a>
+                        </li> 
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="http://www.unsist.com/privacy-policy">Privacy Policy</a>
+                        </li>
+                        <li><a href="http://www.unsist.com/terms-of-use">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="../../js/jqBootstrapValidation.js"></script>
+    <script src="../../js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="../../js/agency.min.js"></script>
+
+</body>
+
+</html>
