@@ -187,9 +187,12 @@
 
       <div class="container">
             <script type="text/javascript">
-                $(document).ready(function () {
-                    $('#table_id').dataTable();
-                });
+                $(document).ready(function() {
+                  var table = $('#table_id').DataTable( {
+                    "scrollY": "400px",
+                    "scrollX": "400px"
+                  } );
+                } )
             </script>
             <div class ="well">
               <div class="table-responsive">
