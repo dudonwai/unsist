@@ -52,6 +52,14 @@
     ga('send', 'pageview');
 </script>
 
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- JQuery Reference
+      If you have added jQuery reference in your master page then ignore, 
+      Else include this too with the below reference -->
+
+<script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css">
+
 </head>
 
 <body id="page-top" class="index">
@@ -96,10 +104,10 @@
                           </a>
                         <ul class="dropdown-menu">
                             <li><a href="#"><span class="text-muted">ARC</span></a></li>
-                            <li><a href="#"><span class="text-muted">CREW</span></a></li>
                             <li><a href="#"><span class="text-muted">BIRCHCLIFF</span></a></li>
-                            <li><a href="#"><span class="text-muted">ENCANA</span></a></li>
                             <li><a href="#"><span class="text-muted">CONOCO</span></a></li>
+                            <li><a href="#"><span class="text-muted">CREW</span></a></li>
+                            <li><a href="#"><span class="text-muted">ENCANA</span></a></li>
                             <li><a href="/Users/Shabshin/Desktop/UI2/shell.html"><span class="text-muted">SHELL</span></a></li>
                         </ul>
                     </li>
@@ -113,27 +121,19 @@
     <!-- Header -->
 
     <section style="background-color: #E5E7E9">
-
-
         
-        <div class="col-sm-2 col-sm-offset-5">
-            
+        <div class="col-sm-2 col-sm-offset-5">            
             <img class="img-responsive img-centered" width="200" src="../img/operator/shell.jpg"> 
             <br>
-            &nbsp;
-            
-      
+            &nbsp;      
         </div>
 
-<br>
-&nbsp;
+        <br>
+        &nbsp;
 
          <div class="container">
             <div class="row">
-           
-
                 <div class="col-lg-6 text-center">
-
                     <table class="table">
                         <thead>
                             <tr>
@@ -142,11 +142,9 @@
                         </thead>
                         <tbody>
                             <tr>
-                              
                               <td>Highest meters per day: 31723 with 415 with actuall drilling 118.75 hours </td>
                             </tr>
-                             <tr>
-                              
+                            <tr>  
                               <td>Lowest meters per day: 31286 with 162 </td>
                             </tr>
                             <tr>  
@@ -161,878 +159,774 @@
                             <tr>  
                               <td>Average Rig up: 2.3 hours</td>
                             </tr>
-
                         </tbody>
                     </table>
                 </div>
                 
-                       <div class='tableauPlaceholder' id='viz1519757390638'>
-                          <noscript>
-                            <a href='#'><img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fo&#47;Formationperformancecomparison&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a>
-                          </noscript>
-                          <object class='tableauViz' width='100' height='50' style='display:none;'>
-                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;Formationperformancecomparison&#47;Dashboard2?:embed=y&amp;:display_count=y&amp;publish=yes' /> <param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fo&#47;Formationperformancecomparison&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' />
-                          </object>
-                      </div>    
-          
-          </div>
+                <div class='tableauPlaceholder' id='viz1519757390638'>
+                    <noscript>
+                      <a href='#'><img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fo&#47;Formationperformancecomparison&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a>
+                    </noscript>
+                    <object class='tableauViz' width='100' height='50' style='display:none;'>
+                      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;Formationperformancecomparison&#47;Dashboard2?:embed=y&amp;:display_count=y&amp;publish=yes' /> <param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fo&#47;Formationperformancecomparison&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' />
+                    </object>
+                </div>    
+            <br>
+            &nbsp;
+            </div>
         </div>
         
-<br>
-&nbsp;
+        <br>
+        &nbsp;
 
     <!-- About Section -->
 
-<div class="container">
-
-
-<div class="table-responsive">
-<table class="table">
-  <thead>
-    <tr>
-      <th></th>
-      <th>License No</th>
-      <th>Well Name</th>
-      <th>Surface Location</th>
-      <th>Prov</th>
-      <th>Loc Type</th>
-      <th>Unique Well Id</th>
-      <th>Operator</th>
-      <th>Contractor</th>
-      <th>Rig No</th>
-      <th>Well Type</th>
-      <th>Vendor Software Version</th>
-      <th>Year</th>
-      <th>Month</th>
-      <th>Day</th>
-      <th>Stand</th>
-      <th>Triple/Double</th>
-      <th>Unnamed: 0</th>
-      <th>Tour_</th>
-      <th>Rig Up</th>
-      <th>Drill Actual</th>
-      <th>Reaming</th>
-      <th>Coring</th>
-      <th>Cond Mud &amp; Circ</th>
-      <th>Trips</th>
-      <th>Rig Service</th>
-      <th>Repair Rig</th>
-      <th>Cut Off Drilg Line</th>
-      <th>Dev Survey</th>
-      <th>Wireline Logs</th>
-      <th>Run Csg &amp; Cement</th>
-      <th>Wait On Cement</th>
-      <th>Nipple Up BOP</th>
-      <th>Test BOP</th>
-      <th>Drillstem Test</th>
-      <th>Plug Back</th>
-      <th>Squeeze Cement</th>
-      <th>Fishing</th>
-      <th>Dir Work</th>
-      <th>Safety Meeting</th>
-      <th>Tear Down</th>
-      <th>Waiting On</th>
-      <th>Rig Watch</th>
-      <th>Other</th>
-      <th>Day</th>
-      <th>Month</th>
-      <th>Year</th>
-      <th>Tour</th>
-      <th>ids</th>
-      <th>From</th>
-      <th>To</th>
-      <th>Distance</th>
-      <th>Total Days</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-       <th><a href = "https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=1ceb7e48-db2f-44a1-be88-d972132d5468">Download PDF</a></th>
-      <td>31283</td>
-      <td>SHELL ET HZ GROUNDBIRCH A16-13-81-21W6</td>
-      <td>16-13-081-21W6</td>
-      <td>BC</td>
-      <td>DLS</td>
-      <td>101/01-20-081-20W6/00</td>
-      <td>SHELL CANADA LTD.</td>
-      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-      <td>572</td>
-      <td>HORIZ</td>
-      <td>Pason</td>
-      <td>2017</td>
-      <td>2</td>
-      <td>28</td>
-      <td>27.250000</td>
-      <td>triple</td>
-      <td>2727</td>
-      <td>-1000</td>
-      <td>1.5</td>
-      <td>92.5</td>
-      <td>10.25</td>
-      <td>0</td>
-      <td>16.75</td>
-      <td>69</td>
-      <td>8.75</td>
-      <td>0</td>
-      <td>1.75</td>
-      <td>0</td>
-      <td>0</td>
-      <td>15.7</td>
-      <td>0</td>
-      <td>7.5</td>
-      <td>2</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>46.25</td>
-      <td>38.25</td>
-      <td>27.25</td>
-      <td>41.25</td>
-      <td>26.25</td>
-      <td>0</td>
-      <td>5.95</td>
-      <td>543</td>
-      <td>159</td>
-      <td>108918</td>
-      <td>108</td>
-      <td>28-2-2017-1</td>
-      <td>608</td>
-      <td>4332</td>
-      <td>3724</td>
-      <td>18</td>
-    </tr>
-    <tr>
-      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31284_ETS_2017MAR02_B16-13.PDF?alt=media&token=d043dec9-3d70-4ede-8cef-0887d9a6ea99">Download PDF</a></th>
-      <td>31284</td>
-      <td>SHELL ET AL HZ GROUNDBIRCH B16-13-81-21W6</td>
-      <td>16-13-081-21W6</td>
-      <td>BC</td>
-      <td>DLS</td>
-      <td>102/01-20-081-20W6/00</td>
-      <td>SHELL CANADA LTD.</td>
-      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-      <td>572</td>
-      <td>HORIZ</td>
-      <td>Pason</td>
-      <td>2017</td>
-      <td>2</td>
-      <td>17</td>
-      <td>27.181818</td>
-      <td>triple</td>
-      <td>1242</td>
-      <td>-1000</td>
-      <td>0</td>
-      <td>107.25</td>
-      <td>0</td>
-      <td>0</td>
-      <td>15.75</td>
-      <td>37</td>
-      <td>6.5</td>
-      <td>0</td>
-      <td>1.25</td>
-      <td>0</td>
-      <td>0</td>
-      <td>22.6</td>
-      <td>0</td>
-      <td>1.5</td>
-      <td>7</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>39.75</td>
-      <td>15</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>11.15</td>
-      <td>810</td>
-      <td>72</td>
-      <td>72612</td>
-      <td>72</td>
-      <td>17-2-2017-1</td>
-      <td>608</td>
-      <td>4332</td>
-      <td>3724</td>
-      <td>12</td>
-    </tr>
-    <tr>
-      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31284_ETS_2017MAR02_B16-13.PDF?alt=media&token=d043dec9-3d70-4ede-8cef-0887d9a6ea99">Download PDF</a></th>
-      <td>31285</td>
-      <td>SHELL ET AL HZ GROUNDBIRCH C16-13-81-21W6</td>
-      <td>16-13-081-21W6</td>
-      <td>BC</td>
-      <td>DLS</td>
-      <td>103/01-20-081-20W6/06</td>
-      <td>SHELL CANADA LTD.</td>
-      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-      <td>572</td>
-      <td>HORIZ</td>
-      <td>Pason</td>
-      <td>2017</td>
-      <td>1</td>
-      <td>18</td>
-      <td>33.750000</td>
-      <td>triple</td>
-      <td>939</td>
-      <td>-1000</td>
-      <td>2.5</td>
-      <td>89.5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>21.75</td>
-      <td>32.75</td>
-      <td>6</td>
-      <td>0</td>
-      <td>1.75</td>
-      <td>0</td>
-      <td>0</td>
-      <td>19.9</td>
-      <td>0</td>
-      <td>4.75</td>
-      <td>6.75</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>32.75</td>
-      <td>15.75</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1.8</td>
-      <td>675</td>
-      <td>30</td>
-      <td>60510</td>
-      <td>60</td>
-      <td>18-1-2017-1</td>
-      <td>610</td>
-      <td>4568</td>
-      <td>3958</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31284_ETS_2017MAR02_B16-13.PDF?alt=media&token=d043dec9-3d70-4ede-8cef-0887d9a6ea99">Download PDF</a></th>
-      <td>31286</td>
-      <td>SHELL ET AL HZ GROUNDBIRCH D16-13-81-21W6</td>
-      <td>16-13-081-21W6</td>
-      <td>BC</td>
-      <td>DLS</td>
-      <td>100/16-17-081-20W6/00</td>
-      <td>SHELL CANADA LTD.</td>
-      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-      <td>572</td>
-      <td>HORIZ</td>
-      <td>Pason</td>
-      <td>2017</td>
-      <td>1</td>
-      <td>27</td>
-      <td>27.235294</td>
-      <td>triple</td>
-      <td>4170</td>
-      <td>-1000</td>
-      <td>5.5</td>
-      <td>79</td>
-      <td>0</td>
-      <td>0</td>
-      <td>31</td>
-      <td>57.5</td>
-      <td>10</td>
-      <td>0</td>
-      <td>4</td>
-      <td>0</td>
-      <td>9.5</td>
-      <td>13.9</td>
-      <td>0</td>
-      <td>11.75</td>
-      <td>2.5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>155.5</td>
-      <td>28.5</td>
-      <td>41.25</td>
-      <td>0</td>
-      <td>10.25</td>
-      <td>0</td>
-      <td>42</td>
-      <td>894</td>
-      <td>117</td>
-      <td>133122</td>
-      <td>132</td>
-      <td>27-1-2017-1</td>
-      <td>613</td>
-      <td>4179</td>
-      <td>3566</td>
-      <td>22</td>
-    </tr>
-    <tr>
-      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31284_ETS_2017MAR02_B16-13.PDF?alt=media&token=d043dec9-3d70-4ede-8cef-0887d9a6ea99">Download PDF</a></th>
-      <td>31290</td>
-      <td>SHELL ET AL HZ GROUNDBIRCH H16-13-81-21W6</td>
-      <td>16-13-081-21W6</td>
-      <td>BC</td>
-      <td>DLS</td>
-      <td>100/16-17-081-20W6/06</td>
-      <td>SHELL CANADA LTD.</td>
-      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-      <td>572</td>
-      <td>HORIZ</td>
-      <td>Pason</td>
-      <td>2017</td>
-      <td>1</td>
-      <td>7</td>
-      <td>27.153846</td>
-      <td>triple</td>
-      <td>930</td>
-      <td>-1000</td>
-      <td>1.5</td>
-      <td>103.25</td>
-      <td>0</td>
-      <td>0</td>
-      <td>15</td>
-      <td>34.25</td>
-      <td>6.5</td>
-      <td>1</td>
-      <td>1.25</td>
-      <td>0</td>
-      <td>0</td>
-      <td>15</td>
-      <td>0</td>
-      <td>3.5</td>
-      <td>2</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>32.75</td>
-      <td>15</td>
-      <td>0</td>
-      <td>4</td>
-      <td>0</td>
-      <td>2</td>
-      <td>345</td>
-      <td>30</td>
-      <td>60510</td>
-      <td>60</td>
-      <td>7-1-2017-1</td>
-      <td>618</td>
-      <td>4650</td>
-      <td>4032</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31284_ETS_2017MAR02_B16-13.PDF?alt=media&token=d043dec9-3d70-4ede-8cef-0887d9a6ea99">Download PDF</a></th>
-      <td>31291</td>
-      <td>SHELL ET AL HZ GROUNDBIRCH I16-13-81-21W6</td>
-      <td>16-13-081-21W6</td>
-      <td>BC</td>
-      <td>DLS</td>
-      <td>100/14-17-081-20W6/06</td>
-      <td>SHELL CANADA LTD.</td>
-      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-      <td>572</td>
-      <td>HORIZ</td>
-      <td>Pason</td>
-      <td>2016</td>
-      <td>12</td>
-      <td>26</td>
-      <td>27.208333</td>
-      <td>triple</td>
-      <td>1515</td>
-      <td>-1000</td>
-      <td>5</td>
-      <td>109.75</td>
-      <td>0</td>
-      <td>0</td>
-      <td>25.75</td>
-      <td>37</td>
-      <td>5.75</td>
-      <td>5</td>
-      <td>1.5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>25.8</td>
-      <td>0</td>
-      <td>4.75</td>
-      <td>3.5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>42.75</td>
-      <td>17.75</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>4.45</td>
-      <td>597</td>
-      <td>237</td>
-      <td>78645</td>
-      <td>78</td>
-      <td>26-12-2016-1</td>
-      <td>610</td>
-      <td>4630</td>
-      <td>4020</td>
-      <td>13</td>
-    </tr>
-    <tr>
-      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31284_ETS_2017MAR02_B16-13.PDF?alt=media&token=d043dec9-3d70-4ede-8cef-0887d9a6ea99">Download PDF</a></th>
-      <td>31292</td>
-      <td>SHELL ET AL HZ GROUNDBIRCH J16-13-081-21W6</td>
-      <td>16-13-081-21W6</td>
-      <td>BC</td>
-      <td>DLS</td>
-      <td>NaN</td>
-      <td>SHELL CANADA LTD.</td>
-      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-      <td>572</td>
-      <td>HORIZ</td>
-      <td>Pason</td>
-      <td>2016</td>
-      <td>12</td>
-      <td>8</td>
-      <td>47.000000</td>
-      <td>triple</td>
-      <td>2343</td>
-      <td>-1000</td>
-      <td>1.75</td>
-      <td>129.5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>42.5</td>
-      <td>60.5</td>
-      <td>8.5</td>
-      <td>0</td>
-      <td>1.5</td>
-      <td>0</td>
-      <td>13.2</td>
-      <td>30.7</td>
-      <td>0</td>
-      <td>25.25</td>
-      <td>5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>63.75</td>
-      <td>29.25</td>
-      <td>0.75</td>
-      <td>2.25</td>
-      <td>0</td>
-      <td>7.85</td>
-      <td>969</td>
-      <td>684</td>
-      <td>114912</td>
-      <td>114</td>
-      <td>8-12-2016-1</td>
-      <td>0</td>
-      <td>4623</td>
-      <td>4623</td>
-      <td>19</td>
-    </tr>
-    <tr>
-      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31284_ETS_2017MAR02_B16-13.PDF?alt=media&token=d043dec9-3d70-4ede-8cef-0887d9a6ea99">Download PDF</a></th>
-      <td>31722</td>
-      <td>SHELL ET AL HZ GROUNDBIRCH 16-9-80-19</td>
-      <td>16-09-080-19W6</td>
-      <td>BC</td>
-      <td>DLS</td>
-      <td>106/01-11-080-19W6/00</td>
-      <td>SHELL CANADA LTD.</td>
-      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-      <td>573</td>
-      <td>HORIZ</td>
-      <td>Pason</td>
-      <td>2017</td>
-      <td>1</td>
-      <td>16</td>
-      <td>27.882353</td>
-      <td>triple</td>
-      <td>2316</td>
-      <td>-1000</td>
-      <td>2.25</td>
-      <td>109.75</td>
-      <td>0</td>
-      <td>0</td>
-      <td>13.25</td>
-      <td>60.25</td>
-      <td>6</td>
-      <td>0</td>
-      <td>2.75</td>
-      <td>0</td>
-      <td>1.4</td>
-      <td>22.9</td>
-      <td>0</td>
-      <td>12.5</td>
-      <td>2.5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>43.25</td>
-      <td>16.25</td>
-      <td>60</td>
-      <td>2.75</td>
-      <td>0</td>
-      <td>5.4</td>
-      <td>1128</td>
-      <td>48</td>
-      <td>96816</td>
-      <td>96</td>
-      <td>16-1-2017-1</td>
-      <td>463</td>
-      <td>5752</td>
-      <td>5289</td>
-      <td>16</td>
-    </tr>
-    <tr>
-      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31284_ETS_2017MAR02_B16-13.PDF?alt=media&token=d043dec9-3d70-4ede-8cef-0887d9a6ea99">Download PDF</a></th>
-      <td>31723</td>
-      <td>SHELL ET AL HZ GROUNDBIRCH A16-9-80-19</td>
-      <td>16-09-080-19W6</td>
-      <td>BC</td>
-      <td>DLS</td>
-      <td>105/16-02-080-19W6/00</td>
-      <td>SHELL CANADA LTD.</td>
-      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-      <td>573</td>
-      <td>HORIZ</td>
-      <td>Pason</td>
-      <td>2017</td>
-      <td>1</td>
-      <td>4</td>
-      <td>27.708333</td>
-      <td>triple</td>
-      <td>1758</td>
-      <td>-1000</td>
-      <td>2</td>
-      <td>118.75</td>
-      <td>0</td>
-      <td>0</td>
-      <td>10</td>
-      <td>54</td>
-      <td>5.75</td>
-      <td>0</td>
-      <td>2</td>
-      <td>0</td>
-      <td>0</td>
-      <td>24.1</td>
-      <td>0</td>
-      <td>4.5</td>
-      <td>4.25</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>51.5</td>
-      <td>15.75</td>
-      <td>0.5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>4.2</td>
-      <td>390</td>
-      <td>39</td>
-      <td>78663</td>
-      <td>78</td>
-      <td>4-1-2017-1</td>
-      <td>463</td>
-      <td>5862</td>
-      <td>5399</td>
-      <td>13</td>
-    </tr>
-    <tr>
-      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31284_ETS_2017MAR02_B16-13.PDF?alt=media&token=d043dec9-3d70-4ede-8cef-0887d9a6ea99">Download PDF</a></th>
-      <td>31724</td>
-      <td>SHELLET AL HZ GROUNDBIRCH B16-9-80-19</td>
-      <td>16-09-080-19W6</td>
-      <td>BC</td>
-      <td>DLS</td>
-      <td>103/16-02-080-19W6/00</td>
-      <td>SHELL CANADA LTD.</td>
-      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-      <td>573</td>
-      <td>HORIZ</td>
-      <td>Pason</td>
-      <td>2016</td>
-      <td>12</td>
-      <td>22</td>
-      <td>27.775000</td>
-      <td>triple</td>
-      <td>2004</td>
-      <td>-1000</td>
-      <td>1.75</td>
-      <td>124</td>
-      <td>0</td>
-      <td>0</td>
-      <td>12</td>
-      <td>57.5</td>
-      <td>5.75</td>
-      <td>0.75</td>
-      <td>2.5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>26.9</td>
-      <td>0</td>
-      <td>4.5</td>
-      <td>7.75</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>50</td>
-      <td>14.75</td>
-      <td>0.75</td>
-      <td>0</td>
-      <td>0</td>
-      <td>5.75</td>
-      <td>825</td>
-      <td>372</td>
-      <td>84684</td>
-      <td>84</td>
-      <td>22-12-2016-1</td>
-      <td>463</td>
-      <td>5708</td>
-      <td>5245</td>
-      <td>14</td>
-    </tr>
-    <tr>
-      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31284_ETS_2017MAR02_B16-13.PDF?alt=media&token=d043dec9-3d70-4ede-8cef-0887d9a6ea99">Download PDF</a></th>
-      <td>31725</td>
-      <td>SHELL ET AL HZ GROUNDBIRCH C16-9-80-19</td>
-      <td>16-09-080-19W6</td>
-      <td>BC</td>
-      <td>DLS</td>
-      <td>103/16-02-080-19W6/00</td>
-      <td>SHELL CANADA LTD.</td>
-      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-      <td>573</td>
-      <td>HORIZ</td>
-      <td>Pason</td>
-      <td>2016</td>
-      <td>12</td>
-      <td>5</td>
-      <td>27.775000</td>
-      <td>triple</td>
-      <td>3213</td>
-      <td>-1000</td>
-      <td>2.25</td>
-      <td>164.5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>12</td>
-      <td>68</td>
-      <td>8.25</td>
-      <td>28.25</td>
-      <td>2.75</td>
-      <td>0</td>
-      <td>0</td>
-      <td>25.1</td>
-      <td>0</td>
-      <td>5.25</td>
-      <td>2.5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>59</td>
-      <td>16.75</td>
-      <td>1.25</td>
-      <td>0.75</td>
-      <td>0</td>
-      <td>9.8</td>
-      <td>729</td>
-      <td>648</td>
-      <td>108864</td>
-      <td>108</td>
-      <td>5-12-2016-1</td>
-      <td>466</td>
-      <td>5900</td>
-      <td>5434</td>
-      <td>18</td>
-    </tr>
-    <tr>
-      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31284_ETS_2017MAR02_B16-13.PDF?alt=media&token=d043dec9-3d70-4ede-8cef-0887d9a6ea99">Download PDF</a></th>
-      <td>31726</td>
-      <td>SHELL ET AL HZ GROUNDBIRCH D16-9-80-19</td>
-      <td>16-09-080-19W6</td>
-      <td>BC</td>
-      <td>DLS</td>
-      <td>102/01-11-080-19W6/00</td>
-      <td>SHELL CANADA LTD.</td>
-      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-      <td>573</td>
-      <td>HORIZ</td>
-      <td>Pason</td>
-      <td>2016</td>
-      <td>11</td>
-      <td>22</td>
-      <td>28.300000</td>
-      <td>triple</td>
-      <td>1824</td>
-      <td>-1000</td>
-      <td>2.25</td>
-      <td>102</td>
-      <td>5</td>
-      <td>0</td>
-      <td>18.5</td>
-      <td>58.25</td>
-      <td>5.5</td>
-      <td>0</td>
-      <td>2.25</td>
-      <td>0</td>
-      <td>0</td>
-      <td>26.6</td>
-      <td>0</td>
-      <td>4.25</td>
-      <td>9</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>3.75</td>
-      <td>45</td>
-      <td>14.25</td>
-      <td>1</td>
-      <td>2.25</td>
-      <td>0</td>
-      <td>5.25</td>
-      <td>747</td>
-      <td>477</td>
-      <td>84672</td>
-      <td>84</td>
-      <td>22-11-2016-1</td>
-      <td>465</td>
-      <td>5748</td>
-      <td>5283</td>
-      <td>14</td>
-    </tr>
-    <tr>
-      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31284_ETS_2017MAR02_B16-13.PDF?alt=media&token=d043dec9-3d70-4ede-8cef-0887d9a6ea99">Download PDF</a></th>
-      <td>31727</td>
-      <td>SHELL ET AL HZ GROUNDBIRCH E16-9-80-19</td>
-      <td>16-09-080-19W6</td>
-      <td>BC</td>
-      <td>DLS</td>
-      <td>100/01-11-080-19W6/00</td>
-      <td>SHELL CANADA LTD.</td>
-      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-      <td>573</td>
-      <td>VERT</td>
-      <td>Pason</td>
-      <td>2016</td>
-      <td>10</td>
-      <td>23</td>
-      <td>0.000000</td>
-      <td>double</td>
-      <td>15</td>
-      <td>-1000</td>
-      <td>1.5</td>
-      <td>2.75</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0.5</td>
-      <td>0.75</td>
-      <td>0.5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>3.4</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>3.75</td>
-      <td>1.75</td>
-      <td>0.5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>141</td>
-      <td>60</td>
-      <td>12096</td>
-      <td>12</td>
-      <td>23-10-2016-1</td>
-      <td>0</td>
-      <td>472</td>
-      <td>472</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31284_ETS_2017MAR02_B16-13.PDF?alt=media&token=d043dec9-3d70-4ede-8cef-0887d9a6ea99">Download PDF</a></th>
-      <td>31728</td>
-      <td>SHELL ET AL HZ GROUNDBIRCH F16-9-80-19</td>
-      <td>16-09-080-19W6</td>
-      <td>BC</td>
-      <td>DLS</td>
-      <td>101/16-02-080-19W6/00</td>
-      <td>SHELL CANADA LTD.</td>
-      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-      <td>573</td>
-      <td>HORIZ</td>
-      <td>Pason</td>
-      <td>2016</td>
-      <td>11</td>
-      <td>8</td>
-      <td>27.687500</td>
-      <td>triple</td>
-      <td>2241</td>
-      <td>-1000</td>
-      <td>2.5</td>
-      <td>133.25</td>
-      <td>1</td>
-      <td>0</td>
-      <td>11.25</td>
-      <td>57</td>
-      <td>7.5</td>
-      <td>0.25</td>
-      <td>3</td>
-      <td>0</td>
-      <td>0</td>
-      <td>48.2</td>
-      <td>0</td>
-      <td>4.5</td>
-      <td>3.5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>51.25</td>
-      <td>16.75</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>3.85</td>
-      <td>675</td>
-      <td>495</td>
-      <td>90720</td>
-      <td>90</td>
-      <td>8-11-2016-1</td>
-      <td>454</td>
-      <td>5758</td>
-      <td>5304</td>
-      <td>15</td>
-    </tr>
-  </tbody>
-</table>
-
-</div>
-</div>
-       
-
+        <div class="container">
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('#table_id').dataTable();
+                });
+            </script>
+            <div class ="well">
+              <div class="table-responsive">
+                <table id="table_id" class="table">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>License No</th>
+                      <th>Well Name</th>
+                      <th>Surface Location</th>
+                      <th>Prov</th>
+                      <th>Loc Type</th>
+                      <th>Unique Well Id</th>
+                      <th>Operator</th>
+                      <th>Contractor</th>
+                      <th>Rig No</th>
+                      <th>Well Type</th>
+                      <th>Vendor Software Version</th>
+                      <th>Year</th>
+                      <th>Month</th>
+                      <th>Day</th>
+                      <th>Triple/Double</th>
+                      <th>Rig Up</th>
+                      <th>Drill Actual</th>
+                      <th>Reaming</th>
+                      <th>Coring</th>
+                      <th>Cond Mud &amp; Circ</th>
+                      <th>Trips</th>
+                      <th>Rig Service</th>
+                      <th>Repair Rig</th>
+                      <th>Cut Off Drilg Line</th>
+                      <th>Dev Survey</th>
+                      <th>Wireline Logs</th>
+                      <th>Run Csg &amp; Cement</th>
+                      <th>Wait On Cement</th>
+                      <th>Nipple Up BOP</th>
+                      <th>Test BOP</th>
+                      <th>Drillstem Test</th>
+                      <th>Plug Back</th>
+                      <th>Squeeze Cement</th>
+                      <th>Fishing</th>
+                      <th>Dir Work</th>
+                      <th>Safety Meeting</th>
+                      <th>Tear Down</th>
+                      <th>Waiting On</th>
+                      <th>Rig Watch</th>
+                      <th>Other</th>
+                      <th>From</th>
+                      <th>To</th>
+                      <th>Distance</th>
+                      <th>Total Days</th>
+                      <th>Meters/day Average</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>0</th>
+                      <td>31283</td>
+                      <td>SHELL ET HZ GROUNDBIRCH A16-13-81-21W6</td>
+                      <td>16-13-081-21W6</td>
+                      <td>BC</td>
+                      <td>DLS</td>
+                      <td>101/01-20-081-20W6/00</td>
+                      <td>SHELL CANADA LTD.</td>
+                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                      <td>572</td>
+                      <td>HORIZ</td>
+                      <td>Pason</td>
+                      <td>2017</td>
+                      <td>2</td>
+                      <td>28</td>
+                      <td>triple</td>
+                      <td>1.50</td>
+                      <td>92.50</td>
+                      <td>10.25</td>
+                      <td>0.0</td>
+                      <td>16.75</td>
+                      <td>69.00</td>
+                      <td>8.75</td>
+                      <td>0.00</td>
+                      <td>1.75</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>15.7</td>
+                      <td>0.0</td>
+                      <td>7.50</td>
+                      <td>2.00</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>46.25</td>
+                      <td>38.25</td>
+                      <td>27.25</td>
+                      <td>41.25</td>
+                      <td>26.25</td>
+                      <td>0.0</td>
+                      <td>5.95</td>
+                      <td>608</td>
+                      <td>4332</td>
+                      <td>3724</td>
+                      <td>18</td>
+                      <td>206.888889</td>
+                    </tr>
+                    <tr>
+                      <th>1</th>
+                      <td>31284</td>
+                      <td>SHELL ET AL HZ GROUNDBIRCH B16-13-81-21W6</td>
+                      <td>16-13-081-21W6</td>
+                      <td>BC</td>
+                      <td>DLS</td>
+                      <td>102/01-20-081-20W6/00</td>
+                      <td>SHELL CANADA LTD.</td>
+                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                      <td>572</td>
+                      <td>HORIZ</td>
+                      <td>Pason</td>
+                      <td>2017</td>
+                      <td>2</td>
+                      <td>17</td>
+                      <td>triple</td>
+                      <td>0.00</td>
+                      <td>107.25</td>
+                      <td>0.00</td>
+                      <td>0.0</td>
+                      <td>15.75</td>
+                      <td>37.00</td>
+                      <td>6.50</td>
+                      <td>0.00</td>
+                      <td>1.25</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>22.6</td>
+                      <td>0.0</td>
+                      <td>1.50</td>
+                      <td>7.00</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.00</td>
+                      <td>39.75</td>
+                      <td>15.00</td>
+                      <td>0.00</td>
+                      <td>0.00</td>
+                      <td>0.0</td>
+                      <td>11.15</td>
+                      <td>608</td>
+                      <td>4332</td>
+                      <td>3724</td>
+                      <td>12</td>
+                      <td>310.333333</td>
+                    </tr>
+                    <tr>
+                      <th>2</th>
+                      <td>31285</td>
+                      <td>SHELL ET AL HZ GROUNDBIRCH C16-13-81-21W6</td>
+                      <td>16-13-081-21W6</td>
+                      <td>BC</td>
+                      <td>DLS</td>
+                      <td>103/01-20-081-20W6/06</td>
+                      <td>SHELL CANADA LTD.</td>
+                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                      <td>572</td>
+                      <td>HORIZ</td>
+                      <td>Pason</td>
+                      <td>2017</td>
+                      <td>1</td>
+                      <td>18</td>
+                      <td>triple</td>
+                      <td>2.50</td>
+                      <td>89.50</td>
+                      <td>0.00</td>
+                      <td>0.0</td>
+                      <td>21.75</td>
+                      <td>32.75</td>
+                      <td>6.00</td>
+                      <td>0.00</td>
+                      <td>1.75</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>19.9</td>
+                      <td>0.0</td>
+                      <td>4.75</td>
+                      <td>6.75</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.00</td>
+                      <td>32.75</td>
+                      <td>15.75</td>
+                      <td>0.00</td>
+                      <td>0.00</td>
+                      <td>0.0</td>
+                      <td>1.80</td>
+                      <td>610</td>
+                      <td>4568</td>
+                      <td>3958</td>
+                      <td>10</td>
+                      <td>395.800000</td>
+                    </tr>
+                    <tr>
+                      <th>3</th>
+                      <td>31286</td>
+                      <td>SHELL ET AL HZ GROUNDBIRCH D16-13-81-21W6</td>
+                      <td>16-13-081-21W6</td>
+                      <td>BC</td>
+                      <td>DLS</td>
+                      <td>100/16-17-081-20W6/00</td>
+                      <td>SHELL CANADA LTD.</td>
+                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                      <td>572</td>
+                      <td>HORIZ</td>
+                      <td>Pason</td>
+                      <td>2017</td>
+                      <td>1</td>
+                      <td>27</td>
+                      <td>triple</td>
+                      <td>5.50</td>
+                      <td>79.00</td>
+                      <td>0.00</td>
+                      <td>0.0</td>
+                      <td>31.00</td>
+                      <td>57.50</td>
+                      <td>10.00</td>
+                      <td>0.00</td>
+                      <td>4.00</td>
+                      <td>0.0</td>
+                      <td>9.5</td>
+                      <td>13.9</td>
+                      <td>0.0</td>
+                      <td>11.75</td>
+                      <td>2.50</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>155.50</td>
+                      <td>28.50</td>
+                      <td>41.25</td>
+                      <td>0.00</td>
+                      <td>10.25</td>
+                      <td>0.0</td>
+                      <td>42.00</td>
+                      <td>613</td>
+                      <td>4179</td>
+                      <td>3566</td>
+                      <td>22</td>
+                      <td>162.090909</td>
+                    </tr>
+                    <tr>
+                      <th>4</th>
+                      <td>31290</td>
+                      <td>SHELL ET AL HZ GROUNDBIRCH H16-13-81-21W6</td>
+                      <td>16-13-081-21W6</td>
+                      <td>BC</td>
+                      <td>DLS</td>
+                      <td>100/16-17-081-20W6/06</td>
+                      <td>SHELL CANADA LTD.</td>
+                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                      <td>572</td>
+                      <td>HORIZ</td>
+                      <td>Pason</td>
+                      <td>2017</td>
+                      <td>1</td>
+                      <td>7</td>
+                      <td>triple</td>
+                      <td>1.50</td>
+                      <td>103.25</td>
+                      <td>0.00</td>
+                      <td>0.0</td>
+                      <td>15.00</td>
+                      <td>34.25</td>
+                      <td>6.50</td>
+                      <td>1.00</td>
+                      <td>1.25</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>15.0</td>
+                      <td>0.0</td>
+                      <td>3.50</td>
+                      <td>2.00</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.00</td>
+                      <td>32.75</td>
+                      <td>15.00</td>
+                      <td>0.00</td>
+                      <td>4.00</td>
+                      <td>0.0</td>
+                      <td>2.00</td>
+                      <td>618</td>
+                      <td>4650</td>
+                      <td>4032</td>
+                      <td>10</td>
+                      <td>403.200000</td>
+                    </tr>
+                    <tr>
+                      <th>5</th>
+                      <td>31291</td>
+                      <td>SHELL ET AL HZ GROUNDBIRCH I16-13-81-21W6</td>
+                      <td>16-13-081-21W6</td>
+                      <td>BC</td>
+                      <td>DLS</td>
+                      <td>100/14-17-081-20W6/06</td>
+                      <td>SHELL CANADA LTD.</td>
+                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                      <td>572</td>
+                      <td>HORIZ</td>
+                      <td>Pason</td>
+                      <td>2016</td>
+                      <td>12</td>
+                      <td>26</td>
+                      <td>triple</td>
+                      <td>5.00</td>
+                      <td>109.75</td>
+                      <td>0.00</td>
+                      <td>0.0</td>
+                      <td>25.75</td>
+                      <td>37.00</td>
+                      <td>5.75</td>
+                      <td>5.00</td>
+                      <td>1.50</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>25.8</td>
+                      <td>0.0</td>
+                      <td>4.75</td>
+                      <td>3.50</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.00</td>
+                      <td>42.75</td>
+                      <td>17.75</td>
+                      <td>0.00</td>
+                      <td>0.00</td>
+                      <td>0.0</td>
+                      <td>4.45</td>
+                      <td>610</td>
+                      <td>4630</td>
+                      <td>4020</td>
+                      <td>13</td>
+                      <td>309.230769</td>
+                    </tr>
+                    <tr>
+                      <th>6</th>
+                      <td>31292</td>
+                      <td>SHELL ET AL HZ GROUNDBIRCH J16-13-081-21W6</td>
+                      <td>16-13-081-21W6</td>
+                      <td>BC</td>
+                      <td>DLS</td>
+                      <td>NaN</td>
+                      <td>SHELL CANADA LTD.</td>
+                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                      <td>572</td>
+                      <td>HORIZ</td>
+                      <td>Pason</td>
+                      <td>2016</td>
+                      <td>12</td>
+                      <td>8</td>
+                      <td>triple</td>
+                      <td>1.75</td>
+                      <td>129.50</td>
+                      <td>0.00</td>
+                      <td>0.0</td>
+                      <td>42.50</td>
+                      <td>60.50</td>
+                      <td>8.50</td>
+                      <td>0.00</td>
+                      <td>1.50</td>
+                      <td>0.0</td>
+                      <td>13.2</td>
+                      <td>30.7</td>
+                      <td>0.0</td>
+                      <td>25.25</td>
+                      <td>5.00</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.00</td>
+                      <td>63.75</td>
+                      <td>29.25</td>
+                      <td>0.75</td>
+                      <td>2.25</td>
+                      <td>0.0</td>
+                      <td>7.85</td>
+                      <td>0</td>
+                      <td>4623</td>
+                      <td>4623</td>
+                      <td>19</td>
+                      <td>243.315789</td>
+                    </tr>
+                    <tr>
+                      <th>7</th>
+                      <td>31722</td>
+                      <td>SHELL ET AL HZ GROUNDBIRCH 16-9-80-19</td>
+                      <td>16-09-080-19W6</td>
+                      <td>BC</td>
+                      <td>DLS</td>
+                      <td>106/01-11-080-19W6/00</td>
+                      <td>SHELL CANADA LTD.</td>
+                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                      <td>573</td>
+                      <td>HORIZ</td>
+                      <td>Pason</td>
+                      <td>2017</td>
+                      <td>1</td>
+                      <td>16</td>
+                      <td>triple</td>
+                      <td>2.25</td>
+                      <td>109.75</td>
+                      <td>0.00</td>
+                      <td>0.0</td>
+                      <td>13.25</td>
+                      <td>60.25</td>
+                      <td>6.00</td>
+                      <td>0.00</td>
+                      <td>2.75</td>
+                      <td>0.0</td>
+                      <td>1.4</td>
+                      <td>22.9</td>
+                      <td>0.0</td>
+                      <td>12.50</td>
+                      <td>2.50</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.00</td>
+                      <td>43.25</td>
+                      <td>16.25</td>
+                      <td>60.00</td>
+                      <td>2.75</td>
+                      <td>0.0</td>
+                      <td>5.40</td>
+                      <td>463</td>
+                      <td>5752</td>
+                      <td>5289</td>
+                      <td>16</td>
+                      <td>330.562500</td>
+                    </tr>
+                    <tr>
+                      <th>8</th>
+                      <td>31723</td>
+                      <td>SHELL ET AL HZ GROUNDBIRCH A16-9-80-19</td>
+                      <td>16-09-080-19W6</td>
+                      <td>BC</td>
+                      <td>DLS</td>
+                      <td>105/16-02-080-19W6/00</td>
+                      <td>SHELL CANADA LTD.</td>
+                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                      <td>573</td>
+                      <td>HORIZ</td>
+                      <td>Pason</td>
+                      <td>2017</td>
+                      <td>1</td>
+                      <td>4</td>
+                      <td>triple</td>
+                      <td>2.00</td>
+                      <td>118.75</td>
+                      <td>0.00</td>
+                      <td>0.0</td>
+                      <td>10.00</td>
+                      <td>54.00</td>
+                      <td>5.75</td>
+                      <td>0.00</td>
+                      <td>2.00</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>24.1</td>
+                      <td>0.0</td>
+                      <td>4.50</td>
+                      <td>4.25</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.00</td>
+                      <td>51.50</td>
+                      <td>15.75</td>
+                      <td>0.50</td>
+                      <td>0.00</td>
+                      <td>0.0</td>
+                      <td>4.20</td>
+                      <td>463</td>
+                      <td>5862</td>
+                      <td>5399</td>
+                      <td>13</td>
+                      <td>415.307692</td>
+                    </tr>
+                    <tr>
+                      <th>9</th>
+                      <td>31724</td>
+                      <td>SHELLET AL HZ GROUNDBIRCH B16-9-80-19</td>
+                      <td>16-09-080-19W6</td>
+                      <td>BC</td>
+                      <td>DLS</td>
+                      <td>103/16-02-080-19W6/00</td>
+                      <td>SHELL CANADA LTD.</td>
+                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                      <td>573</td>
+                      <td>HORIZ</td>
+                      <td>Pason</td>
+                      <td>2016</td>
+                      <td>12</td>
+                      <td>22</td>
+                      <td>triple</td>
+                      <td>1.75</td>
+                      <td>124.00</td>
+                      <td>0.00</td>
+                      <td>0.0</td>
+                      <td>12.00</td>
+                      <td>57.50</td>
+                      <td>5.75</td>
+                      <td>0.75</td>
+                      <td>2.50</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>26.9</td>
+                      <td>0.0</td>
+                      <td>4.50</td>
+                      <td>7.75</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.00</td>
+                      <td>50.00</td>
+                      <td>14.75</td>
+                      <td>0.75</td>
+                      <td>0.00</td>
+                      <td>0.0</td>
+                      <td>5.75</td>
+                      <td>463</td>
+                      <td>5708</td>
+                      <td>5245</td>
+                      <td>14</td>
+                      <td>374.642857</td>
+                    </tr>
+                    <tr>
+                      <th>10</th>
+                      <td>31725</td>
+                      <td>SHELL ET AL HZ GROUNDBIRCH C16-9-80-19</td>
+                      <td>16-09-080-19W6</td>
+                      <td>BC</td>
+                      <td>DLS</td>
+                      <td>103/16-02-080-19W6/00</td>
+                      <td>SHELL CANADA LTD.</td>
+                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                      <td>573</td>
+                      <td>HORIZ</td>
+                      <td>Pason</td>
+                      <td>2016</td>
+                      <td>12</td>
+                      <td>5</td>
+                      <td>triple</td>
+                      <td>2.25</td>
+                      <td>164.50</td>
+                      <td>0.00</td>
+                      <td>0.0</td>
+                      <td>12.00</td>
+                      <td>68.00</td>
+                      <td>8.25</td>
+                      <td>28.25</td>
+                      <td>2.75</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>25.1</td>
+                      <td>0.0</td>
+                      <td>5.25</td>
+                      <td>2.50</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.00</td>
+                      <td>59.00</td>
+                      <td>16.75</td>
+                      <td>1.25</td>
+                      <td>0.75</td>
+                      <td>0.0</td>
+                      <td>9.80</td>
+                      <td>466</td>
+                      <td>5900</td>
+                      <td>5434</td>
+                      <td>18</td>
+                      <td>301.888889</td>
+                    </tr>
+                    <tr>
+                      <th>11</th>
+                      <td>31726</td>
+                      <td>SHELL ET AL HZ GROUNDBIRCH D16-9-80-19</td>
+                      <td>16-09-080-19W6</td>
+                      <td>BC</td>
+                      <td>DLS</td>
+                      <td>102/01-11-080-19W6/00</td>
+                      <td>SHELL CANADA LTD.</td>
+                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                      <td>573</td>
+                      <td>HORIZ</td>
+                      <td>Pason</td>
+                      <td>2016</td>
+                      <td>11</td>
+                      <td>22</td>
+                      <td>triple</td>
+                      <td>2.25</td>
+                      <td>102.00</td>
+                      <td>5.00</td>
+                      <td>0.0</td>
+                      <td>18.50</td>
+                      <td>58.25</td>
+                      <td>5.50</td>
+                      <td>0.00</td>
+                      <td>2.25</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>26.6</td>
+                      <td>0.0</td>
+                      <td>4.25</td>
+                      <td>9.00</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>3.75</td>
+                      <td>45.00</td>
+                      <td>14.25</td>
+                      <td>1.00</td>
+                      <td>2.25</td>
+                      <td>0.0</td>
+                      <td>5.25</td>
+                      <td>465</td>
+                      <td>5748</td>
+                      <td>5283</td>
+                      <td>14</td>
+                      <td>377.357143</td>
+                    </tr>
+                    <tr>
+                      <th>12</th>
+                      <td>31727</td>
+                      <td>SHELL ET AL HZ GROUNDBIRCH E16-9-80-19</td>
+                      <td>16-09-080-19W6</td>
+                      <td>BC</td>
+                      <td>DLS</td>
+                      <td>100/01-11-080-19W6/00</td>
+                      <td>SHELL CANADA LTD.</td>
+                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                      <td>573</td>
+                      <td>VERT</td>
+                      <td>Pason</td>
+                      <td>2016</td>
+                      <td>10</td>
+                      <td>23</td>
+                      <td>double</td>
+                      <td>1.50</td>
+                      <td>2.75</td>
+                      <td>0.00</td>
+                      <td>0.0</td>
+                      <td>0.50</td>
+                      <td>0.75</td>
+                      <td>0.50</td>
+                      <td>0.00</td>
+                      <td>0.00</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>3.4</td>
+                      <td>0.0</td>
+                      <td>0.00</td>
+                      <td>0.00</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.00</td>
+                      <td>3.75</td>
+                      <td>1.75</td>
+                      <td>0.50</td>
+                      <td>0.00</td>
+                      <td>0.0</td>
+                      <td>0.00</td>
+                      <td>0</td>
+                      <td>472</td>
+                      <td>472</td>
+                      <td>2</td>
+                      <td>236.000000</td>
+                    </tr>
+                    <tr>
+                      <th>13</th>
+                      <td>31728</td>
+                      <td>SHELL ET AL HZ GROUNDBIRCH F16-9-80-19</td>
+                      <td>16-09-080-19W6</td>
+                      <td>BC</td>
+                      <td>DLS</td>
+                      <td>101/16-02-080-19W6/00</td>
+                      <td>SHELL CANADA LTD.</td>
+                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                      <td>573</td>
+                      <td>HORIZ</td>
+                      <td>Pason</td>
+                      <td>2016</td>
+                      <td>11</td>
+                      <td>8</td>
+                      <td>triple</td>
+                      <td>2.50</td>
+                      <td>133.25</td>
+                      <td>1.00</td>
+                      <td>0.0</td>
+                      <td>11.25</td>
+                      <td>57.00</td>
+                      <td>7.50</td>
+                      <td>0.25</td>
+                      <td>3.00</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>48.2</td>
+                      <td>0.0</td>
+                      <td>4.50</td>
+                      <td>3.50</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.0</td>
+                      <td>0.00</td>
+                      <td>51.25</td>
+                      <td>16.75</td>
+                      <td>1.00</td>
+                      <td>0.00</td>
+                      <td>0.0</td>
+                      <td>3.85</td>
+                      <td>454</td>
+                      <td>5758</td>
+                      <td>5304</td>
+                      <td>15</td>
+                      <td>353.600000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+      </div>
     </section>
 
-     
-
-
+    <!-- footer --> 
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Unsist Inc. 2017</span>
+                    <span class="copyright">Copyright &copy; Unsist Inc. 2018</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
@@ -1060,7 +954,7 @@
 
 
     <!-- jQuery -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
+    <!-- script src="../vendor/jquery/jquery.min.js" /script -->
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -1098,7 +992,6 @@
   var dbRef = firebase.database().ref()
   dfRef.on('value', snap => bigOne.innerText = snap.val());
 
-
 </script>
 
 <script type='text/javascript'>                    
@@ -1109,8 +1002,6 @@
   scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
   vizElement.parentNode.insertBefore(scriptElement, vizElement);               
 </script>
-
-
 
 </body>
 
