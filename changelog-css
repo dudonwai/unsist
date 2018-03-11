@@ -1,0 +1,66 @@
+x********** Reduce padding between sections
+file:///C:/Users/Dudon%20Wai/Desktop/Unsist/unsist/css/agency.min.css
+
+@media (min-width: 768px)
+section {
+    padding: 100px 0; --> 75px
+}
+
+section {
+    padding: 100px 0;
+}    
+
+
+
+x********** Reduce padding for hedaers
+file:///C:/Users/Dudon%20Wai/Desktop/Unsist/unsist/vendor/bootstrap/css/bootstrap.min.css
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 5px; --> 20px to 10 or 5
+    margin-bottom: 5px;
+
+
+
+
+
+x********** Change UNSIST top left
+file:///C:/Users/Dudon%20Wai/Desktop/Unsist/unsist/vendor/bootstrap/css/bootstrap.min.css
+.navbar-brand {
+    float: left;
+    height: 50px; --> 20px
+    padding: 15px 15px; --> 5px 15 px
+    font-size: 18px;
+    line-height: 20px; --> 30px
+}
+
+
+
+
+x********** Reduce padding of orange button
+file:///C:/Users/Dudon%20Wai/Desktop/Unsist/unsist/vendor/bootstrap/css/bootstrap.min.css
+@media (min-width: 768px)
+.navbar-nav>li>a {
+    padding-top: 20px; --> 10
+    padding-bottom: 20px; --> 10
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 10px;
+}
+
+
+x ************ Reduce minimum height
+file:///C:/Users/Dudon%20Wai/Desktop/Unsist/unsist/vendor/bootstrap/css/bootstrap.min.css
+.navbar {
+    position: relative;
+    min-height: 50px; --> 20px
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+
+
+**********
+Logo into Navbar
+Reduce # headings in navbar
