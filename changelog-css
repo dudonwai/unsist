@@ -3,7 +3,7 @@ file:///C:/Users/Dudon%20Wai/Desktop/Unsist/unsist/css/agency.min.css
 
 @media (min-width: 768px)
 section {
-    padding: 100px 0; --> 75px
+    padding: 100px 0; --> 70px
 }
 
 section {
