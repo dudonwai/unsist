@@ -58,6 +58,9 @@
       Else include this too with the below reference -->
 
 <script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+<!-- https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js
+https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js -->
+
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css">
 
 </head>
@@ -117,2566 +120,957 @@
 
     <!-- Header -->
 
-    <section style="background-color: #E5E7E9">
-
-        <div class="col-sm-2 col-sm-offset-5">            
-            <img class="img-responsive img-centered" width="100" src="../../img/logos/unsist-logo-large.png"> 
-            <br>
-            &nbsp;      
-        </div>
-
-        <br>
-        &nbsp;
-
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 text-center">
-                    <h3 align="center">Unsist Insights - <u>All Companies</u></h3>
-                    <table class="table">                   
-                        <tbody>
-                            <tr>
-                              <td><strong>Highest Meters per Day</strong></td>
-                              <td>501 m/day</td>
-                              <td>Encana, Lic # 35059</td>
-                            </tr>
-                            <tr>  
-                              <td><strong>Lowest Meters per Day</strong></td>
-                              <td>51 m/day</td>
-                              <td>Crew, Lic # 33083</td>
-                            </tr>
-                            <tr>  
-                              <td><strong>Deepest Well</strong></td>
-                              <td>5900 m</td>
-                              <td>Shell, Lic # 31725</td>
-                            </tr>
-                            <tr>  
-                              <td><strong>Longest Tripping Time</strong>
-                              <td>69.50 hours</td>
-                              <td>Encana, Lic # 34562</td>
-                            </tr>
-                            <tr>  
-                              <td><strong>Average Rig up</strong></td>
-                              <td>2.3 hours</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>                
-              
-              
-
-                <div class="col-lg-6 text-center">
-                  <div class='tableauPlaceholder' id='viz1520272339512' style='position: relative'>
-                      <noscript>
-                        <a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;al&#47;all_31&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a>
-                      </noscript>
-                      <object class='tableauViz' width='550' height='350' style='display:none;'>
-                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='all_31&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;al&#47;all_31&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' />
-                      </object>
-                  </div>       
-            
-                  <br>
-                  &nbsp;
-                </div>  
-            </div>
-        </div>
-        
-
-    <!-- About Section -->
+    <section style="background-color: #F2F4F4">
 
       <div class="container">
-            <script type="text/javascript">
-                $(document).ready(function() {
-                  var table = $('#table_id').DataTable( {
-                    "scrollY": "400px",
-                    "scrollX": "400px"
-                  } );
-                } )
-            </script>
-            <div class ="well">
-              <div class="table-responsive">
-                <table id="table_id" class="table">
-                  <thead>
-                    <tr>
-                      <th></th>
-                      <th>License No</th>
-                      <th>Well Name</th>
-                      <th>Surface Location</th>
-                      <th>Total Days</th>
-                      <th>Meters/day Average</th>
-                      <th>Distance</th>
-                      <th>To</th>
-                      <th>From</th>
-                      <th>Prov</th>
-                      <th>Loc Type</th>
-                      <th>Unique Well Id</th>
-                      <th>Operator</th>
-                      <th>Contractor</th>
-                      <th>Rig No</th>
-                      <th>Well Type</th>
-                      <th>Vendor Software Version</th>
-                      <th>Triple/Double</th>
-                      <th>date</th>
-                      <th>Rig Up</th>
-                      <th>Drill Actual</th>
-                      <th>Reaming</th>
-                      <th>Coring</th>
-                      <th>Cond Mud &amp; Circ</th>
-                      <th>Trips</th>
-                      <th>Rig Service</th>
-                      <th>Repair Rig</th>
-                      <th>Cut Off Drilg Line</th>
-                      <th>Dev Survey</th>
-                      <th>Wireline Logs</th>
-                      <th>Run Csg &amp; Cement</th>
-                      <th>Wait On Cement</th>
-                      <th>Nipple Up BOP</th>
-                      <th>Test BOP</th>
-                      <th>Drillstem Test</th>
-                      <th>Plug Back</th>
-                      <th>Squeeze Cement</th>
-                      <th>Fishing</th>
-                      <th>Dir Work</th>
-                      <th>Safety Meeting</th>
-                      <th>Tear Down</th>
-                      <th>Waiting On</th>
-                      <th>Rig Watch</th>
-                      <th>Other</th>
-                      <th>ids</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>32634</td>
-                      <td>CREW HZ WILDER 13-19-082-19</td>
-                      <td>13-19-082-19W6</td>
-                      <td>20</td>
-                      <td>236.4</td>
-                      <td>4729</td>
-                      <td>4772</td>
-                      <td>43</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>100/07-26-082-20W6/06</td>
-                      <td>CREW ENERGY INC.</td>
-                      <td>CHINOOK DRILLING LTD.</td>
-                      <td>19</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2017-07-14</td>
-                      <td>6.25</td>
-                      <td>159</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>15.75</td>
-                      <td>50.25</td>
-                      <td>7.75</td>
-                      <td>23.5</td>
-                      <td>3</td>
-                      <td>57</td>
-                      <td>0</td>
-                      <td>21.9</td>
-                      <td>4</td>
-                      <td>6</td>
-                      <td>3.5</td>
-                      <td>0.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>21</td>
-                      <td>15.75</td>
-                      <td>48.75</td>
-                      <td>5.5</td>
-                      <td>0</td>
-                      <td>30.65</td>
-                      <td>14-7-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>32635</td>
-                      <td>CREW HZ WILDER A13-19-082-19</td>
-                      <td>13-19-082-19W6</td>
-                      <td>14</td>
-                      <td>337.8</td>
-                      <td>4729</td>
-                      <td>4772</td>
-                      <td>43</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>100/05-26-082-20W6/06</td>
-                      <td>CREW ENERGY INC.</td>
-                      <td>CHINOOK DRILLING LTD.</td>
-                      <td>19</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2017-07-01</td>
-                      <td>7.25</td>
-                      <td>137.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>7</td>
-                      <td>35.75</td>
-                      <td>6.75</td>
-                      <td>2.25</td>
-                      <td>1.5</td>
-                      <td>17.25</td>
-                      <td>0</td>
-                      <td>16.4</td>
-                      <td>4</td>
-                      <td>3.75</td>
-                      <td>3.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>32.25</td>
-                      <td>12.5</td>
-                      <td>5.25</td>
-                      <td>22.25</td>
-                      <td>0</td>
-                      <td>20.45</td>
-                      <td>1-7-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>32636</td>
-                      <td>CREW HZ WILDER B13-19-082-19</td>
-                      <td>13-19-082-19W6</td>
-                      <td>18</td>
-                      <td>207.1</td>
-                      <td>3728</td>
-                      <td>3762</td>
-                      <td>34</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>100/11-25-082-20W6/06</td>
-                      <td>CREW ENERGY INC.</td>
-                      <td>CHINOOK DRILLING LTD.</td>
-                      <td>19</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2017-06-14</td>
-                      <td>7</td>
-                      <td>160.5</td>
-                      <td>5.25</td>
-                      <td>0</td>
-                      <td>30</td>
-                      <td>60</td>
-                      <td>7.75</td>
-                      <td>0</td>
-                      <td>2.25</td>
-                      <td>42.25</td>
-                      <td>0</td>
-                      <td>22.3</td>
-                      <td>3.75</td>
-                      <td>4.5</td>
-                      <td>6.5</td>
-                      <td>2.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>17</td>
-                      <td>15.25</td>
-                      <td>2.25</td>
-                      <td>12.75</td>
-                      <td>0</td>
-                      <td>30</td>
-                      <td>14-6-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>32637</td>
-                      <td>CREW HZ WILDER C13-19-082-19</td>
-                      <td>13-19-082-19W6</td>
-                      <td>15</td>
-                      <td>250.1</td>
-                      <td>3752</td>
-                      <td>3752</td>
-                      <td>0</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>100/04-20-082-19W6/06</td>
-                      <td>CREW ENERGY INC.</td>
-                      <td>CHINOOK DRILLING LTD.</td>
-                      <td>19</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2017-05-31</td>
-                      <td>8.25</td>
-                      <td>132.25</td>
-                      <td>2</td>
-                      <td>0</td>
-                      <td>12.5</td>
-                      <td>53.25</td>
-                      <td>6.5</td>
-                      <td>4.75</td>
-                      <td>3.25</td>
-                      <td>23</td>
-                      <td>0</td>
-                      <td>16.7</td>
-                      <td>4</td>
-                      <td>5.75</td>
-                      <td>4.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>36.75</td>
-                      <td>12.5</td>
-                      <td>4</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>13.85</td>
-                      <td>31-5-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>32638</td>
-                      <td>CREW HZ WILDER D13-19-082-19</td>
-                      <td>13-19-082-19W6</td>
-                      <td>57</td>
-                      <td>62.0</td>
-                      <td>3533</td>
-                      <td>3533</td>
-                      <td>0</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>100/05-20-082-19W6/06</td>
-                      <td>CREW ENERGY INC.</td>
-                      <td>CHINOOK DRILLING LTD.</td>
-                      <td>19</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2017-04-05</td>
-                      <td>15.75</td>
-                      <td>120</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>23.25</td>
-                      <td>61.75</td>
-                      <td>6.5</td>
-                      <td>5</td>
-                      <td>2.75</td>
-                      <td>20.75</td>
-                      <td>0</td>
-                      <td>14.9</td>
-                      <td>4</td>
-                      <td>6.5</td>
-                      <td>8.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>28.5</td>
-                      <td>13.25</td>
-                      <td>7.75</td>
-                      <td>3</td>
-                      <td>984</td>
-                      <td>33.85</td>
-                      <td>5-4-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>32639</td>
-                      <td>CREW HZ WILDER E13-19-82-19</td>
-                      <td>13-19-082-19W6</td>
-                      <td>14</td>
-                      <td>275.6</td>
-                      <td>3858</td>
-                      <td>3858</td>
-                      <td>0</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>100/01-26-082-20W6/06</td>
-                      <td>CREW ENERGY INC.</td>
-                      <td>CHINOOK DRILLING LTD.</td>
-                      <td>19</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2017-03-23</td>
-                      <td>35.75</td>
-                      <td>123.25</td>
-                      <td>0.75</td>
-                      <td>0</td>
-                      <td>12</td>
-                      <td>35.5</td>
-                      <td>7.75</td>
-                      <td>2.25</td>
-                      <td>3.75</td>
-                      <td>33.75</td>
-                      <td>0</td>
-                      <td>20.6</td>
-                      <td>4</td>
-                      <td>8</td>
-                      <td>3.75</td>
-                      <td>1</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>13</td>
-                      <td>11.75</td>
-                      <td>8.5</td>
-                      <td>2</td>
-                      <td>0</td>
-                      <td>8.4</td>
-                      <td>23-3-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>32706</td>
-                      <td>CREW HZ SEPTIMUS E7-30-82-19W6</td>
-                      <td>07-30-082-19W6</td>
-                      <td>12</td>
-                      <td>294.4</td>
-                      <td>3533</td>
-                      <td>3551</td>
-                      <td>18</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>100/15-25-082-19W6/06</td>
-                      <td>CREW ENERGY INC.</td>
-                      <td>CHINOOK DRILLING LTD.</td>
-                      <td>18</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2017-07-01</td>
-                      <td>6.5</td>
-                      <td>115.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>27.75</td>
-                      <td>36.75</td>
-                      <td>5.5</td>
-                      <td>0</td>
-                      <td>1.5</td>
-                      <td>29</td>
-                      <td>0</td>
-                      <td>20.8</td>
-                      <td>0</td>
-                      <td>3</td>
-                      <td>3.5</td>
-                      <td>0.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>6.75</td>
-                      <td>10.75</td>
-                      <td>0.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>3.7</td>
-                      <td>1-7-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>32707</td>
-                      <td>CREW HZ SEPTIMUS F07-30-082-19</td>
-                      <td>07-30-082-19W6</td>
-                      <td>12</td>
-                      <td>329.7</td>
-                      <td>3956</td>
-                      <td>3956</td>
-                      <td>0</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>100/11-20-082-20W6/06</td>
-                      <td>CREW ENERGY INC.</td>
-                      <td>CHINOOK DRILLING LTD.</td>
-                      <td>18</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2017-07-12</td>
-                      <td>6.5</td>
-                      <td>125.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>11</td>
-                      <td>27.25</td>
-                      <td>5.5</td>
-                      <td>0</td>
-                      <td>1.25</td>
-                      <td>41.75</td>
-                      <td>0</td>
-                      <td>20.1</td>
-                      <td>0.5</td>
-                      <td>6.75</td>
-                      <td>2</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>7</td>
-                      <td>10.75</td>
-                      <td>4.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>1</td>
-                      <td>12-7-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>32708</td>
-                      <td>CREW HZ SEPTIMUS G7-30-82-19W6</td>
-                      <td>07-30-082-19W6</td>
-                      <td>14</td>
-                      <td>279.4</td>
-                      <td>3912</td>
-                      <td>3912</td>
-                      <td>0</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>110/10-20-082-19W6/06</td>
-                      <td>CREW ENERGY INC.</td>
-                      <td>CHINOOK DRILLING LTD.</td>
-                      <td>18</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2017-07-24</td>
-                      <td>4.75</td>
-                      <td>122</td>
-                      <td>14.5</td>
-                      <td>0</td>
-                      <td>16</td>
-                      <td>57.75</td>
-                      <td>7</td>
-                      <td>0</td>
-                      <td>2.75</td>
-                      <td>46.25</td>
-                      <td>0</td>
-                      <td>17.6</td>
-                      <td>0</td>
-                      <td>6.25</td>
-                      <td>4.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>12.5</td>
-                      <td>13</td>
-                      <td>8</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>3.2</td>
-                      <td>24-7-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>33000</td>
-                      <td>CREW HZ WILDER I15-10-82-20W6M</td>
-                      <td>15-10-082-20W6</td>
-                      <td>14</td>
-                      <td>277.5</td>
-                      <td>3885</td>
-                      <td>3885</td>
-                      <td>0</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>102/09-11-082-20W6/06</td>
-                      <td>CREW ENERGY INC.</td>
-                      <td>AKITA DRILLING LTD.</td>
-                      <td>56</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2017-09-22</td>
-                      <td>5.75</td>
-                      <td>112</td>
-                      <td>2.5</td>
-                      <td>0</td>
-                      <td>41.25</td>
-                      <td>31.75</td>
-                      <td>10.25</td>
-                      <td>0</td>
-                      <td>3.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>30.4</td>
-                      <td>3.75</td>
-                      <td>7</td>
-                      <td>2.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>33</td>
-                      <td>13.25</td>
-                      <td>0.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>22-9-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>33001</td>
-                      <td>CREW HZ WILDER J15-10-82-20W6M</td>
-                      <td>15-10-082-20W6</td>
-                      <td>17</td>
-                      <td>235.6</td>
-                      <td>4006</td>
-                      <td>4006</td>
-                      <td>0</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>102/09-11-082-20W6/00</td>
-                      <td>CREW ENERGY INC.</td>
-                      <td>AKITA DRILLING LTD.</td>
-                      <td>56</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2017-09-19</td>
-                      <td>9.5</td>
-                      <td>122.25</td>
-                      <td>12.25</td>
-                      <td>0</td>
-                      <td>53.25</td>
-                      <td>48.5</td>
-                      <td>12.75</td>
-                      <td>0</td>
-                      <td>3.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>58.3</td>
-                      <td>0</td>
-                      <td>16</td>
-                      <td>3.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>34.75</td>
-                      <td>16</td>
-                      <td>0</td>
-                      <td>6.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>19-9-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>33002</td>
-                      <td>CREW HZ WILDER K15-10-82-20 W6M</td>
-                      <td>15-10-082-20W6</td>
-                      <td>15</td>
-                      <td>280.0</td>
-                      <td>4200</td>
-                      <td>4222</td>
-                      <td>22</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>102/09-11-082-20W6/00</td>
-                      <td>CREW ENERGY INC.</td>
-                      <td>AKITA DRILLING LTD.</td>
-                      <td>56</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2017-11-05</td>
-                      <td>6.5</td>
-                      <td>120.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>45</td>
-                      <td>37.25</td>
-                      <td>13.25</td>
-                      <td>15</td>
-                      <td>2.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>30.1</td>
-                      <td>1.75</td>
-                      <td>15.75</td>
-                      <td>5.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>42</td>
-                      <td>16</td>
-                      <td>1.5</td>
-                      <td>8.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>5-11-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>33003</td>
-                      <td>CREW HZ WILDER L15-10-82-20 W6M</td>
-                      <td>15-10-082-20W6</td>
-                      <td>24</td>
-                      <td>174.2</td>
-                      <td>4180</td>
-                      <td>4180</td>
-                      <td>0</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>103/08-11-082-20W6/00</td>
-                      <td>CREW ENERGY INC.</td>
-                      <td>AKITA DRILLING LTD.</td>
-                      <td>56</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2017-11-02</td>
-                      <td>11</td>
-                      <td>146.5</td>
-                      <td>5.5</td>
-                      <td>0</td>
-                      <td>60.25</td>
-                      <td>65.5</td>
-                      <td>14.25</td>
-                      <td>0</td>
-                      <td>3</td>
-                      <td>0</td>
-                      <td>4.2</td>
-                      <td>28.4</td>
-                      <td>4</td>
-                      <td>27.25</td>
-                      <td>4.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>56.5</td>
-                      <td>20</td>
-                      <td>68.25</td>
-                      <td>44</td>
-                      <td>12</td>
-                      <td>0.5</td>
-                      <td>2-11-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>33083</td>
-                      <td>CREW HZ MONIAS H04-22-082-20</td>
-                      <td>04-22-082-20W6</td>
-                      <td>81</td>
-                      <td>50.9</td>
-                      <td>4125</td>
-                      <td>4635</td>
-                      <td>510</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>100/02-14-082-20W6/00</td>
-                      <td>CREW ENERGY INC.</td>
-                      <td>AKITA DRILLING LTD.</td>
-                      <td>56</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2017-03-28</td>
-                      <td>2</td>
-                      <td>111.75</td>
-                      <td>0.5</td>
-                      <td>0</td>
-                      <td>50.25</td>
-                      <td>69.5</td>
-                      <td>14</td>
-                      <td>1.75</td>
-                      <td>4.75</td>
-                      <td>0</td>
-                      <td>1</td>
-                      <td>65.2</td>
-                      <td>4</td>
-                      <td>13.25</td>
-                      <td>12.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>37.75</td>
-                      <td>13.75</td>
-                      <td>0</td>
-                      <td>12</td>
-                      <td>1496</td>
-                      <td>0</td>
-                      <td>28-3-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>34561</td>
-                      <td>ECA HZ TOWER 9-6-81-17</td>
-                      <td>09-06-081-17W6</td>
-                      <td>21</td>
-                      <td>195.1</td>
-                      <td>4098</td>
-                      <td>4098</td>
-                      <td>0</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>100/08-12-081-18W6/00</td>
-                      <td>ENCANA CORPORATION</td>
-                      <td>ENSIGN DRILLING INC.</td>
-                      <td>557</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2017-10-19</td>
-                      <td>77.75</td>
-                      <td>115.25</td>
-                      <td>0.25</td>
-                      <td>0</td>
-                      <td>15</td>
-                      <td>59</td>
-                      <td>5</td>
-                      <td>30</td>
-                      <td>1.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>10.7</td>
-                      <td>0</td>
-                      <td>20.75</td>
-                      <td>6.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>72</td>
-                      <td>19</td>
-                      <td>26.5</td>
-                      <td>9.25</td>
-                      <td>0</td>
-                      <td>8.7</td>
-                      <td>19-10-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>34562</td>
-                      <td>ECA HZ TOWER A09-06-081-17</td>
-                      <td>09-06-081-17W6</td>
-                      <td>16</td>
-                      <td>262.5</td>
-                      <td>4200</td>
-                      <td>4200</td>
-                      <td>0</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>102/08-12-081-18W6/00</td>
-                      <td>ENCANA CORPORATION</td>
-                      <td>ENSIGN DRILLING INC.</td>
-                      <td>557</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2017-11-11</td>
-                      <td>15.75</td>
-                      <td>116.5</td>
-                      <td>1</td>
-                      <td>0</td>
-                      <td>7.75</td>
-                      <td>69.5</td>
-                      <td>4.25</td>
-                      <td>4.25</td>
-                      <td>5.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>22.5</td>
-                      <td>3.5</td>
-                      <td>6.5</td>
-                      <td>8.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>67.75</td>
-                      <td>15</td>
-                      <td>20.5</td>
-                      <td>6.5</td>
-                      <td>0</td>
-                      <td>6.95</td>
-                      <td>11-11-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>34563</td>
-                      <td>ECA HZ TOWER B9-6-81-17</td>
-                      <td>09-06-081-17W6</td>
-                      <td>14</td>
-                      <td>281.1</td>
-                      <td>3936</td>
-                      <td>3936</td>
-                      <td>0</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>103/01-12-081-18W6/00</td>
-                      <td>ENCANA CORPORATION</td>
-                      <td>ENSIGN DRILLING INC.</td>
-                      <td>557</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2017-11-27</td>
-                      <td>24.25</td>
-                      <td>115.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>27.5</td>
-                      <td>39</td>
-                      <td>2.75</td>
-                      <td>19.75</td>
-                      <td>2</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>18.3</td>
-                      <td>3.5</td>
-                      <td>11.5</td>
-                      <td>6.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>36.5</td>
-                      <td>12.25</td>
-                      <td>15</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>1.5</td>
-                      <td>27-11-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>33564</td>
-                      <td>ECA HZ TOWER C9-6-81-17W6</td>
-                      <td>09-06-081-17W6</td>
-                      <td>14</td>
-                      <td>290.7</td>
-                      <td>4070</td>
-                      <td>4090</td>
-                      <td>20</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>100/01-12-081-18W6/00</td>
-                      <td>ENCANA CORPORATION</td>
-                      <td>TRINIDAD DRILLING LTD.</td>
-                      <td>55</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2017-10-27</td>
-                      <td>28.75</td>
-                      <td>125.5</td>
-                      <td>0.25</td>
-                      <td>0</td>
-                      <td>19.75</td>
-                      <td>35.75</td>
-                      <td>6.5</td>
-                      <td>2.5</td>
-                      <td>1.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>15.8</td>
-                      <td>3</td>
-                      <td>8</td>
-                      <td>5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>27.5</td>
-                      <td>13.5</td>
-                      <td>18.25</td>
-                      <td>13</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>27-10-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>34565</td>
-                      <td>ECA HZ TOWER D9-6-81-17W6</td>
-                      <td>09-06-081-17W6</td>
-                      <td>14</td>
-                      <td>302.0</td>
-                      <td>4228</td>
-                      <td>4249</td>
-                      <td>21</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>102/01-12-081-18W6/00</td>
-                      <td>ENCANA CORPORATION</td>
-                      <td>TRINIDAD DRILLING LTD.</td>
-                      <td>55</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2017-11-09</td>
-                      <td>14</td>
-                      <td>143.5</td>
-                      <td>0.25</td>
-                      <td>0</td>
-                      <td>25.75</td>
-                      <td>39.75</td>
-                      <td>7.25</td>
-                      <td>0</td>
-                      <td>2</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>17.7</td>
-                      <td>0</td>
-                      <td>8.75</td>
-                      <td>4.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>25.75</td>
-                      <td>18</td>
-                      <td>5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>9-11-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>34566</td>
-                      <td>ECA HZ TOWER E9-6-81-17</td>
-                      <td>09-06-081-17W6</td>
-                      <td>13</td>
-                      <td>302.2</td>
-                      <td>3929</td>
-                      <td>3949</td>
-                      <td>20</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>103/01-12-081-18W6/00</td>
-                      <td>ENCANA CORPORATION</td>
-                      <td>TRINIDAD DRILLING LTD.</td>
-                      <td>55</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2017-11-22</td>
-                      <td>12</td>
-                      <td>132.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>19.75</td>
-                      <td>31</td>
-                      <td>6.5</td>
-                      <td>0</td>
-                      <td>1.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>15.3</td>
-                      <td>4</td>
-                      <td>12.75</td>
-                      <td>3.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0.5</td>
-                      <td>23.25</td>
-                      <td>14.25</td>
-                      <td>20.75</td>
-                      <td>2</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>22-11-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>34583</td>
-                      <td>ECA HZ TOWERLAKE E6-1-81-18</td>
-                      <td>06-01-081-18W6</td>
-                      <td>12</td>
-                      <td>351.7</td>
-                      <td>4220</td>
-                      <td>4220</td>
-                      <td>0</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>106/15-31-080-17W6/00</td>
-                      <td>ENCANA CORPORATION</td>
-                      <td>ENSIGN DRILLING INC.</td>
-                      <td>137</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2017-10-03</td>
-                      <td>14.5</td>
-                      <td>107.25</td>
-                      <td>0.5</td>
-                      <td>0</td>
-                      <td>7.75</td>
-                      <td>31.75</td>
-                      <td>6</td>
-                      <td>0.25</td>
-                      <td>2</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>16.6</td>
-                      <td>2.75</td>
-                      <td>5.25</td>
-                      <td>7.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>47.75</td>
-                      <td>12</td>
-                      <td>20.75</td>
-                      <td>3</td>
-                      <td>0</td>
-                      <td>2.15</td>
-                      <td>3-10-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>34584</td>
-                      <td>ECA CRP HZ TOWER G5-1-81-18</td>
-                      <td>05-01-081-18W6</td>
-                      <td>12</td>
-                      <td>345.7</td>
-                      <td>4148</td>
-                      <td>4148</td>
-                      <td>0</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>111/11-31-080-17W6/00</td>
-                      <td>ENCANA CORPORATION</td>
-                      <td>TRINIDAD DRILLING LTD.</td>
-                      <td>45</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2017-08-27</td>
-                      <td>12.5</td>
-                      <td>125.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>5.75</td>
-                      <td>31.25</td>
-                      <td>6.75</td>
-                      <td>0</td>
-                      <td>1.75</td>
-                      <td>27.25</td>
-                      <td>0</td>
-                      <td>15.8</td>
-                      <td>0</td>
-                      <td>9.75</td>
-                      <td>3.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>16.75</td>
-                      <td>11</td>
-                      <td>4.75</td>
-                      <td>7.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>27-8-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>34585</td>
-                      <td>ECA CRP HZ TOWER H5-1-81-18</td>
-                      <td>05-01-081-18W6</td>
-                      <td>13</td>
-                      <td>323.9</td>
-                      <td>4211</td>
-                      <td>4211</td>
-                      <td>0</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>105/11-31-080-17W6/00</td>
-                      <td>ENCANA CORPORATION</td>
-                      <td>TRINIDAD DRILLING LTD.</td>
-                      <td>45</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2017-09-08</td>
-                      <td>14</td>
-                      <td>126.75</td>
-                      <td>1.5</td>
-                      <td>0</td>
-                      <td>2.75</td>
-                      <td>43.75</td>
-                      <td>8.75</td>
-                      <td>6</td>
-                      <td>1.75</td>
-                      <td>18.75</td>
-                      <td>0</td>
-                      <td>14.2</td>
-                      <td>0</td>
-                      <td>4.75</td>
-                      <td>4.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>29.25</td>
-                      <td>7.5</td>
-                      <td>3</td>
-                      <td>1.25</td>
-                      <td>0</td>
-                      <td>11.5</td>
-                      <td>8-9-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>34586</td>
-                      <td>ECA CRP HZ TOWER I5-1-81-18</td>
-                      <td>05-01-081-18W6</td>
-                      <td>12</td>
-                      <td>342.1</td>
-                      <td>4105</td>
-                      <td>4105</td>
-                      <td>0</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>106/11-31-080-17W6/00</td>
-                      <td>ENCANA CORPORATION</td>
-                      <td>TRINIDAD DRILLING LTD.</td>
-                      <td>45</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2017-09-20</td>
-                      <td>13.25</td>
-                      <td>133.75</td>
-                      <td>0.5</td>
-                      <td>0</td>
-                      <td>2.75</td>
-                      <td>29.75</td>
-                      <td>6.25</td>
-                      <td>0</td>
-                      <td>1.75</td>
-                      <td>8</td>
-                      <td>0</td>
-                      <td>15.2</td>
-                      <td>0</td>
-                      <td>8.25</td>
-                      <td>3.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>29.75</td>
-                      <td>13.5</td>
-                      <td>8</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>1.2</td>
-                      <td>20-9-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>35057</td>
-                      <td>ECA HZ TOWER R02-12-081-18</td>
-                      <td>02-12-081-18W6</td>
-                      <td>11</td>
-                      <td>404.2</td>
-                      <td>4446</td>
-                      <td>4446</td>
-                      <td>0</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>107/02-06-081-17W6/00</td>
-                      <td>ENCANA CORPORATION</td>
-                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-                      <td>535</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2017-11-06</td>
-                      <td>16.5</td>
-                      <td>102</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>18.75</td>
-                      <td>37.5</td>
-                      <td>6.5</td>
-                      <td>5.25</td>
-                      <td>0.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>16</td>
-                      <td>3</td>
-                      <td>7.5</td>
-                      <td>3.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>25</td>
-                      <td>14.25</td>
-                      <td>7.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>6-11-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>35058</td>
-                      <td>ECA HZ TOWER S02-12-81-18W6</td>
-                      <td>02-12-081-18W6</td>
-                      <td>10</td>
-                      <td>440.7</td>
-                      <td>4407</td>
-                      <td>4407</td>
-                      <td>0</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>108/02-06-081-17W6/00</td>
-                      <td>ENCANA CORPORATION</td>
-                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-                      <td>535</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2017-11-17</td>
-                      <td>10.5</td>
-                      <td>96.75</td>
-                      <td>0.5</td>
-                      <td>0</td>
-                      <td>16</td>
-                      <td>18.75</td>
-                      <td>5.5</td>
-                      <td>0</td>
-                      <td>0.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>14.4</td>
-                      <td>2</td>
-                      <td>10.25</td>
-                      <td>3.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>16.75</td>
-                      <td>11.25</td>
-                      <td>11.5</td>
-                      <td>5.25</td>
-                      <td>0</td>
-                      <td>0.7</td>
-                      <td>17-11-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>35059</td>
-                      <td>ECA HZ TOWER T02-12-81-18W6</td>
-                      <td>02-12-081-18W6</td>
-                      <td>9</td>
-                      <td>501.1</td>
-                      <td>4510</td>
-                      <td>4510</td>
-                      <td>0</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>109/02-06-081-17W6/00</td>
-                      <td>ENCANA CORPORATION</td>
-                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-                      <td>535</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2017-11-26</td>
-                      <td>12</td>
-                      <td>93.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>14.75</td>
-                      <td>22.5</td>
-                      <td>6</td>
-                      <td>0</td>
-                      <td>0.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>12.2</td>
-                      <td>3</td>
-                      <td>8.75</td>
-                      <td>2.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>13</td>
-                      <td>10.75</td>
-                      <td>4.75</td>
-                      <td>2</td>
-                      <td>0</td>
-                      <td>1.7</td>
-                      <td>26-11-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>31283</td>
-                      <td>SHELL ET HZ GROUNDBIRCH A16-13-81-21W6</td>
-                      <td>16-13-081-21W6</td>
-                      <td>18</td>
-                      <td>206.9</td>
-                      <td>3724</td>
-                      <td>4332</td>
-                      <td>608</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>101/01-20-081-20W6/00</td>
-                      <td>SHELL CANADA LTD.</td>
-                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-                      <td>572</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2017-02-28</td>
-                      <td>1.5</td>
-                      <td>92.5</td>
-                      <td>10.25</td>
-                      <td>0</td>
-                      <td>16.75</td>
-                      <td>69</td>
-                      <td>8.75</td>
-                      <td>0</td>
-                      <td>1.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>15.7</td>
-                      <td>0</td>
-                      <td>7.5</td>
-                      <td>2</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>46.25</td>
-                      <td>38.25</td>
-                      <td>27.25</td>
-                      <td>41.25</td>
-                      <td>26.25</td>
-                      <td>0</td>
-                      <td>5.95</td>
-                      <td>28-2-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>31284</td>
-                      <td>SHELL ET AL HZ GROUNDBIRCH B16-13-81-21W6</td>
-                      <td>16-13-081-21W6</td>
-                      <td>12</td>
-                      <td>384.3</td>
-                      <td>4612</td>
-                      <td>5225</td>
-                      <td>613</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>102/01-20-081-20W6/00</td>
-                      <td>SHELL CANADA LTD.</td>
-                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-                      <td>572</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2017-02-17</td>
-                      <td>0</td>
-                      <td>107.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>15.75</td>
-                      <td>37</td>
-                      <td>6.5</td>
-                      <td>0</td>
-                      <td>1.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>22.6</td>
-                      <td>0</td>
-                      <td>1.5</td>
-                      <td>7</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>39.75</td>
-                      <td>15</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>11.15</td>
-                      <td>17-2-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>31285</td>
-                      <td>SHELL ET AL HZ GROUNDBIRCH C16-13-81-21W6</td>
-                      <td>16-13-081-21W6</td>
-                      <td>10</td>
-                      <td>395.8</td>
-                      <td>3958</td>
-                      <td>4568</td>
-                      <td>610</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>103/01-20-081-20W6/06</td>
-                      <td>SHELL CANADA LTD.</td>
-                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-                      <td>572</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2017-01-18</td>
-                      <td>2.5</td>
-                      <td>89.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>21.75</td>
-                      <td>32.75</td>
-                      <td>6</td>
-                      <td>0</td>
-                      <td>1.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>19.9</td>
-                      <td>0</td>
-                      <td>4.75</td>
-                      <td>6.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>32.75</td>
-                      <td>15.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>1.8</td>
-                      <td>18-1-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>31286</td>
-                      <td>SHELL ET AL HZ GROUNDBIRCH D16-13-81-21W6</td>
-                      <td>16-13-081-21W6</td>
-                      <td>22</td>
-                      <td>162.1</td>
-                      <td>3566</td>
-                      <td>4179</td>
-                      <td>613</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>100/16-17-081-20W6/00</td>
-                      <td>SHELL CANADA LTD.</td>
-                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-                      <td>572</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2017-01-27</td>
-                      <td>5.5</td>
-                      <td>79</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>31</td>
-                      <td>57.5</td>
-                      <td>10</td>
-                      <td>0</td>
-                      <td>4</td>
-                      <td>0</td>
-                      <td>9.5</td>
-                      <td>13.9</td>
-                      <td>0</td>
-                      <td>11.75</td>
-                      <td>2.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>155.5</td>
-                      <td>28.5</td>
-                      <td>41.25</td>
-                      <td>0</td>
-                      <td>10.25</td>
-                      <td>0</td>
-                      <td>42</td>
-                      <td>27-1-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>31290</td>
-                      <td>SHELL ET AL HZ GROUNDBIRCH H16-13-81-21W6</td>
-                      <td>16-13-081-21W6</td>
-                      <td>10</td>
-                      <td>403.2</td>
-                      <td>4032</td>
-                      <td>4650</td>
-                      <td>618</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>100/16-17-081-20W6/06</td>
-                      <td>SHELL CANADA LTD.</td>
-                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-                      <td>572</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2017-01-07</td>
-                      <td>1.5</td>
-                      <td>103.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>15</td>
-                      <td>34.25</td>
-                      <td>6.5</td>
-                      <td>1</td>
-                      <td>1.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>15</td>
-                      <td>0</td>
-                      <td>3.5</td>
-                      <td>2</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>32.75</td>
-                      <td>15</td>
-                      <td>0</td>
-                      <td>4</td>
-                      <td>0</td>
-                      <td>2</td>
-                      <td>7-1-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>31291</td>
-                      <td>SHELL ET AL HZ GROUNDBIRCH I16-13-81-21W6</td>
-                      <td>16-13-081-21W6</td>
-                      <td>13</td>
-                      <td>309.2</td>
-                      <td>4020</td>
-                      <td>4630</td>
-                      <td>610</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>100/14-17-081-20W6/06</td>
-                      <td>SHELL CANADA LTD.</td>
-                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-                      <td>572</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2016-12-26</td>
-                      <td>5</td>
-                      <td>109.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>25.75</td>
-                      <td>37</td>
-                      <td>5.75</td>
-                      <td>5</td>
-                      <td>1.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>25.8</td>
-                      <td>0</td>
-                      <td>4.75</td>
-                      <td>3.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>42.75</td>
-                      <td>17.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>4.45</td>
-                      <td>26-12-2016-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>31292</td>
-                      <td>SHELL ET AL HZ GROUNDBIRCH J16-13-081-21W6</td>
-                      <td>16-13-081-21W6</td>
-                      <td>19</td>
-                      <td>243.3</td>
-                      <td>4623</td>
-                      <td>4623</td>
-                      <td>0</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>NaN</td>
-                      <td>SHELL CANADA LTD.</td>
-                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-                      <td>572</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2016-12-08</td>
-                      <td>1.75</td>
-                      <td>129.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>42.5</td>
-                      <td>60.5</td>
-                      <td>8.5</td>
-                      <td>0</td>
-                      <td>1.5</td>
-                      <td>0</td>
-                      <td>13.2</td>
-                      <td>30.7</td>
-                      <td>0</td>
-                      <td>25.25</td>
-                      <td>5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>63.75</td>
-                      <td>29.25</td>
-                      <td>0.75</td>
-                      <td>2.25</td>
-                      <td>0</td>
-                      <td>7.85</td>
-                      <td>8-12-2016-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>31722</td>
-                      <td>SHELL ET AL HZ GROUNDBIRCH 16-9-80-19</td>
-                      <td>16-09-080-19W6</td>
-                      <td>16</td>
-                      <td>330.6</td>
-                      <td>5289</td>
-                      <td>5752</td>
-                      <td>463</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>106/01-11-080-19W6/00</td>
-                      <td>SHELL CANADA LTD.</td>
-                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-                      <td>573</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2017-01-16</td>
-                      <td>2.25</td>
-                      <td>109.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>13.25</td>
-                      <td>60.25</td>
-                      <td>6</td>
-                      <td>0</td>
-                      <td>2.75</td>
-                      <td>0</td>
-                      <td>1.4</td>
-                      <td>22.9</td>
-                      <td>0</td>
-                      <td>12.5</td>
-                      <td>2.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>43.25</td>
-                      <td>16.25</td>
-                      <td>60</td>
-                      <td>2.75</td>
-                      <td>0</td>
-                      <td>5.4</td>
-                      <td>16-1-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>31723</td>
-                      <td>SHELL ET AL HZ GROUNDBIRCH A16-9-80-19</td>
-                      <td>16-09-080-19W6</td>
-                      <td>13</td>
-                      <td>415.3</td>
-                      <td>5399</td>
-                      <td>5862</td>
-                      <td>463</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>105/16-02-080-19W6/00</td>
-                      <td>SHELL CANADA LTD.</td>
-                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-                      <td>573</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2017-01-04</td>
-                      <td>2</td>
-                      <td>118.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>10</td>
-                      <td>54</td>
-                      <td>5.75</td>
-                      <td>0</td>
-                      <td>2</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>24.1</td>
-                      <td>0</td>
-                      <td>4.5</td>
-                      <td>4.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>51.5</td>
-                      <td>15.75</td>
-                      <td>0.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>4.2</td>
-                      <td>4-1-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>31724</td>
-                      <td>SHELLET AL HZ GROUNDBIRCH B16-9-80-19</td>
-                      <td>16-09-080-19W6</td>
-                      <td>14</td>
-                      <td>374.6</td>
-                      <td>5245</td>
-                      <td>5708</td>
-                      <td>463</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>103/16-02-080-19W6/00</td>
-                      <td>SHELL CANADA LTD.</td>
-                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-                      <td>573</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2016-12-22</td>
-                      <td>1.75</td>
-                      <td>124</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>12</td>
-                      <td>57.5</td>
-                      <td>5.75</td>
-                      <td>0.75</td>
-                      <td>2.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>26.9</td>
-                      <td>0</td>
-                      <td>4.5</td>
-                      <td>7.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>50</td>
-                      <td>14.75</td>
-                      <td>0.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>5.75</td>
-                      <td>22-12-2016-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>31725</td>
-                      <td>SHELL ET AL HZ GROUNDBIRCH C16-9-80-19</td>
-                      <td>16-09-080-19W6</td>
-                      <td>18</td>
-                      <td>301.9</td>
-                      <td>5434</td>
-                      <td>5900</td>
-                      <td>466</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>103/16-02-080-19W6/00</td>
-                      <td>SHELL CANADA LTD.</td>
-                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-                      <td>573</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2016-12-05</td>
-                      <td>2.25</td>
-                      <td>164.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>12</td>
-                      <td>68</td>
-                      <td>8.25</td>
-                      <td>28.25</td>
-                      <td>2.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>25.1</td>
-                      <td>0</td>
-                      <td>5.25</td>
-                      <td>2.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>59</td>
-                      <td>16.75</td>
-                      <td>1.25</td>
-                      <td>0.75</td>
-                      <td>0</td>
-                      <td>9.8</td>
-                      <td>5-12-2016-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>31726</td>
-                      <td>SHELL ET AL HZ GROUNDBIRCH D16-9-80-19</td>
-                      <td>16-09-080-19W6</td>
-                      <td>14</td>
-                      <td>377.4</td>
-                      <td>5283</td>
-                      <td>5748</td>
-                      <td>465</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>102/01-11-080-19W6/00</td>
-                      <td>SHELL CANADA LTD.</td>
-                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-                      <td>573</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2016-11-22</td>
-                      <td>2.25</td>
-                      <td>102</td>
-                      <td>5</td>
-                      <td>0</td>
-                      <td>18.5</td>
-                      <td>58.25</td>
-                      <td>5.5</td>
-                      <td>0</td>
-                      <td>2.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>26.6</td>
-                      <td>0</td>
-                      <td>4.25</td>
-                      <td>9</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>3.75</td>
-                      <td>45</td>
-                      <td>14.25</td>
-                      <td>1</td>
-                      <td>2.25</td>
-                      <td>0</td>
-                      <td>5.25</td>
-                      <td>22-11-2016-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>31727</td>
-                      <td>SHELL ET AL HZ GROUNDBIRCH E16-9-80-19</td>
-                      <td>16-09-080-19W6</td>
-                      <td>2</td>
-                      <td>236.0</td>
-                      <td>472</td>
-                      <td>472</td>
-                      <td>0</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>100/01-11-080-19W6/00</td>
-                      <td>SHELL CANADA LTD.</td>
-                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-                      <td>573</td>
-                      <td>VERT</td>
-                      <td>Pason</td>
-                      <td>double</td>
-                      <td>2016-10-23</td>
-                      <td>1.5</td>
-                      <td>2.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0.5</td>
-                      <td>0.75</td>
-                      <td>0.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>3.4</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>3.75</td>
-                      <td>1.75</td>
-                      <td>0.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>23-10-2016-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>31728</td>
-                      <td>SHELL ET AL HZ GROUNDBIRCH F16-9-80-19</td>
-                      <td>16-09-080-19W6</td>
-                      <td>15</td>
-                      <td>353.6</td>
-                      <td>5304</td>
-                      <td>5758</td>
-                      <td>454</td>
-                      <td>BC</td>
-                      <td>DLS</td>
-                      <td>101/16-02-080-19W6/00</td>
-                      <td>SHELL CANADA LTD.</td>
-                      <td>PRECISION DRILLING, DIV OF PDCLP</td>
-                      <td>573</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2016-11-08</td>
-                      <td>2.5</td>
-                      <td>133.25</td>
-                      <td>1</td>
-                      <td>0</td>
-                      <td>11.25</td>
-                      <td>57</td>
-                      <td>7.5</td>
-                      <td>0.25</td>
-                      <td>3</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>48.2</td>
-                      <td>0</td>
-                      <td>4.5</td>
-                      <td>3.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>51.25</td>
-                      <td>16.75</td>
-                      <td>1</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>3.85</td>
-                      <td>8-11-2016-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>33418</td>
-                      <td>TOURMALINE HZ BLUEBERRY b-J93-I/94-B-9</td>
-                      <td>b-093-I/094-B-09</td>
-                      <td>9</td>
-                      <td>408.1</td>
-                      <td>3673</td>
-                      <td>3700</td>
-                      <td>27</td>
-                      <td>BC</td>
-                      <td>NTS</td>
-                      <td>204/b-014-A/094-B-16/09</td>
-                      <td>TOURMALINE OIL CORP.</td>
-                      <td>PATTERSON-UTI DRILLING CANADA LTD.</td>
-                      <td>811</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2017-08-22</td>
-                      <td>2</td>
-                      <td>70.75</td>
-                      <td>1</td>
-                      <td>0</td>
-                      <td>10.5</td>
-                      <td>16.25</td>
-                      <td>6</td>
-                      <td>0</td>
-                      <td>0.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>14.7</td>
-                      <td>0</td>
-                      <td>1.75</td>
-                      <td>2.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>29.75</td>
-                      <td>6.75</td>
-                      <td>0.25</td>
-                      <td>1.75</td>
-                      <td>0</td>
-                      <td>8</td>
-                      <td>22-8-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>33419</td>
-                      <td>TOURMALINE HZ BLUEBERRY b-K93-I/94-B-9</td>
-                      <td>b-093-I/094-B-09</td>
-                      <td>9</td>
-                      <td>420.9</td>
-                      <td>3788</td>
-                      <td>3814</td>
-                      <td>26</td>
-                      <td>BC</td>
-                      <td>NTS</td>
-                      <td>205/b-014-A/094-B-16/09</td>
-                      <td>TOURMALINE OIL CORP.</td>
-                      <td>PATTERSON-UTI DRILLING CANADA LTD.</td>
-                      <td>811</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2017-08-21</td>
-                      <td>1.75</td>
-                      <td>74.5</td>
-                      <td>1.25</td>
-                      <td>0</td>
-                      <td>15.25</td>
-                      <td>14.25</td>
-                      <td>5.5</td>
-                      <td>0</td>
-                      <td>1.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>17.1</td>
-                      <td>0</td>
-                      <td>1.25</td>
-                      <td>3.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>30</td>
-                      <td>8.25</td>
-                      <td>0.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>8.65</td>
-                      <td>21-8-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>33420</td>
-                      <td>TOURMALINE HZ BLUEBERRY B-L093-I/094-B-09</td>
-                      <td>b-093-I/094-B-09</td>
-                      <td>11</td>
-                      <td>353.6</td>
-                      <td>3890</td>
-                      <td>3916</td>
-                      <td>26</td>
-                      <td>BC</td>
-                      <td>NTS</td>
-                      <td>200/b-014-A/094-B-16/00</td>
-                      <td>TOURMALINE OIL CORP.</td>
-                      <td>PATTERSON-UTI DRILLING CANADA LTD.</td>
-                      <td>811</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2017-08-20</td>
-                      <td>2</td>
-                      <td>79.25</td>
-                      <td>1.75</td>
-                      <td>0</td>
-                      <td>17.25</td>
-                      <td>31.75</td>
-                      <td>7</td>
-                      <td>0</td>
-                      <td>2.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>14.6</td>
-                      <td>0</td>
-                      <td>2</td>
-                      <td>4.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>32.75</td>
-                      <td>9.5</td>
-                      <td>0.5</td>
-                      <td>2.25</td>
-                      <td>0</td>
-                      <td>1.65</td>
-                      <td>20-8-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>33421</td>
-                      <td>TOURMALINE HZ BLUEBERRY B-M093-I/094-B-09</td>
-                      <td>b-093-I/094-B-09</td>
-                      <td>14</td>
-                      <td>283.3</td>
-                      <td>3966</td>
-                      <td>3991</td>
-                      <td>25</td>
-                      <td>BC</td>
-                      <td>NTS</td>
-                      <td>200/a-014-A/094-B-16/00</td>
-                      <td>TOURMALINE OIL CORP.</td>
-                      <td>PATTERSON-UTI DRILLING CANADA LTD.</td>
-                      <td>811</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2017-08-15</td>
-                      <td>55.5</td>
-                      <td>76.25</td>
-                      <td>1</td>
-                      <td>0</td>
-                      <td>14.5</td>
-                      <td>25.25</td>
-                      <td>7.75</td>
-                      <td>0</td>
-                      <td>2.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>17.3</td>
-                      <td>0</td>
-                      <td>3</td>
-                      <td>1.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>36.75</td>
-                      <td>11.25</td>
-                      <td>42.75</td>
-                      <td>2</td>
-                      <td>0</td>
-                      <td>2.4</td>
-                      <td>15-8-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>33422</td>
-                      <td>Tourmaline HZ Blueberry b-F93-I/94-B-9</td>
-                      <td>b-093-I/094-B-09</td>
-                      <td>11</td>
-                      <td>373.6</td>
-                      <td>4110</td>
-                      <td>4137</td>
-                      <td>27</td>
-                      <td>BC</td>
-                      <td>NTS</td>
-                      <td>203/a-072-I/094-B-09/09</td>
-                      <td>TOURMALINE OIL CORP.</td>
-                      <td>PATTERSON-UTI DRILLING CANADA LTD.</td>
-                      <td>811</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2017-08-25</td>
-                      <td>3.25</td>
-                      <td>84</td>
-                      <td>0.75</td>
-                      <td>0</td>
-                      <td>11</td>
-                      <td>23</td>
-                      <td>6.75</td>
-                      <td>0</td>
-                      <td>2.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>21.7</td>
-                      <td>0</td>
-                      <td>2.25</td>
-                      <td>4.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>38</td>
-                      <td>9.25</td>
-                      <td>0.5</td>
-                      <td>2.75</td>
-                      <td>0</td>
-                      <td>0.95</td>
-                      <td>25-8-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>33423</td>
-                      <td>Tourmaline Hz blueberry b-G93-I/94-B9</td>
-                      <td>b-093-I/094-B-09</td>
-                      <td>9</td>
-                      <td>398.0</td>
-                      <td>3582</td>
-                      <td>3609</td>
-                      <td>27</td>
-                      <td>BC</td>
-                      <td>NTS</td>
-                      <td>200/b-014-A/094-B-16/09</td>
-                      <td>TOURMALINE OIL CORP.</td>
-                      <td>PATTERSON-UTI DRILLING CANADA LTD.</td>
-                      <td>811</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2017-08-25</td>
-                      <td>2.75</td>
-                      <td>72.5</td>
-                      <td>1.25</td>
-                      <td>0</td>
-                      <td>5</td>
-                      <td>31.75</td>
-                      <td>5</td>
-                      <td>0</td>
-                      <td>1.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>17.6</td>
-                      <td>0</td>
-                      <td>2</td>
-                      <td>2.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>31</td>
-                      <td>8.5</td>
-                      <td>0.25</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>6.3</td>
-                      <td>25-8-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>33424</td>
-                      <td>Tourmaline HZ Blueberryb-H93-I/94-B-9</td>
-                      <td>b-093-I/094-B-09</td>
-                      <td>8</td>
-                      <td>450.9</td>
-                      <td>3607</td>
-                      <td>3634</td>
-                      <td>27</td>
-                      <td>BC</td>
-                      <td>NTS</td>
-                      <td>202/b-014-A/094-B-16/09</td>
-                      <td>TOURMALINE OIL CORP.</td>
-                      <td>PATTERSON-UTI DRILLING CANADA LTD.</td>
-                      <td>811</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2017-08-24</td>
-                      <td>1.5</td>
-                      <td>72</td>
-                      <td>1</td>
-                      <td>0</td>
-                      <td>10.25</td>
-                      <td>15.75</td>
-                      <td>6</td>
-                      <td>0</td>
-                      <td>1.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>13</td>
-                      <td>0</td>
-                      <td>2.5</td>
-                      <td>1</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>23.5</td>
-                      <td>6</td>
-                      <td>0.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0.25</td>
-                      <td>24-8-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>33426</td>
-                      <td>Tourmaline HZ Blueberry b-C93-I/94-B-9</td>
-                      <td>b-093-I/094-B-09</td>
-                      <td>10</td>
-                      <td>400.8</td>
-                      <td>4008</td>
-                      <td>4008</td>
-                      <td>0</td>
-                      <td>BC</td>
-                      <td>NTS</td>
-                      <td>200/b-072-I/094-B-09/09</td>
-                      <td>TOURMALINE OIL CORP.</td>
-                      <td>PATTERSON-UTI DRILLING CANADA LTD.</td>
-                      <td>811</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2017-08-28</td>
-                      <td>1.25</td>
-                      <td>93</td>
-                      <td>2</td>
-                      <td>0</td>
-                      <td>7.5</td>
-                      <td>26.5</td>
-                      <td>7.5</td>
-                      <td>0</td>
-                      <td>0.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>16.6</td>
-                      <td>0</td>
-                      <td>8</td>
-                      <td>5.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>37.25</td>
-                      <td>10.75</td>
-                      <td>0.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>9.15</td>
-                      <td>28-8-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>33427</td>
-                      <td>Tourmaline HZ Blueberry b-D93-I/94-B-9</td>
-                      <td>b-093-I/094-B-09</td>
-                      <td>11</td>
-                      <td>370.0</td>
-                      <td>4070</td>
-                      <td>4070</td>
-                      <td>0</td>
-                      <td>BC</td>
-                      <td>NTS</td>
-                      <td>202/b-072-I/094-B-09/09</td>
-                      <td>TOURMALINE OIL CORP.</td>
-                      <td>PATTERSON-UTI DRILLING CANADA LTD.</td>
-                      <td>811</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2017-08-27</td>
-                      <td>2.25</td>
-                      <td>92.75</td>
-                      <td>1.25</td>
-                      <td>0</td>
-                      <td>7</td>
-                      <td>17.5</td>
-                      <td>7</td>
-                      <td>0</td>
-                      <td>1.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>15.9</td>
-                      <td>0</td>
-                      <td>1.25</td>
-                      <td>2</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>32.5</td>
-                      <td>8</td>
-                      <td>0.5</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>5.45</td>
-                      <td>27-8-2017-1</td>
-                    </tr>
-                    <tr>
-                      <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
-                      <td>33428</td>
-                      <td>Tourmaline HZ Blueberry b-E93-I/94-B-9</td>
-                      <td>b-093-I/094-B-09</td>
-                      <td>16</td>
-                      <td>256.8</td>
-                      <td>4109</td>
-                      <td>4136</td>
-                      <td>27</td>
-                      <td>BC</td>
-                      <td>NTS</td>
-                      <td>203/b-072-I/094-B-09/09</td>
-                      <td>TOURMALINE OIL CORP.</td>
-                      <td>PATTERSON-UTI DRILLING CANADA LTD.</td>
-                      <td>811</td>
-                      <td>HORIZ</td>
-                      <td>Pason</td>
-                      <td>triple</td>
-                      <td>2017-08-26</td>
-                      <td>41.25</td>
-                      <td>105.25</td>
-                      <td>2.25</td>
-                      <td>0</td>
-                      <td>16.5</td>
-                      <td>27.75</td>
-                      <td>8</td>
-                      <td>0</td>
-                      <td>0.75</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>17.9</td>
-                      <td>0</td>
-                      <td>10.75</td>
-                      <td>2</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>37</td>
-                      <td>10.5</td>
-                      <td>37.25</td>
-                      <td>24</td>
-                      <td>0</td>
-                      <td>5.7</td>
-                      <td>26-8-2017-1</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+
+        <!-- Top Row -->
+        <div class="row">
+
+            <!-- Company Logo and Info -->
+            <div class="col-sm-3">
+                <ul class="list-group">
+                    <li class="list-group-item text-muted" style ='background-color: #e3e6e8'><img title="profile image" class="img-responsive img-centered" height="110" width="110" align="middle" src="../../img/operator/shell.jpg"></li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Company Name</strong></span> Shell</li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Market Cap (2017)</strong></span> 
+                        <a target="_blank" href="https://www.bloomberg.com/quote/RDS/A:US"> $264.1B USD</a></li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Revenue (2017)</strong></span> 
+                        <a target="_blank" href="https://www.bloomberg.com/quote/RDS/A:US"> $305.1B USD</a></li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Net Income (2017)</strong></span> 
+                        <a target="_blank" href="https://www.bloomberg.com/quote/RDS/A:US"> $13.0B USD</a></li>
+                </ul>
             </div>
 
-
-            <div class="row">
-              <div class="col-xs-6">        
-                  <p>*Data accessed from <strong><u>public</u></strong> sources only.</p>
-              </div>
-              <div class="col-xs-6 text-right">        
-                  <p>Access this Unsist energy dataset directly and <a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/data.csv?alt=media&token=f23849f8-9974-4cba-8459-a56e0ab573ad"><strong>download CSV</strong></a></p>
-              </div>
+            <!-- Insights -->
+            <div class="col-sm-9">
+                   <div>
+                      <table class="table table-hover " id= "table_id1">
+                          <thead>
+                              <tr>
+                                  <th class="text-center">Company</th>
+                                  <th class="text-center">MD</th>
+                                  <th class="text-center">TVD</th>
+                                  <th class="text-center">TLL</th>
+                                  <th class="text-center">Days</th>
+                                  <th class="text-center">Days/mMD</th>
+                                  <th class="text-center">Drlg %</th>
+                                  <th class="text-center">Trpg %</th>
+                                  <th class="text-center">Wells Drilled</th>
+                                  <th class="text-center">Bits</th>
+                                  <th class="text-center">Days/mMD</th>
+                                  <th class="text-center">Drlg %</th>
+                                  <th class="text-center">Trpg %</th>
+                                  <th class="text-center">Wells Drilled</th>
+                                  <th class="text-center">Bits</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <th class="text-center">ARC</th>
+                                  <td class="text-center">1</td>
+                                  <td class="text-center">4</td>
+                                  <td class="text-center">6</td>
+                                  <td class="text-center">13</td>
+                                  <td class="text-center">5</td>
+                                  <td class="text-center">2</td>
+                                  <td class="text-center">6</td>
+                                  <td class="text-center">13</td>
+                                  <td class="text-center">5</td>
+                                  <td class="text-center">5</td>
+                                  <td class="text-center">2</td>
+                                  <td class="text-center">6</td>
+                                  <td class="text-center">13</td>
+                                  <td class="text-center">5</td>
+                              </tr>                                
+                              <tr>
+                                  <th class="text-center">Shell</th>
+                                  <td class="text-center">1</td>
+                                  <td class="text-center">4</td>
+                                  <td class="text-center">6</td>
+                                  <td class="text-center">13</td>
+                                  <td class="text-center">5</td>
+                                  <td class="text-center">2</td>
+                                  <td class="text-center">6</td>
+                                  <td class="text-center">13</td>
+                                  <td class="text-center">5</td>
+                                  <td class="text-center">5</td>
+                                  <td class="text-center">2</td>
+                                  <td class="text-center">6</td>
+                                  <td class="text-center">13</td>
+                                  <td class="text-center">5</td>
+                              </tr>                            
+                          </tbody>
+                      </table>
+                  </div>
+                
             </div>
+          
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <!--left col-->
+
+                <ul class="list-group">
+                    <li class="list-group-item text-muted">Activity <i class="fa fa-dashboard fa-1x"></i></li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Drilled (2017)</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Completed (2017)</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Producing (2017)</strong></span> Coming Soon</li>
+                </ul>
+
+                <ul class="list-group">
+                    <li class="list-group-item text-muted">Cost and Production Estimates </li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>D&amp;C Cost (2017)</strong></span> Coming Soon</li>
+                    <!-- Cost = fn(TVD, TLL, TPP), where TPP = TLL -->
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Production (2017)</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-left"> Learn how we calculate this <a href="http://unsist.com">here</a>.</li>
+                </ul>
+
+                <ul class="list-group">
+                    <li class="list-group-item text-muted">Top Ranks <i class="fa fa-link fa-1x"></i></li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Well Drilled</strong></span> Rank 1 of 15</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Max MD</strong></span> Rank 3 of 15</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Max Lateral</strong></span> Rank 4 of 15</li>
+                    <li class="list-group-item text-left">See more rankings <a href="http://unsist.com">here</a>.</li>
+                </ul>
+            </div>
+            <!--/col-3-->
 
 
-            <div class ="well">
-              <div class="row">
-                <div class="col-lg-6 col-lg-offset-3 text-center">
-                  <h3>Enjoying the <span class="text-primary">free</span> insights?</h3>
-                    <p>We provide much deeper data &amp; analytics than what you see here.
-                      <br>Contact us to learn more.</p>
-                  <a class="btn btn-primary" href="../demo.html#contact">Contact Us</a>         
-                </div>
+            <div class="col-sm-9">
+                <ul class="list-group">
+
+                    <ul class="nav nav-tabs" id="myTab">
+                        <li class="active"><a href="#drilling" data-toggle="tab">Drilling</a></li>
+                        <li><a href="#completions" data-toggle="tab">Completions</a></li>
+                        <li><a href="#production" data-toggle="tab">Production</a></li>
+                        <li><a href="#financials" data-toggle="tab">Financials</a></li>
+                        <li><a href="#custom-data" data-toggle="tab">Custom Data</a></li>
+                        <li><a href="#visualizations" data-toggle="tab">Visualizations</a></li>
+                    </ul>
+                    <br>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="drilling">
+                        <div>
+                            <table class="table table-hover " id= "table_id">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>License No</th>
+                                        <th>Well Name</th>
+                                        <th>Surface Location</th>
+                                        <th>Prov</th>
+                                        <th>Loc Type</th>
+                                        <th>Unique Well Id</th>
+                                        <th>Operator</th>
+                                        <th>Contractor</th>
+                                        <th>Rig No</th>
+                                        <th>Well Type</th>
+                                        <th>Vendor Software Version</th>
+                                        <th>Year</th>
+                                        <th>Month</th>
+                                        <th>Day</th>
+                                        <th>Triple/Double</th>
+                                        <th>Rig Up</th>
+                                        <th>Drill Actual</th>
+                                        <th>Reaming</th>
+                                        <th>Coring</th>
+                                        <th>Cond Mud &amp; Circ</th>
+                                        <th>Trips</th>
+                                        <th>Rig Service</th>
+                                        <th>Repair Rig</th>
+                                        <th>Cut Off Drilg Line</th>
+                                        <th>Dev Survey</th>
+                                        <th>Wireline Logs</th>
+                                        <th>Run Csg &amp; Cement</th>
+                                        <th>Wait On Cement</th>
+                                        <th>Nipple Up BOP</th>
+                                        <th>Test BOP</th>
+                                        <th>Drillstem Test</th>
+                                        <th>Plug Back</th>
+                                        <th>Squeeze Cement</th>
+                                        <th>Fishing</th>
+                                        <th>Dir Work</th>
+                                        <th>Safety Meeting</th>
+                                        <th>Tear Down</th>
+                                        <th>Waiting On</th>
+                                        <th>Rig Watch</th>
+                                        <th>Other</th>
+                                        <th>From</th>
+                                        <th>To</th>
+                                        <th>Distance</th>
+                                        <th>Total Days</th>
+                                        <th>Meters/day Average</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
+                                        <td>31283</td>
+                                        <td>SHELL ET HZ GROUNDBIRCH A16-13-81-21W6</td>
+                                        <td>16-13-081-21W6</td>
+                                        <td>BC</td>
+                                        <td>DLS</td>
+                                        <td>101/01-20-081-20W6/00</td>
+                                        <td>SHELL CANADA LTD.</td>
+                                        <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                                        <td>572</td>
+                                        <td>HORIZ</td>
+                                        <td>Pason</td>
+                                        <td>2017</td>
+                                        <td>2</td>
+                                        <td>28</td>
+                                        <td>triple</td>
+                                        <td>1.50</td>
+                                        <td>92.50</td>
+                                        <td>10.25</td>
+                                        <td>0.0</td>
+                                        <td>16.75</td>
+                                        <td>69.00</td>
+                                        <td>8.75</td>
+                                        <td>0.00</td>
+                                        <td>1.75</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>15.7</td>
+                                        <td>0.0</td>
+                                        <td>7.50</td>
+                                        <td>2.00</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>46.25</td>
+                                        <td>38.25</td>
+                                        <td>27.25</td>
+                                        <td>41.25</td>
+                                        <td>26.25</td>
+                                        <td>0.0</td>
+                                        <td>5.95</td>
+                                        <td>608</td>
+                                        <td>4332</td>
+                                        <td>3724</td>
+                                        <td>18</td>
+                                        <td>206.9</td>
+                                    </tr>
+                                    <tr>
+                                        <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
+                                        <td>31284</td>
+                                        <td>SHELL ET AL HZ GROUNDBIRCH B16-13-81-21W6</td>
+                                        <td>16-13-081-21W6</td>
+                                        <td>BC</td>
+                                        <td>DLS</td>
+                                        <td>102/01-20-081-20W6/00</td>
+                                        <td>SHELL CANADA LTD.</td>
+                                        <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                                        <td>572</td>
+                                        <td>HORIZ</td>
+                                        <td>Pason</td>
+                                        <td>2017</td>
+                                        <td>2</td>
+                                        <td>17</td>
+                                        <td>triple</td>
+                                        <td>0.00</td>
+                                        <td>107.25</td>
+                                        <td>0.00</td>
+                                        <td>0.0</td>
+                                        <td>15.75</td>
+                                        <td>37.00</td>
+                                        <td>6.50</td>
+                                        <td>0.00</td>
+                                        <td>1.25</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>22.6</td>
+                                        <td>0.0</td>
+                                        <td>1.50</td>
+                                        <td>7.00</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.00</td>
+                                        <td>39.75</td>
+                                        <td>15.00</td>
+                                        <td>0.00</td>
+                                        <td>0.00</td>
+                                        <td>0.0</td>
+                                        <td>11.15</td>
+                                        <td>608</td>
+                                        <td>4332</td>
+                                        <td>3724</td>
+                                        <td>12</td>
+                                        <td>310.3</td>
+                                    </tr>
+                                    <tr>
+                                        <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
+                                        <td>31285</td>
+                                        <td>SHELL ET AL HZ GROUNDBIRCH C16-13-81-21W6</td>
+                                        <td>16-13-081-21W6</td>
+                                        <td>BC</td>
+                                        <td>DLS</td>
+                                        <td>103/01-20-081-20W6/06</td>
+                                        <td>SHELL CANADA LTD.</td>
+                                        <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                                        <td>572</td>
+                                        <td>HORIZ</td>
+                                        <td>Pason</td>
+                                        <td>2017</td>
+                                        <td>1</td>
+                                        <td>18</td>
+                                        <td>triple</td>
+                                        <td>2.50</td>
+                                        <td>89.50</td>
+                                        <td>0.00</td>
+                                        <td>0.0</td>
+                                        <td>21.75</td>
+                                        <td>32.75</td>
+                                        <td>6.00</td>
+                                        <td>0.00</td>
+                                        <td>1.75</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>19.9</td>
+                                        <td>0.0</td>
+                                        <td>4.75</td>
+                                        <td>6.75</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.00</td>
+                                        <td>32.75</td>
+                                        <td>15.75</td>
+                                        <td>0.00</td>
+                                        <td>0.00</td>
+                                        <td>0.0</td>
+                                        <td>1.80</td>
+                                        <td>610</td>
+                                        <td>4568</td>
+                                        <td>3958</td>
+                                        <td>10</td>
+                                        <td>395.8</td>
+                                </tr>
+                                <tr>
+                                    <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
+                                    <td>31286</td>
+                                    <td>SHELL ET AL HZ GROUNDBIRCH D16-13-81-21W6</td>
+                                    <td>16-13-081-21W6</td>
+                                    <td>BC</td>
+                                    <td>DLS</td>
+                                    <td>100/16-17-081-20W6/00</td>
+                                    <td>SHELL CANADA LTD.</td>
+                                    <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                                    <td>572</td>
+                                    <td>HORIZ</td>
+                                    <td>Pason</td>
+                                    <td>2017</td>
+                                    <td>1</td>
+                                    <td>27</td>
+                                    <td>triple</td>
+                                    <td>5.50</td>
+                                    <td>79.00</td>
+                                    <td>0.00</td>
+                                    <td>0.0</td>
+                                    <td>31.00</td>
+                                    <td>57.50</td>
+                                    <td>10.00</td>
+                                    <td>0.00</td>
+                                    <td>4.00</td>
+                                    <td>0.0</td>
+                                    <td>9.5</td>
+                                    <td>13.9</td>
+                                    <td>0.0</td>
+                                    <td>11.75</td>
+                                    <td>2.50</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>155.50</td>
+                                    <td>28.50</td>
+                                    <td>41.25</td>
+                                    <td>0.00</td>
+                                    <td>10.25</td>
+                                    <td>0.0</td>
+                                    <td>42.00</td>
+                                    <td>613</td>
+                                    <td>4179</td>
+                                    <td>3566</td>
+                                    <td>22</td>
+                                    <td>162.1</td>
+                                  </tr>
+                                  <tr>
+                                    <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
+                                    <td>31290</td>
+                                    <td>SHELL ET AL HZ GROUNDBIRCH H16-13-81-21W6</td>
+                                    <td>16-13-081-21W6</td>
+                                    <td>BC</td>
+                                    <td>DLS</td>
+                                    <td>100/16-17-081-20W6/06</td>
+                                    <td>SHELL CANADA LTD.</td>
+                                    <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                                    <td>572</td>
+                                    <td>HORIZ</td>
+                                    <td>Pason</td>
+                                    <td>2017</td>
+                                    <td>1</td>
+                                    <td>7</td>
+                                    <td>triple</td>
+                                    <td>1.50</td>
+                                    <td>103.25</td>
+                                    <td>0.00</td>
+                                    <td>0.0</td>
+                                    <td>15.00</td>
+                                    <td>34.25</td>
+                                    <td>6.50</td>
+                                    <td>1.00</td>
+                                    <td>1.25</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>15.0</td>
+                                    <td>0.0</td>
+                                    <td>3.50</td>
+                                    <td>2.00</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.00</td>
+                                    <td>32.75</td>
+                                    <td>15.00</td>
+                                    <td>0.00</td>
+                                    <td>4.00</td>
+                                    <td>0.0</td>
+                                    <td>2.00</td>
+                                    <td>618</td>
+                                    <td>4650</td>
+                                    <td>4032</td>
+                                    <td>10</td>
+                                    <td>403.2</td>
+                                  </tr>
+                                  <tr>
+                                    <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
+                                    <td>31291</td>
+                                    <td>SHELL ET AL HZ GROUNDBIRCH I16-13-81-21W6</td>
+                                    <td>16-13-081-21W6</td>
+                                    <td>BC</td>
+                                    <td>DLS</td>
+                                    <td>100/14-17-081-20W6/06</td>
+                                    <td>SHELL CANADA LTD.</td>
+                                    <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                                    <td>572</td>
+                                    <td>HORIZ</td>
+                                    <td>Pason</td>
+                                    <td>2016</td>
+                                    <td>12</td>
+                                    <td>26</td>
+                                    <td>triple</td>
+                                    <td>5.00</td>
+                                    <td>109.75</td>
+                                    <td>0.00</td>
+                                    <td>0.0</td>
+                                    <td>25.75</td>
+                                    <td>37.00</td>
+                                    <td>5.75</td>
+                                    <td>5.00</td>
+                                    <td>1.50</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>25.8</td>
+                                    <td>0.0</td>
+                                    <td>4.75</td>
+                                    <td>3.50</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.00</td>
+                                    <td>42.75</td>
+                                    <td>17.75</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>0.0</td>
+                                    <td>4.45</td>
+                                    <td>610</td>
+                                    <td>4630</td>
+                                    <td>4020</td>
+                                    <td>13</td>
+                                    <td>309.2</td>
+                                  </tr>
+                                  <tr>
+                                    <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
+                                    <td>31292</td>
+                                    <td>SHELL ET AL HZ GROUNDBIRCH J16-13-081-21W6</td>
+                                    <td>16-13-081-21W6</td>
+                                    <td>BC</td>
+                                    <td>DLS</td>
+                                    <td>NaN</td>
+                                    <td>SHELL CANADA LTD.</td>
+                                    <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                                    <td>572</td>
+                                    <td>HORIZ</td>
+                                    <td>Pason</td>
+                                    <td>2016</td>
+                                    <td>12</td>
+                                    <td>8</td>
+                                    <td>triple</td>
+                                    <td>1.75</td>
+                                    <td>129.50</td>
+                                    <td>0.00</td>
+                                    <td>0.0</td>
+                                    <td>42.50</td>
+                                    <td>60.50</td>
+                                    <td>8.50</td>
+                                    <td>0.00</td>
+                                    <td>1.50</td>
+                                    <td>0.0</td>
+                                    <td>13.2</td>
+                                    <td>30.7</td>
+                                    <td>0.0</td>
+                                    <td>25.25</td>
+                                    <td>5.00</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.00</td>
+                                    <td>63.75</td>
+                                    <td>29.25</td>
+                                    <td>0.75</td>
+                                    <td>2.25</td>
+                                    <td>0.0</td>
+                                    <td>7.85</td>
+                                    <td>0</td>
+                                    <td>4623</td>
+                                    <td>4623</td>
+                                    <td>19</td>
+                                    <td>243.3</td>
+                                  </tr>
+                                  <tr>
+                                    <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
+                                    <td>31722</td>
+                                    <td>SHELL ET AL HZ GROUNDBIRCH 16-9-80-19</td>
+                                    <td>16-09-080-19W6</td>
+                                    <td>BC</td>
+                                    <td>DLS</td>
+                                    <td>106/01-11-080-19W6/00</td>
+                                    <td>SHELL CANADA LTD.</td>
+                                    <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                                    <td>573</td>
+                                    <td>HORIZ</td>
+                                    <td>Pason</td>
+                                    <td>2017</td>
+                                    <td>1</td>
+                                    <td>16</td>
+                                    <td>triple</td>
+                                    <td>2.25</td>
+                                    <td>109.75</td>
+                                    <td>0.00</td>
+                                    <td>0.0</td>
+                                    <td>13.25</td>
+                                    <td>60.25</td>
+                                    <td>6.00</td>
+                                    <td>0.00</td>
+                                    <td>2.75</td>
+                                    <td>0.0</td>
+                                    <td>1.4</td>
+                                    <td>22.9</td>
+                                    <td>0.0</td>
+                                    <td>12.50</td>
+                                    <td>2.50</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.00</td>
+                                    <td>43.25</td>
+                                    <td>16.25</td>
+                                    <td>60.00</td>
+                                    <td>2.75</td>
+                                    <td>0.0</td>
+                                    <td>5.40</td>
+                                    <td>463</td>
+                                    <td>5752</td>
+                                    <td>5289</td>
+                                    <td>16</td>
+                                    <td>330.6</td>
+                                  </tr>
+                                  <tr>
+                                    <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
+                                    <td>31723</td>
+                                    <td>SHELL ET AL HZ GROUNDBIRCH A16-9-80-19</td>
+                                    <td>16-09-080-19W6</td>
+                                    <td>BC</td>
+                                    <td>DLS</td>
+                                    <td>105/16-02-080-19W6/00</td>
+                                    <td>SHELL CANADA LTD.</td>
+                                    <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                                    <td>573</td>
+                                    <td>HORIZ</td>
+                                    <td>Pason</td>
+                                    <td>2017</td>
+                                    <td>1</td>
+                                    <td>4</td>
+                                    <td>triple</td>
+                                    <td>2.00</td>
+                                    <td>118.75</td>
+                                    <td>0.00</td>
+                                    <td>0.0</td>
+                                    <td>10.00</td>
+                                    <td>54.00</td>
+                                    <td>5.75</td>
+                                    <td>0.00</td>
+                                    <td>2.00</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>24.1</td>
+                                    <td>0.0</td>
+                                    <td>4.50</td>
+                                    <td>4.25</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.00</td>
+                                    <td>51.50</td>
+                                    <td>15.75</td>
+                                    <td>0.50</td>
+                                    <td>0.00</td>
+                                    <td>0.0</td>
+                                    <td>4.20</td>
+                                    <td>463</td>
+                                    <td>5862</td>
+                                    <td>5399</td>
+                                    <td>13</td>
+                                    <td>415.3</td>
+                                  </tr>
+                                  <tr>
+                                    <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
+                                    <td>31724</td>
+                                    <td>SHELLET AL HZ GROUNDBIRCH B16-9-80-19</td>
+                                    <td>16-09-080-19W6</td>
+                                    <td>BC</td>
+                                    <td>DLS</td>
+                                    <td>103/16-02-080-19W6/00</td>
+                                    <td>SHELL CANADA LTD.</td>
+                                    <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                                    <td>573</td>
+                                    <td>HORIZ</td>
+                                    <td>Pason</td>
+                                    <td>2016</td>
+                                    <td>12</td>
+                                    <td>22</td>
+                                    <td>triple</td>
+                                    <td>1.75</td>
+                                    <td>124.00</td>
+                                    <td>0.00</td>
+                                    <td>0.0</td>
+                                    <td>12.00</td>
+                                    <td>57.50</td>
+                                    <td>5.75</td>
+                                    <td>0.75</td>
+                                    <td>2.50</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>26.9</td>
+                                    <td>0.0</td>
+                                    <td>4.50</td>
+                                    <td>7.75</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.00</td>
+                                    <td>50.00</td>
+                                    <td>14.75</td>
+                                    <td>0.75</td>
+                                    <td>0.00</td>
+                                    <td>0.0</td>
+                                    <td>5.75</td>
+                                    <td>463</td>
+                                    <td>5708</td>
+                                    <td>5245</td>
+                                    <td>14</td>
+                                    <td>374.6</td>
+                                  </tr>
+                                  <tr>
+                                    <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
+                                    <td>31725</td>
+                                    <td>SHELL ET AL HZ GROUNDBIRCH C16-9-80-19</td>
+                                    <td>16-09-080-19W6</td>
+                                    <td>BC</td>
+                                    <td>DLS</td>
+                                    <td>103/16-02-080-19W6/00</td>
+                                    <td>SHELL CANADA LTD.</td>
+                                    <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                                    <td>573</td>
+                                    <td>HORIZ</td>
+                                    <td>Pason</td>
+                                    <td>2016</td>
+                                    <td>12</td>
+                                    <td>5</td>
+                                    <td>triple</td>
+                                    <td>2.25</td>
+                                    <td>164.50</td>
+                                    <td>0.00</td>
+                                    <td>0.0</td>
+                                    <td>12.00</td>
+                                    <td>68.00</td>
+                                    <td>8.25</td>
+                                    <td>28.25</td>
+                                    <td>2.75</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>25.1</td>
+                                    <td>0.0</td>
+                                    <td>5.25</td>
+                                    <td>2.50</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.00</td>
+                                    <td>59.00</td>
+                                    <td>16.75</td>
+                                    <td>1.25</td>
+                                    <td>0.75</td>
+                                    <td>0.0</td>
+                                    <td>9.80</td>
+                                    <td>466</td>
+                                    <td>5900</td>
+                                    <td>5434</td>
+                                    <td>18</td>
+                                    <td>301.9</td>
+                                  </tr>
+                                  <tr>
+                                    <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
+                                    <td>31726</td>
+                                    <td>SHELL ET AL HZ GROUNDBIRCH D16-9-80-19</td>
+                                    <td>16-09-080-19W6</td>
+                                    <td>BC</td>
+                                    <td>DLS</td>
+                                    <td>102/01-11-080-19W6/00</td>
+                                    <td>SHELL CANADA LTD.</td>
+                                    <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                                    <td>573</td>
+                                    <td>HORIZ</td>
+                                    <td>Pason</td>
+                                    <td>2016</td>
+                                    <td>11</td>
+                                    <td>22</td>
+                                    <td>triple</td>
+                                    <td>2.25</td>
+                                    <td>102.00</td>
+                                    <td>5.00</td>
+                                    <td>0.0</td>
+                                    <td>18.50</td>
+                                    <td>58.25</td>
+                                    <td>5.50</td>
+                                    <td>0.00</td>
+                                    <td>2.25</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>26.6</td>
+                                    <td>0.0</td>
+                                    <td>4.25</td>
+                                    <td>9.00</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>3.75</td>
+                                    <td>45.00</td>
+                                    <td>14.25</td>
+                                    <td>1.00</td>
+                                    <td>2.25</td>
+                                    <td>0.0</td>
+                                    <td>5.25</td>
+                                    <td>465</td>
+                                    <td>5748</td>
+                                    <td>5283</td>
+                                    <td>14</td>
+                                    <td>377.4</td>
+                                  </tr>
+                                  <tr>
+                                    <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
+                                    <td>31727</td>
+                                    <td>SHELL ET AL HZ GROUNDBIRCH E16-9-80-19</td>
+                                    <td>16-09-080-19W6</td>
+                                    <td>BC</td>
+                                    <td>DLS</td>
+                                    <td>100/01-11-080-19W6/00</td>
+                                    <td>SHELL CANADA LTD.</td>
+                                    <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                                    <td>573</td>
+                                    <td>VERT</td>
+                                    <td>Pason</td>
+                                    <td>2016</td>
+                                    <td>10</td>
+                                    <td>23</td>
+                                    <td>double</td>
+                                    <td>1.50</td>
+                                    <td>2.75</td>
+                                    <td>0.00</td>
+                                    <td>0.0</td>
+                                    <td>0.50</td>
+                                    <td>0.75</td>
+                                    <td>0.50</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>3.4</td>
+                                    <td>0.0</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.00</td>
+                                    <td>3.75</td>
+                                    <td>1.75</td>
+                                    <td>0.50</td>
+                                    <td>0.00</td>
+                                    <td>0.0</td>
+                                    <td>0.00</td>
+                                    <td>0</td>
+                                    <td>472</td>
+                                    <td>472</td>
+                                    <td>2</td>
+                                    <td>236.0</td>
+                                  </tr>
+                                  <tr>
+                                    <th><a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/31283_ETS_2017MAR23_A16-13.PDF?alt=media&token=b87afe34-96a4-44db-b820-e68f0f2cb39b"> Download PDF</a></th>
+                                    <td>31728</td>
+                                    <td>SHELL ET AL HZ GROUNDBIRCH F16-9-80-19</td>
+                                    <td>16-09-080-19W6</td>
+                                    <td>BC</td>
+                                    <td>DLS</td>
+                                    <td>101/16-02-080-19W6/00</td>
+                                    <td>SHELL CANADA LTD.</td>
+                                    <td>PRECISION DRILLING, DIV OF PDCLP</td>
+                                    <td>573</td>
+                                    <td>HORIZ</td>
+                                    <td>Pason</td>
+                                    <td>2016</td>
+                                    <td>11</td>
+                                    <td>8</td>
+                                    <td>triple</td>
+                                    <td>2.50</td>
+                                    <td>133.25</td>
+                                    <td>1.00</td>
+                                    <td>0.0</td>
+                                    <td>11.25</td>
+                                    <td>57.00</td>
+                                    <td>7.50</td>
+                                    <td>0.25</td>
+                                    <td>3.00</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>48.2</td>
+                                    <td>0.0</td>
+                                    <td>4.50</td>
+                                    <td>3.50</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.00</td>
+                                    <td>51.25</td>
+                                    <td>16.75</td>
+                                    <td>1.00</td>
+                                    <td>0.00</td>
+                                    <td>0.0</td>
+                                    <td>3.85</td>
+                                    <td>454</td>
+                                    <td>5758</td>
+                                    <td>5304</td>
+                                    <td>15</td>
+                                    <td>353.6</td>
+                                  </tr>
+                                </tbody>
+                          </table>
+   
+                          
+                          <div class="row">
+                              <div class="col-md-4 col-md-offset-4 text-center">
+                                  <ul class="pagination" id="myPager"></ul>
+                              </div>
+                          </div>
+
+                      </div>
+                      <!--/table-resp-->
+                  </div>
+
+                  <!--/tab-pane-->
+                  <div class="tab-pane" id="completions">
+                    
+                        <p>  Coming Soon!</p>
+                        <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+                    
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="production">
+                          <p>  Coming Soon!</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="financials">
+                          <p>  Coming Soon!</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="custom-data">
+                          <p>  Coming Soon!</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="visualizations">
+                          <p>  Coming Soon! (Example Below)</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                          <hr>
+                          <div class='tableauPlaceholder' id='viz1520272339512' style='position: relative'>
+                            <noscript>
+                              <a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;al&#47;all_31&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a>
+                            </noscript>
+                            <object class='tableauViz' width='550' height='350' style='display:none;'>
+                              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='all_31&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;al&#47;all_31&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' />
+                            </object>
+                          </div>
+                    </div>                  
+
               </div>
-            </div>            
+              <!--/tab-pane-->
+          </ul>
+          <!--/tab-content-->
+        </div>
+        <!--/col-9-->          
+                      
+    </div>
+    <!--/row-->
 
-          </div>
-      </div>
-    </section>     
+    <div class="row">
+        <div class="col-xs-6">        
+            <p>*Data accessed from <strong><u>public</u></strong> sources only.</p>
+        </div>
+        <div class="col-xs-6 text-right">        
+            <p>Access this Unsist energy dataset directly and <a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/data.csv?alt=media&token=f23849f8-9974-4cba-8459-a56e0ab573ad"><strong>download CSV</strong></a></p>
+            <br>
+        </div> 
+    </div>
+
+    <div class="row" style="background-color: white">
+         <div class="col-lg-6 col-lg-offset-3 text-center">
+            <ul class="list-group">
+                <h3>Enjoying the <span class="text-primary">free</span> insights?</h3>
+                <p>We provide much deeper data &amp; analytics than what you see here.
+                <br>Contact us to learn more.</p>
+                <a class="btn btn-primary" href="../demo.html#contact">Contact Us</a>   
+                <br>      
+            </ul>
+        </div>
+    </div>   
 
 
+    </section> 
 
-
+    <!-- footer --> 
     <footer>
         <div class="container">
             <div class="row">
@@ -2706,7 +1100,6 @@
             </div>
         </div>
     </footer>
-
 
 
     <!-- jQuery -->
@@ -2742,9 +1135,12 @@
     messagingSenderId: "989389729849"
   };
   firebase.initializeApp(config);
+
+
   var bigOne = document.getElementById('bigOne');
   var dbRef = firebase.database().ref()
   dfRef.on('value', snap => bigOne.innerText = snap.val());
+
 </script>
 
 <script type='text/javascript'>
@@ -2756,11 +1152,24 @@
   vizElement.parentNode.insertBefore(scriptElement, vizElement);                
 </script>
 
+<script type="text/javascript">
+    $(document).ready(function() {
+      var table = $('#table_id').DataTable( {
+        "scrollY": "600px",
+        "scrollX": "400px"
+      } );
+    } )
+</script>
 
-
-
+<script type="text/javascript">
+    $(document).ready(function() {
+      var table = $('#table_id1').DataTable( {
+        "scrollY": "300px",
+        "scrollX": "400px"
+      } );
+    } )
+</script>
 
 </body>
 
 </html>
-
