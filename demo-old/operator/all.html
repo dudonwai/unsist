@@ -94,17 +94,10 @@ https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js -->
                         <a class="page-scroll" type="button" data-toggle="dropdown"><b>Performance Review</b>
                         </a>
                         <ul class="dropdown-menu" >                          
-                            <li><a href="blackswan.html"><span class="text-muted">BLACK SWAN</span></a></li>
-                            <li><a href="canbriam.html"><span class="text-muted">CANBRIAM</span></a></li>
-                            <li><a href="cnrl.html"><span class="text-muted">CNRL</span></a></li>
-                            <li><a href="crew.html"><span class="text-muted">CREW</span></a></li>
-                            <li><a href="encana.html"><span class="text-muted">ENCANA</span></a></li>
-                            <li><a href="murphy.html"><span class="text-muted">MURPHY</span></a></li>
-                            <li><a href="paintedpony.html"><span class="text-muted">PAINTED PONY</span></a></li>
-                            <li><a href="progress.html"><span class="text-muted">PROGRESS</span></a></li>
+                            <li><a href="shell.html"><span class="text-muted">CREW</span></a></li>
+                            <li><a href="shell.html"><span class="text-muted">ENCANA</span></a></li>
                             <li><a href="shell.html"><span class="text-muted">SHELL</span></a></li>
-                            <li><a href="storm.html"><span class="text-muted">STORM RESOURCES</span></a></li>
-                            <li><a href="tourmaline.html"><span class="text-muted">TOURMALINE</span></a></li>
+                            <li><a href="shell.html"><span class="text-muted">TOURMALINE</span></a></li>
                             <li><a href="all.html"><span class="text-muted"><strong>ALL COMPANIES</strong></span></a></li>
                         </ul>
                     </li>                                      
@@ -137,49 +130,83 @@ https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js -->
             <!-- Company Logo and Info -->
             <div class="col-sm-3">
                 <ul class="list-group">
-                    <li class="list-group-item text-muted" style ='background-color: #e3e6e8'><img title="profile image" class="img-responsive img-centered" height="110" width="110" align="middle" src="../../img/operator/crew.jpg"></li>
+                    <li class="list-group-item text-muted" style ='background-color: #e3e6e8'><img title="profile image" class="img-responsive img-centered" height="110" width="110" align="middle" src="../../img/operator/shell.jpg"></li>
                     <li class="list-group-item text-right">
-                        <span class="pull-left"><strong>Company Name</strong></span> Crew Energy</li>
+                        <span class="pull-left"><strong>Company Name</strong></span> Shell</li>
                     <li class="list-group-item text-right">
                         <span class="pull-left"><strong>Market Cap (2017)</strong></span> 
-                        <a target="_blank" href="#"> $ -</a></li>
+                        <a target="_blank" href="https://www.bloomberg.com/quote/RDS/A:US"> $264.1B USD</a></li>
                     <li class="list-group-item text-right">
                         <span class="pull-left"><strong>Revenue (2017)</strong></span> 
-                        <a target="_blank" href="#"> $ -</a></li>
+                        <a target="_blank" href="https://www.bloomberg.com/quote/RDS/A:US"> $305.1B USD</a></li>
                     <li class="list-group-item text-right">
                         <span class="pull-left"><strong>Net Income (2017)</strong></span> 
-                        <a target="_blank" href="#"> $ -</a></li>
+                        <a target="_blank" href="https://www.bloomberg.com/quote/RDS/A:US"> $13.0B USD</a></li>
                 </ul>
             </div>
 
             <!-- Insights -->
             <div class="col-sm-9">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <!-- Company Specific -->
-                        <ul class="list-group">
-                            <li class="list-group-item text-primary text-center"><strong>Unsist Insights - Crew Energy</strong></li>
-                            <li class="list-group-item text-right"><span class="pull-left"><strong>Average Spud-RR</strong></span> days</li>
-                            <li class="list-group-item text-right"><span class="pull-left"><strong>Average Days/MD</strong></span> m/day</li>
-                            <li class="list-group-item text-right"><span class="pull-left"><strong>Drilling %</strong></span> %</li>
-                            <li class="list-group-item text-right"><span class="pull-left"><strong>Average MD</strong></span> m</li>
-                            <li class="list-group-item text-right"><span class="pull-left"><strong>Average TVD</strong></span> m</li>
-                            <li class="list-group-item text-right"><span class="pull-left"><strong>Average HZ</strong></span> m</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6">
-                          <!-- Benchmark -->
-                        <ul class="list-group">
-                            <li class="list-group-item text-primary text-center"><strong>Group Benchmark</strong></li>
-                            <li class="list-group-item text-right"><span class="pull-left"><strong>Average Spud-RR</strong></span> days ()</li>
-                            <li class="list-group-item text-right"><span class="pull-left"><strong>Average Days/MD</strong></span> m/day ()</li>
-                            <li class="list-group-item text-right"><span class="pull-left"><strong>Drilling %</strong></span> % ()</li>
-                            <li class="list-group-item text-right"><span class="pull-left"><strong>Average MD</strong></span> m ()</li>
-                            <li class="list-group-item text-right"><span class="pull-left"><strong>Average TVD</strong></span> m ()</li>
-                            <li class="list-group-item text-right"><span class="pull-left"><strong>Average HZ</strong></span> m ()</li>
-                        </ul>
-                    </div>
-                </div>
+                   <div>
+                      <table class="table table-hover " id= "table_id1">
+                          <thead>
+                              <tr>
+                                  <th class="text-center">Company</th>
+                                  <th class="text-center">MD</th>
+                                  <th class="text-center">TVD</th>
+                                  <th class="text-center">TLL</th>
+                                  <th class="text-center">Days</th>
+                                  <th class="text-center">Days/mMD</th>
+                                  <th class="text-center">Drlg %</th>
+                                  <th class="text-center">Trpg %</th>
+                                  <th class="text-center">Wells Drilled</th>
+                                  <th class="text-center">Bits</th>
+                                  <th class="text-center">Days/mMD</th>
+                                  <th class="text-center">Drlg %</th>
+                                  <th class="text-center">Trpg %</th>
+                                  <th class="text-center">Wells Drilled</th>
+                                  <th class="text-center">Bits</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <th class="text-center">ARC</th>
+                                  <td class="text-center">1</td>
+                                  <td class="text-center">4</td>
+                                  <td class="text-center">6</td>
+                                  <td class="text-center">13</td>
+                                  <td class="text-center">5</td>
+                                  <td class="text-center">2</td>
+                                  <td class="text-center">6</td>
+                                  <td class="text-center">13</td>
+                                  <td class="text-center">5</td>
+                                  <td class="text-center">5</td>
+                                  <td class="text-center">2</td>
+                                  <td class="text-center">6</td>
+                                  <td class="text-center">13</td>
+                                  <td class="text-center">5</td>
+                              </tr>                                
+                              <tr>
+                                  <th class="text-center">Shell</th>
+                                  <td class="text-center">1</td>
+                                  <td class="text-center">4</td>
+                                  <td class="text-center">6</td>
+                                  <td class="text-center">13</td>
+                                  <td class="text-center">5</td>
+                                  <td class="text-center">2</td>
+                                  <td class="text-center">6</td>
+                                  <td class="text-center">13</td>
+                                  <td class="text-center">5</td>
+                                  <td class="text-center">5</td>
+                                  <td class="text-center">2</td>
+                                  <td class="text-center">6</td>
+                                  <td class="text-center">13</td>
+                                  <td class="text-center">5</td>
+                              </tr>                            
+                          </tbody>
+                      </table>
+                  </div>
+                
             </div>
           
         </div>
@@ -189,10 +216,10 @@ https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js -->
                 <!--left col-->
 
                 <ul class="list-group">
-                    <li class="list-group-item text-muted">2017 Activity <i class="fa fa-dashboard fa-1x"></i></li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Drilled</strong></span> Coming Soon</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Completed</strong></span> Coming Soon</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Producing</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-muted">Activity <i class="fa fa-dashboard fa-1x"></i></li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Drilled (2017)</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Completed (2017)</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Producing (2017)</strong></span> Coming Soon</li>
                 </ul>
 
                 <ul class="list-group">
@@ -200,15 +227,15 @@ https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js -->
                     <li class="list-group-item text-right"><span class="pull-left"><strong>D&amp;C Cost (2017)</strong></span> Coming Soon</li>
                     <!-- Cost = fn(TVD, TLL, TPP), where TPP = TLL -->
                     <li class="list-group-item text-right"><span class="pull-left"><strong>Production (2017)</strong></span> Coming Soon</li>
-                    <li class="list-group-item text-left"> Learn how we calculate this <a href="http://unsist.com/demo/definitions">here</a>.</li>
+                    <li class="list-group-item text-left"> Learn how we calculate this <a href="http://unsist.com">here</a>.</li>
                 </ul>
 
                 <ul class="list-group">
                     <li class="list-group-item text-muted">Top Ranks <i class="fa fa-link fa-1x"></i></li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong>Metric</strong></span> Coming Soon</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong>Metric</strong></span> Coming Soon</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong>Metric</strong></span> Coming Soon</li>
-                    <li class="list-group-item text-left">See rankings of all companies <a href="http://unsist.com/demo/operator/all">here</a>.</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Well Drilled</strong></span> Rank 1 of 15</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Max MD</strong></span> Rank 3 of 15</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Max Lateral</strong></span> Rank 4 of 15</li>
+                    <li class="list-group-item text-left">See more rankings <a href="http://unsist.com">here</a>.</li>
                 </ul>
             </div>
             <!--/col-3-->
@@ -995,8 +1022,17 @@ https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js -->
 
                     <!--/tab-pane-->
                     <div class="tab-pane" id="visualizations">
-                          <p>  Coming Soon!</p>
+                          <p>  Coming Soon! (Example Below)</p>
                           <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                          <hr>
+                          <div class='tableauPlaceholder' id='viz1520272339512' style='position: relative'>
+                            <noscript>
+                              <a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;al&#47;all_31&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a>
+                            </noscript>
+                            <object class='tableauViz' width='550' height='350' style='display:none;'>
+                              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='all_31&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;al&#47;all_31&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' />
+                            </object>
+                          </div>
                     </div>                  
 
               </div>
@@ -1120,6 +1156,15 @@ https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js -->
     $(document).ready(function() {
       var table = $('#table_id').DataTable( {
         "scrollY": "600px",
+        "scrollX": "400px"
+      } );
+    } )
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+      var table = $('#table_id1').DataTable( {
+        "scrollY": "300px",
         "scrollX": "400px"
       } );
     } )
