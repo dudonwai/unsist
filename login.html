@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+    <!--  This file has been downloaded from bootdey.com    @bootdey on twitter -->
+    <!--  All snippets are MIT license http://bootdey.com/license -->
+    <!-- 
+    	The codes are free, but we require linking to our web site.
+    	Why to Link?
+    	A true story: one girl didn't set a link and had no decent date for two years, and another guy set a link and got a top ranking in Google! 
+    	Where to Put the Link?
+    	home, about, credits... or in a good page that you want
+    	THANK YOU MY FRIEND!
+    -->
+    <title>Profile Page - Bootdey.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+    	body{margin-top:20px;}
+
+    </style>
+
+        <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+
+    <!-- Theme CSS -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+   <!--  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> -->
+
+    <script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css">
+<script src="https://nightly.datatables.net/js/jquery.dataTables.min.js"></script>
+
+<style type="text/css">
+  /* body { background: #F2F4F4  !important; } *//* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+
+ ul {
+        list-style-type: none;
+        margin: 0 0 3px 0;
+
+      }
+
+    li{
+      margin: 20px 0;
+      }
+
+</style>
+
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+
+  <head>
+
+
+
+  </head>
+    <body background ="http://www.unsist.com/img/unsist.jpeg">
+			<div class="container col-sm-4 col-md-offset-1">
+
+        
+
+        <ul>
+
+			    <li><input id='txtEmail' type ="email" class="form-control " placeholder="Email" id ="email"></li>
+			    <li><input id="txtPassword" type="password" class="form-control " placeholder="Password"></li>
+
+		<!-- 	    <button id="btnSignUp" class ="btn btn-secondary" onsubmit = "return a();">Sign Up
+				</button> -->
+				<li><button id="btnLogin" class ="btn btn-action">Log In
+			</button><a href ="signup.html"> Sign Up</a></li>
+				<li><button id="btnLogout" class ="btn btn-action hide" >Log Out
+				</button>
+
+      </ul>
+				
+
+
+
+				   
+				  
+
+
+				
+
+				
+
+				
+
+				
+
+<!-- 				<button id="btnLogin" class ="btn btn-action" onsubmit = "return a();">Log In
+				</button> -->
+<!-- 
+				<button id="btnSignUp" class ="btn btn-secondary" onsubmit = "return a();">Sign Up
+				</button> -->
+
+
+			</div>
+
+
+
+
+
+			<script src="login.js"></script>
+
+
+
+			<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCqP3WriWOlSZqa1zvg7DY2dzPJM3yOGm8",
+    authDomain: "mockup-1eaa9.firebaseapp.com",
+    databaseURL: "https://mockup-1eaa9.firebaseio.com",
+    projectId: "mockup-1eaa9",
+    storageBucket: "mockup-1eaa9.appspot.com",
+    messagingSenderId: "989389729849"
+  };
+  firebase.initializeApp(config);
+
+
+  const txtEmail = document.getElementById("txtEmail");
+  const txtPassword = document.getElementById("txtPassword");
+  const btnLogin = document.getElementById("btnLogin");
+  // const btnSignUp = document.getElementById("btnSignUp");
+  const btnLogout = document.getElementById("btnLogout");
+
+
+  // Add login event 
+
+
+  btnLogin.addEventListener('click', e => {
+
+  	const email = txtEmail.value;
+  	const pass = txtPassword.value;
+  	const auth = firebase.auth();
+
+  	const promise = auth.signInWithEmailAndPassword(email, pass);
+  	promise.catch(e => console.log(e.message));
+
+
+  });
+
+
+  //  btnSignUp.addEventListener('click', e => {
+
+  // 	const email = txtEmail.value;
+  // 	const pass = txtPassword.value;
+  // 	const auth = firebase.auth();
+
+  // 	const promise = auth.createUserWithEmailAndPassword(email, pass);
+  // 	promise.catch(e => console.log(e.message));
+
+
+  // });
+
+
+   //Add a realtime listener
+   firebase.auth().onAuthStateChanged(firebaseUser => { 
+   	if(firebaseUser) {
+   		console.log(firebaseUser);
+   		btnLogout.classList.remove('hide');
+   		window.location = 'https://www.unsist.com/demo/demo';
+
+   	} else {
+   		console.log('not logged in');
+   		btnLogout.classList.add('hide');
+   	}
+
+   });
+
+
+    btnLogout.addEventListener('click', e => {
+
+		firebase.auth().signOut();
+
+
+  });
+
+
+   firebase.database().ref('sample/').on('child_added', function(snapshot){
+
+
+      //console.log(snapshot.val());
+
+    }); 
+
+    // firebase.database().ref('sample/').on('child_remove', function(snapshot){
+    //   console.log(snapshot.val());
+
+    // }); 
+
+    function a(){
+
+      var fullname = document.getElementById("txtFullName").value;
+      var email = document.getElementById("txtEmail").value;
+      var company = document.getElementById("txtCompany").value;
+      var role = document.getElementById("txtRole").value;
+
+
+
+      firebase.database().ref('sample/' + fullname + '/' + 'Company').set(company);
+      firebase.database().ref('sample/' + fullname + '/' + 'Email').set(email);
+      firebase.database().ref('sample/' + fullname + '/' + 'Role').set(role);
+
+      return false;
+
+    }
+
+
+
+
+
+
+</script>
+
+		</body>
+		</html>
+
+
+
+
