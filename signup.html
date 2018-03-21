@@ -64,12 +64,26 @@
       margin: 20px 0;
       }
 
-    body {
-    background-image: url(http://www.unsist.com/img/unsist.jpeg);
-    background-position: center top;
-    background-size: 100% auto;
-    }
 
+    body {
+    background: url(http://www.unsist.com/img/unsist.jpeg)   no-repeat center center fixed; 
+
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+    }
+.center {
+    /*height: 200px;
+    width: 400px;
+
+    position: fixed;*/
+    /*top: 50%;
+    left: 50%;*/
+    margin-top: 90px;
+    /*margin-left: -200px;*/
+}
 
 </style>
 
@@ -81,8 +95,7 @@
 	</head>
 		<body>
 			
-
-
+<div class="center">
       <div class="container col-sm-4 col-md-offset-1" style="vertical-align:middle">
 
 
@@ -109,6 +122,7 @@
 
 
 			  </form>
+      </div>
 				
 
 
