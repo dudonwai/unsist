@@ -12,8 +12,20 @@
     	home, about, credits... or in a good page that you want
     	THANK YOU MY FRIEND!
     -->
-    <title>Profile Page - Bootdey.com</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="UNSIST Data Science - Creating technology for Oil &amp; Gas that never stops.">
+    <meta name="author" content="Dudon Wai">
+    <meta name="keywords" content="UNSIST Data Science Calgary Alberta Canada Oil Gas Energy Technology NextAI Dudon Wai">
+
+    <meta property="og:site_name" content="UNSIST Data Science">
+    <meta property="og:title" content="UNSIST Data Science">
+    <meta property="og:description" content="UNSIST Data Science - Creating technology for Oil &amp; Gas that never stops.">
+    <meta property="og:url" content="http://www.unsist.com/">
+    <meta property="og:image" content="http://www.unsist.com/img/unsist.jpeg">
+
+    <title>UNSIST Data Science</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
@@ -52,6 +64,12 @@
       margin: 20px 0;
       }
 
+    body {
+    background-image: url(http://www.unsist.com/img/unsist.jpeg);
+    background-position: center top;
+    background-size: 100% auto;
+    }
+
 
 </style>
 
@@ -61,11 +79,11 @@
 
 
 	</head>
-		<body background ="http://www.unsist.com/img/unsist.jpeg">
+		<body>
 			
 
 
-      <div class="container col-sm-4 col-md-offset-1">
+      <div class="container col-sm-4 col-md-offset-1" style="vertical-align:middle">
 
 
 
@@ -84,7 +102,8 @@
 			       <li><input id='txtCompany' class="form-control  " type ="company" placeholder="Company"> </li>
 			       <li><input id='txtRole' class="form-control" type ="role" placeholder="Role"> </li>
 			       <li><button id="btnSignUp" class ="btn btn-secondary" onsubmit = "return a();">Sign Up
-				</button> <a href ="login.html">Log In</a></li>
+				</button> &nbsp;<button  class="btn btn-secondary"><div id="button"><a href ="login.html">Log In</a></div></button></li>
+        
 
           
 
