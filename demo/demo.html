@@ -537,12 +537,12 @@
         function complete() {
         } );
     });
-    firebase.database().ref('sample/').on('child_added', function(snapshot){
+/*    firebase.database().ref('sample/').on('child_added', function(snapshot){
       console.log(snapshot.val());
     }); 
     firebase.database().ref('sample/').on('child_remove', function(snapshot){
       console.log(snapshot.val());
-    }); 
+    }); */
     function a(){
       var name = document.getElementById("name").value;
       var message = document.getElementById("message").value;
