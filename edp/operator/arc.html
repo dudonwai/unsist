@@ -1,0 +1,2032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="UNSIST Data Science - Creating technology for Oil &amp; Gas that never stops.">
+    <meta name="author" content="Dudon Wai">
+    <meta name="keywords" content="UNSIST Data Science Calgary Alberta Canada Oil Gas Energy Technology NextAI Dudon Wai">
+
+    <meta property="og:site_name" content="UNSIST Data Science">
+    <meta property="og:title" content="UNSIST Data Science">
+    <meta property="og:description" content="UNSIST Data Science - Creating technology for Oil &amp; Gas that never stops.">
+    <meta property="og:url" content="http://www.unsist.com/">
+    <meta property="og:image" content="http://www.unsist.com/img/unsist.jpeg">
+
+    <title>UNSIST Data Science</title>
+
+      <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../../favicon.png?">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="../../css/agency.min.css" rel="stylesheet">
+
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+            
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-85617324-3', 'auto');
+    ga('send', 'pageview');
+</script>
+
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- JQuery Reference
+      If you have added jQuery reference in your master page then ignore, 
+      Else include this too with the below reference -->
+
+<script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+<!-- https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js
+https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js -->
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css">
+
+</head>
+
+<body id="page-top" class="index" >
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="../../index.html#page-top" alt="UNSIST Data Science"><b>UNSIST</b> </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" type="button" data-toggle="dropdown"><b>Energy Data Platform</b></a>
+                        <ul class="dropdown-menu" >                          
+                            <li><a href="../../edp.html"><span class="text-muted"><strong><u>Energy Data Platform</u></strong></span></a></li>                            
+                            <li><a href="arc.html"><span class="text-muted">ARC RESOURCES</span></a></li>                            
+                            <li><a href="blackswan.html"><span class="text-muted">BLACK SWAN</span></a></li>
+                            <li><a href="canbriam.html"><span class="text-muted">CANBRIAM</span></a></li>
+                            <li><a href="cnrl.html"><span class="text-muted">CNRL</span></a></li>
+                            <li><a href="crew.html"><span class="text-muted">CREW</span></a></li>
+                            <li><a href="encana.html"><span class="text-muted">ENCANA</span></a></li>
+                            <li><a href="murphy.html"><span class="text-muted">MURPHY</span></a></li>
+                            <li><a href="paintedpony.html"><span class="text-muted">PAINTED PONY</span></a></li>
+                            <li><a href="progress.html"><span class="text-muted">PROGRESS</span></a></li>
+                            <li><a href="shell.html"><span class="text-muted">SHELL</span></a></li>
+                            <li><a href="storm.html"><span class="text-muted">STORM RESOURCES</span></a></li>
+                            <li><a href="tourmaline.html"><span class="text-muted">TOURMALINE</span></a></li>
+                            <li><a href="all.html"><span class="text-muted"><strong><u>ALL COMPANIES</u></strong></span></a></li>
+                        </ul>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="https://unsist-exchange.myshopify.com"><b>Exchange</b></a>
+                    </li>   
+
+                    <li>
+                        <a class="page-scroll" href="../../blog.html"><b>Blog</b></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="../../about.html"><b>About</b></a>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="../../#contact"><b>Contact</b></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    
+    <!-- Header -->
+
+    <section style="background-color: #F2F4F4">
+
+      <div class="container">
+
+        <!-- Top Row -->
+        <div class="row">
+
+            <!-- Company Logo and Info -->
+            <div class="col-sm-3">
+                <ul class="list-group">
+                    <li class="list-group-item text-muted" style ='background-color: #e3e6e8'><img title="profile image" class="img-responsive img-centered" height="110" min-width="110" align="middle" src="../../img/operator/arcresources.png"></li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Company </strong></span> ARC Resources</li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Market Cap (2017)</strong></span> 
+                        <a target="_blank" href="https://www.bloomberg.com/quote/ARX:CN"> $4.7B CAD</a></li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Revenue (2017)</strong></span> 
+                        <a target="_blank" href="https://www.bloomberg.com/quote/ARX:CN"> $1,267.9M CAD</a></li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Net Income (2017)</strong></span> 
+                        <a target="_blank" href="https://www.bloomberg.com/quote/ARX:CN"> $388.9M CAD</a></li>                      
+                </ul>
+            </div>
+
+            <!-- Insights -->
+                <div class="col-lg-9 text-center">
+                    <div class="well" style="background-color: white">
+                        <div style="overflow-x:auto;">
+                            <h3 align="center">Insights &amp; Benchmarks</h3>
+                            <table class="table table-responsive" id="">
+                                <thead>
+                                    <tr>
+                                      <td></td>
+                                      <td class="text-primary"><strong>ARC Resources</strong></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td class="text-primary"><strong>Group Benchmark</strong></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td></td>
+                                        <td><strong>Avg</strong></td>
+                                        <td><strong>P10</strong></td>
+                                        <td><strong>P50</strong></td>
+                                        <td><strong>P90</strong></td>
+                                        <td><strong>Avg</strong></td>
+                                        <td><strong>P10</strong></td>
+                                        <td><strong>P50</strong></td>
+                                        <td><strong>P90</strong></td></tr>     
+<tr>
+  <th class="text-center">Operating Day</th>
+  <td class="text-center">11.04</td>
+  <td class="text-center">9.16</td>
+  <td class="text-center">10.42</td>
+  <td class="text-center">14.60</td>
+  <td class="text-center">15.22</td>
+  <td class="text-center">8.42</td>
+  <td class="text-center">14.31</td>
+  <td class="text-center">22.17</td>
+</tr>
+<tr>
+  <th class="text-center">m / Operating Day</th>
+  <td class="text-center">439.67</td>
+  <td class="text-center">482.29</td>
+  <td class="text-center">374.62</td>
+  <td class="text-center">289.86</td>
+  <td class="text-center">320.68</td>
+  <td class="text-center">469.86</td>
+  <td class="text-center">311.01</td>
+  <td class="text-center">174.39</td>
+</tr>
+<tr>
+  <th class="text-center">Drlg %</th>
+  <td class="text-center">37.63</td>
+  <td class="text-center">44.76</td>
+  <td class="text-center">38.20</td>
+  <td class="text-center">30.06</td>
+  <td class="text-center">43.28</td>
+  <td class="text-center">52.21</td>
+  <td class="text-center">43.20</td>
+  <td class="text-center">34.39</td>
+</tr>
+<tr>
+  <th class="text-center">MD</th>
+  <td class="text-center">4645.17</td>
+  <td class="text-center">4734.60</td>
+  <td class="text-center">4075.00</td>
+  <td class="text-center">3501.20</td>
+  <td class="text-center">3754.19</td>
+  <td class="text-center">5174.30</td>
+  <td class="text-center">4164.50</td>
+  <td class="text-center">3587.00</td>
+</tr>
+<tr>
+  <th class="text-center">TVD</th>
+  <td class="text-center">2050.55</td>
+  <td class="text-center">2322.52</td>
+  <td class="text-center">1998.80</td>
+  <td class="text-center">1940.07</td>
+  <td class="text-center">2084.11</td>
+  <td class="text-center">2417.71</td>
+  <td class="text-center">2077.54</td>
+  <td class="text-center">1801.32</td>
+</tr>
+<tr>
+  <th class="text-center">Lateral</th>
+  <td class="text-center">1799.21</td>
+  <td class="text-center">2349.98</td>
+  <td class="text-center">1745.00</td>
+  <td class="text-center">1328.91</td>
+  <td class="text-center">1989.83</td>
+  <td class="text-center">2713.79</td>
+  <td class="text-center">1920.99</td>
+  <td class="text-center">1416.28</td>
+</tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>                         
+
+          
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <!--left col-->
+
+                <ul class="list-group">
+                    <li class="list-group-item text-muted">2017 Activity <i class="fa fa-dashboard fa-1x"></i></li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Drilled</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Completed</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Producing</strong></span> Coming Soon</li>
+                </ul>
+
+                <ul class="list-group">
+                    <li class="list-group-item text-muted">Cost and Production Estimates </li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Production (2017)</strong></span> 
+                        <a target="_blank" href="http://www.arcresources.com/investors/reporting/quarterly-results/"> 122.9 kboe/d</a></li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Netback (2017)</strong></span> 
+                        <a target="_blank" href="http://www.arcresources.com/investors/reporting/quarterly-results/"> $27.16 CAD/boe</a></li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>D&amp;C Cost (2017)</strong></span> Coming Soon</li>
+                    <!-- Cost = fn(TVD, TLL, TPP), where TPP = TLL -->                        
+                    <li class="list-group-item text-left"> Learn how we calculate this <a href="http://unsist.com/demo/definitions">here</a>.</li>
+                </ul>
+
+                <ul class="list-group">
+                    <li class="list-group-item text-muted">Top Ranks <i class="fa fa-link fa-1x"></i></li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Metric 1</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Metric 2</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Metric 3</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-left">See all company rankings <a href="http://unsist.com/demo/operator/all">here</a>.</li>
+                </ul>
+            </div>
+            <!--/col-3-->
+
+
+            <div class="col-sm-9">
+                <h3 align="center">Company Data</h3>
+                <ul class="list-group">
+                    
+                    <ul class="nav nav-tabs" id="myTab">
+                        <li class="active"><a href="#drilling" data-toggle="tab">Drilling</a></li>
+                        <li><a href="#completions" data-toggle="tab">Completions</a></li>
+                        <li><a href="#production" data-toggle="tab">Production</a></li>
+                        <li><a href="#financials" data-toggle="tab">Financials</a></li>
+                        <li><a href="#custom-data" data-toggle="tab">Custom Data</a></li>
+                        <li><a href="#visualizations" data-toggle="tab">Visualizations</a></li>
+                    </ul>
+                    <br>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="drilling">
+                        <div>
+                            <table class="table table-hover " id= "table_id">
+                                <thead>
+
+    <tr>
+      <th>License No</th>
+      <th>Well Name</th>
+      <th>Surface Location</th>
+      <th>Unique Well Id</th>
+      <th>Operator</th>
+      <th>Contractor</th>
+      <th>Rig No</th>
+      <th>Well Type</th>
+      <th>Prov</th>
+      <th>Loc Type</th>
+      <th>Triple/Double</th>
+      <th>First Bit Size (mm)</th>
+      <th>Last Bit Size (mm)</th>
+      <th>Number of Bits</th>
+      <th>From (m)</th>
+      <th>To (m)</th>
+      <th>Tour Sheet Start Depth to TD (m)</th>
+      <th>Heel (mMD)</th>
+      <th>TD (mTVD)</th>
+      <th>Surface and Vertical Length (m)</th>
+      <th>Tangent and Build Length (m)</th>
+      <th>Lateral Length (m)</th>
+      <th>Tour Sheet Start Date</th>
+      <th>Drilling %</th>
+      <th>Trip %</th>
+      <th>Reaming %</th>
+      <th>Dev Survey and Connections %</th>
+      <th>Directional Work %</th>
+      <th>Cond Mud &amp; Circ %</th>
+      <th>Casing and Cement %</th>
+      <th>Operating Days (d)</th>
+      <th>m / Operating Days (m/d)</th>
+      <th>On Bottom ROP Avg (m/h)</th>
+      <th>Lateral WOB Avg (kDaN)</th>
+      <th>Lateral RPM Avg</th>
+      <th>Lateral Torque Avg</th>
+      <th>Lateral ROP Avg (m/h)</th>
+      <th>Rig Up (h)</th>
+      <th>Drill Actual (h)</th>
+      <th>Reaming (h)</th>
+      <th>Coring (h)</th>
+      <th>Cond Mud &amp; Circ (h)</th>
+      <th>Trips (h)</th>
+      <th>Rig Service (h)</th>
+      <th>Repair Rig (h)</th>
+      <th>Cut Off Drilg Line (h)</th>
+      <th>Dev Survey (h)</th>
+      <th>Wireline Logs (h)</th>
+      <th>Run Csg &amp; Cement (h)</th>
+      <th>Wait On Cement (h)</th>
+      <th>Nipple Up BOP (h)</th>
+      <th>Test BOP (h)</th>
+      <th>Drillstem Test (h)</th>
+      <th>Plug Back (h)</th>
+      <th>Squeeze Cement (h)</th>
+      <th>Fishing (h)</th>
+      <th>Dir Work (h)</th>
+      <th>Safety Meeting (h)</th>
+      <th>Tear Down (h)</th>
+      <th>Waiting On (h)</th>
+      <th>Rig Watch (h)</th>
+      <th>Other (h)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="http://unsist.com/files/arc/31525_ETS_2015JAN20_ARCRES HZ SUNRISE J2-25-78-18.PDF">31525</a></td>
+      <td>SUNRISE HZ J2-25-78-18W6</td>
+      <td>12-25-078-18W6</td>
+      <td>102/09-19-078-18W6/00</td>
+      <td>ARC RESOURCES</td>
+      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+      <td>529</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>double</td>
+      <td>279.0</td>
+      <td>159.0</td>
+      <td>8</td>
+      <td>0</td>
+      <td>4415.0</td>
+      <td>4415.0</td>
+      <td>2511.00</td>
+      <td>2356.13</td>
+      <td>2099.38</td>
+      <td>411.62</td>
+      <td>1904.00</td>
+      <td>2016-01-03</td>
+      <td>44.8</td>
+      <td>14.0</td>
+      <td>1.8</td>
+      <td>0.0</td>
+      <td>15.2</td>
+      <td>4.2</td>
+      <td>6.2</td>
+      <td>16.21</td>
+      <td>272.39</td>
+      <td>25.34</td>
+      <td>10.55</td>
+      <td>38.64</td>
+      <td>7109.09</td>
+      <td>35.26</td>
+      <td>7.00</td>
+      <td>174.25</td>
+      <td>7.00</td>
+      <td>0.0</td>
+      <td>16.50</td>
+      <td>54.50</td>
+      <td>12.25</td>
+      <td>0.00</td>
+      <td>2.00</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>24.25</td>
+      <td>4.00</td>
+      <td>7.50</td>
+      <td>7.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>59.25</td>
+      <td>19.25</td>
+      <td>10.00</td>
+      <td>8.00</td>
+      <td>0.0</td>
+      <td>1.25</td>
+    </tr>
+    <tr>
+      <td><a href="http://unsist.com/files/arc/31526_ETS_2016JAN06_ARCRES HZ SUNRISE K2-25-78-18.PDF">31526</a></td>
+      <td>ARCRES HZ SUNRISE K2-25-78-18</td>
+      <td>02-25-078-18W6</td>
+      <td>102/08-19-078-17W6/00</td>
+      <td>ARC RESOURCES</td>
+      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+      <td>529</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>triple</td>
+      <td>279.0</td>
+      <td>159.0</td>
+      <td>8</td>
+      <td>0</td>
+      <td>4490.0</td>
+      <td>4490.0</td>
+      <td>2543.74</td>
+      <td>2366.47</td>
+      <td>2138.15</td>
+      <td>405.59</td>
+      <td>1946.26</td>
+      <td>2016-01-21</td>
+      <td>49.0</td>
+      <td>13.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>15.2</td>
+      <td>4.9</td>
+      <td>5.1</td>
+      <td>15.64</td>
+      <td>287.17</td>
+      <td>24.40</td>
+      <td>10.89</td>
+      <td>48.89</td>
+      <td>7088.89</td>
+      <td>40.76</td>
+      <td>7.50</td>
+      <td>184.00</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>18.50</td>
+      <td>50.75</td>
+      <td>10.50</td>
+      <td>0.00</td>
+      <td>1.50</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>19.00</td>
+      <td>4.00</td>
+      <td>5.50</td>
+      <td>7.75</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>57.00</td>
+      <td>13.75</td>
+      <td>6.75</td>
+      <td>8.25</td>
+      <td>0.0</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td><a href="http://unsist.com/files/arc/31527_ETS_2016FEB24_ARCRES HZ SUNRISE L2-25-78-18.PDF">31527</a></td>
+      <td>ARCRES HZ SUNRISE L2-25-78-18</td>
+      <td>02-25-078-18W6</td>
+      <td>103/08-19-078-17W6/00</td>
+      <td>ARC RESOURCES</td>
+      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+      <td>529</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>triple</td>
+      <td>279.0</td>
+      <td>159.0</td>
+      <td>7</td>
+      <td>0</td>
+      <td>4503.0</td>
+      <td>4503.0</td>
+      <td>2582.00</td>
+      <td>2442.39</td>
+      <td>2237.57</td>
+      <td>344.43</td>
+      <td>1921.00</td>
+      <td>2016-02-06</td>
+      <td>46.2</td>
+      <td>15.2</td>
+      <td>0.3</td>
+      <td>0.0</td>
+      <td>14.4</td>
+      <td>4.0</td>
+      <td>6.4</td>
+      <td>14.98</td>
+      <td>300.62</td>
+      <td>27.13</td>
+      <td>12.22</td>
+      <td>51.11</td>
+      <td>7266.67</td>
+      <td>44.42</td>
+      <td>11.00</td>
+      <td>166.00</td>
+      <td>1.00</td>
+      <td>0.0</td>
+      <td>14.25</td>
+      <td>54.50</td>
+      <td>9.75</td>
+      <td>1.50</td>
+      <td>1.50</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>23.00</td>
+      <td>4.00</td>
+      <td>6.75</td>
+      <td>5.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>51.75</td>
+      <td>17.25</td>
+      <td>19.50</td>
+      <td>4.00</td>
+      <td>0.0</td>
+      <td>3.25</td>
+    </tr>
+    <tr>
+      <td><a href="http://unsist.com/files/arc/31603_ETS_2016APR11.PDF">31603</a></td>
+      <td>ARCRES HZ PARKLAND 5-9-81-16</td>
+      <td>05-09-081-16W6</td>
+      <td>100/14-08-081-16W6/00</td>
+      <td>ARC RESOURCES</td>
+      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+      <td>529</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>triple</td>
+      <td>279.0</td>
+      <td>159.0</td>
+      <td>5</td>
+      <td>0</td>
+      <td>3555.0</td>
+      <td>3555.0</td>
+      <td>2234.38</td>
+      <td>2027.54</td>
+      <td>1753.23</td>
+      <td>481.15</td>
+      <td>1326.62</td>
+      <td>2016-03-29</td>
+      <td>44.6</td>
+      <td>11.9</td>
+      <td>1.1</td>
+      <td>0.0</td>
+      <td>17.5</td>
+      <td>1.9</td>
+      <td>8.2</td>
+      <td>9.49</td>
+      <td>374.62</td>
+      <td>35.02</td>
+      <td>13.25</td>
+      <td>50.00</td>
+      <td>9575.00</td>
+      <td>54.71</td>
+      <td>35.00</td>
+      <td>101.50</td>
+      <td>2.50</td>
+      <td>0.0</td>
+      <td>4.25</td>
+      <td>27.00</td>
+      <td>6.00</td>
+      <td>0.00</td>
+      <td>0.75</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>18.75</td>
+      <td>4.00</td>
+      <td>3.75</td>
+      <td>4.75</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>39.75</td>
+      <td>13.25</td>
+      <td>6.25</td>
+      <td>19.00</td>
+      <td>0.0</td>
+      <td>1.50</td>
+    </tr>
+    <tr>
+      <td><a href="http://unsist.com/files/arc/31604_ETS_2016APR26.PDF">31604</a></td>
+      <td>ARCRES HZ PARKLAND A5-9-81-16</td>
+      <td>05-09-081-16W6</td>
+      <td>100/14-08-081-16W6/00</td>
+      <td>ARC RESOURCES</td>
+      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+      <td>529</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>triple</td>
+      <td>279.0</td>
+      <td>171.0</td>
+      <td>5</td>
+      <td>0</td>
+      <td>3514.0</td>
+      <td>3514.0</td>
+      <td>2175.92</td>
+      <td>1982.62</td>
+      <td>843.30</td>
+      <td>1332.62</td>
+      <td>1338.08</td>
+      <td>2016-04-10</td>
+      <td>38.6</td>
+      <td>12.9</td>
+      <td>1.2</td>
+      <td>0.0</td>
+      <td>16.0</td>
+      <td>4.0</td>
+      <td>10.5</td>
+      <td>11.52</td>
+      <td>305.01</td>
+      <td>32.92</td>
+      <td>15.75</td>
+      <td>56.25</td>
+      <td>8237.50</td>
+      <td>35.92</td>
+      <td>4.50</td>
+      <td>106.75</td>
+      <td>3.25</td>
+      <td>0.0</td>
+      <td>11.00</td>
+      <td>35.75</td>
+      <td>10.00</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>0.0</td>
+      <td>7.00</td>
+      <td>29.00</td>
+      <td>4.00</td>
+      <td>4.75</td>
+      <td>5.25</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>44.25</td>
+      <td>14.50</td>
+      <td>0.00</td>
+      <td>7.00</td>
+      <td>0.0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td><a href="http://unsist.com/files/arc/31605_ETS_2016MAY04.PDF">31605</a></td>
+      <td>ARCRES HZ PARKLAND B05-09-081-16</td>
+      <td>05-09-081-16W6</td>
+      <td>102/14-08-081-16W6/00</td>
+      <td>ARC RESOURCES</td>
+      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+      <td>529</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>triple</td>
+      <td>279.0</td>
+      <td>171.0</td>
+      <td>6</td>
+      <td>0</td>
+      <td>3600.0</td>
+      <td>3600.0</td>
+      <td>2241.17</td>
+      <td>2019.03</td>
+      <td>1721.12</td>
+      <td>520.05</td>
+      <td>1358.83</td>
+      <td>2016-04-22</td>
+      <td>41.0</td>
+      <td>15.1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>9.1</td>
+      <td>3.9</td>
+      <td>9.8</td>
+      <td>11.75</td>
+      <td>306.38</td>
+      <td>31.17</td>
+      <td>14.63</td>
+      <td>53.75</td>
+      <td>8587.50</td>
+      <td>31.24</td>
+      <td>9.75</td>
+      <td>115.50</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>11.00</td>
+      <td>42.50</td>
+      <td>7.25</td>
+      <td>0.00</td>
+      <td>0.50</td>
+      <td>0.0</td>
+      <td>18.50</td>
+      <td>27.75</td>
+      <td>4.00</td>
+      <td>11.00</td>
+      <td>3.75</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>25.75</td>
+      <td>13.25</td>
+      <td>11.25</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>1.25</td>
+    </tr>
+    <tr>
+      <td><a href="http://unsist.com/files/arc/31606_ETS_2016MAY16.PDF">31606</a></td>
+      <td>PARKLAND C5-09-81-16W6</td>
+      <td>05-09-081-16W6 BC</td>
+      <td>100/14-08-081-16W6/00</td>
+      <td>ARC RESOURCES</td>
+      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+      <td>529</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>triple</td>
+      <td>279.0</td>
+      <td>159.0</td>
+      <td>5</td>
+      <td>0</td>
+      <td>18097.0</td>
+      <td>18097.0</td>
+      <td>2280.56</td>
+      <td>1977.66</td>
+      <td>1694.79</td>
+      <td>585.77</td>
+      <td>1285.44</td>
+      <td>2016-05-04</td>
+      <td>40.9</td>
+      <td>13.3</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>18.6</td>
+      <td>3.1</td>
+      <td>7.0</td>
+      <td>9.49</td>
+      <td>1907.04</td>
+      <td>194.07</td>
+      <td>11.75</td>
+      <td>41.25</td>
+      <td>8925.00</td>
+      <td>58.43</td>
+      <td>6.75</td>
+      <td>93.25</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>7.00</td>
+      <td>30.25</td>
+      <td>6.25</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>3.75</td>
+      <td>16.00</td>
+      <td>2.00</td>
+      <td>7.75</td>
+      <td>6.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>42.25</td>
+      <td>12.75</td>
+      <td>47.75</td>
+      <td>14.75</td>
+      <td>0.0</td>
+      <td>0.50</td>
+    </tr>  
+    <tr>
+      <td><a href="http://unsist.com/files/arc/32309_ETS_2017MAR09.PDF">32309</a></td>
+      <td>ARCRES HZ PARKLAND H12-07-081-16</td>
+      <td>12-7-81-16 W6</td>
+      <td>100/01-07-081-16W6/00</td>
+      <td>ARC Resources Ltd.</td>
+      <td>Beaver Drilling Ltd.</td>
+      <td>15AC</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>triple</td>
+      <td>279.0</td>
+      <td>159.0</td>
+      <td>4</td>
+      <td>24</td>
+      <td>3608.0</td>
+      <td>3584.0</td>
+      <td>2124.92</td>
+      <td>1970.48</td>
+      <td>1748.85</td>
+      <td>376.07</td>
+      <td>1483.08</td>
+      <td>2016-12-08</td>
+      <td>34.9</td>
+      <td>14.7</td>
+      <td>0.2</td>
+      <td>0.0</td>
+      <td>18.0</td>
+      <td>5.5</td>
+      <td>9.6</td>
+      <td>9.14</td>
+      <td>392.32</td>
+      <td>46.85</td>
+      <td>11.00</td>
+      <td>70.00</td>
+      <td>8500.00</td>
+      <td>79.10</td>
+      <td>134.75</td>
+      <td>76.50</td>
+      <td>0.50</td>
+      <td>0.0</td>
+      <td>12.00</td>
+      <td>32.25</td>
+      <td>7.50</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>21.00</td>
+      <td>2.00</td>
+      <td>5.75</td>
+      <td>1.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>39.50</td>
+      <td>19.75</td>
+      <td>4.00</td>
+      <td>25.00</td>
+      <td>36.0</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td><a href="http://unsist.com/files/arc/32310_ETS_2017MAR01.PDF">32310</a></td>
+      <td>ARCRES HZ PARKLAND G12-07-081-16</td>
+      <td>12-7-81-16 W6</td>
+      <td>105/04-08-081-16W6/00</td>
+      <td>ARC Resources Ltd.</td>
+      <td>Beaver Drilling Ltd.</td>
+      <td>15AC</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>triple</td>
+      <td>279.0</td>
+      <td>159.0</td>
+      <td>5</td>
+      <td>6</td>
+      <td>3777.0</td>
+      <td>3771.0</td>
+      <td>2123.09</td>
+      <td>1969.15</td>
+      <td>1746.77</td>
+      <td>376.32</td>
+      <td>1653.91</td>
+      <td>2016-12-17</td>
+      <td>31.2</td>
+      <td>17.4</td>
+      <td>0.3</td>
+      <td>0.0</td>
+      <td>17.6</td>
+      <td>4.8</td>
+      <td>10.9</td>
+      <td>10.20</td>
+      <td>369.78</td>
+      <td>49.46</td>
+      <td>11.25</td>
+      <td>70.00</td>
+      <td>11750.00</td>
+      <td>100.24</td>
+      <td>8.75</td>
+      <td>76.25</td>
+      <td>0.75</td>
+      <td>0.0</td>
+      <td>11.75</td>
+      <td>42.50</td>
+      <td>8.50</td>
+      <td>4.75</td>
+      <td>2.25</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>26.75</td>
+      <td>2.00</td>
+      <td>6.00</td>
+      <td>2.50</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>43.00</td>
+      <td>17.25</td>
+      <td>1.00</td>
+      <td>8.50</td>
+      <td>0.0</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td><a href="http://unsist.com/files/arc/32311_FTLR_2017FEB23.PDF">32311</a></td>
+      <td>ARCRES HZ PARKLAND F12-07-081-16</td>
+      <td>12-7-81-16 W6</td>
+      <td>102/05-08-081-16W6/00</td>
+      <td>ARC Resources Ltd.</td>
+      <td>Beaver Drilling Ltd.</td>
+      <td>15AC</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>triple</td>
+      <td>279.0</td>
+      <td>159.0</td>
+      <td>4</td>
+      <td>6</td>
+      <td>3919.0</td>
+      <td>3913.0</td>
+      <td>2174.00</td>
+      <td>2013.83</td>
+      <td>1766.67</td>
+      <td>407.33</td>
+      <td>1745.00</td>
+      <td>2016-12-19</td>
+      <td>38.2</td>
+      <td>12.4</td>
+      <td>0.2</td>
+      <td>0.0</td>
+      <td>17.1</td>
+      <td>7.4</td>
+      <td>9.3</td>
+      <td>9.96</td>
+      <td>392.94</td>
+      <td>42.88</td>
+      <td>12.14</td>
+      <td>70.00</td>
+      <td>10285.71</td>
+      <td>65.85</td>
+      <td>7.75</td>
+      <td>91.25</td>
+      <td>0.50</td>
+      <td>0.0</td>
+      <td>17.75</td>
+      <td>29.75</td>
+      <td>8.25</td>
+      <td>0.00</td>
+      <td>1.50</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>22.25</td>
+      <td>2.00</td>
+      <td>4.75</td>
+      <td>3.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>40.75</td>
+      <td>16.75</td>
+      <td>1.25</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td><a href="http://unsist.com/files/arc/32312_ETS_2017FEB10.PDF">32312</a></td>
+      <td>ARCRES HZ PARKLAND E12-07-081-16</td>
+      <td>12-7-81-16 W6</td>
+      <td>100/05-08-081-16W6/00</td>
+      <td>ARC Resources Ltd.</td>
+      <td>Beaver Drilling Ltd.</td>
+      <td>15AC</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>triple</td>
+      <td>279.0</td>
+      <td>159.0</td>
+      <td>5</td>
+      <td>6</td>
+      <td>4075.0</td>
+      <td>4069.0</td>
+      <td>2116.19</td>
+      <td>1972.07</td>
+      <td>1757.20</td>
+      <td>358.99</td>
+      <td>1958.81</td>
+      <td>2016-12-20</td>
+      <td>31.9</td>
+      <td>17.9</td>
+      <td>0.6</td>
+      <td>0.0</td>
+      <td>20.4</td>
+      <td>4.6</td>
+      <td>9.2</td>
+      <td>10.45</td>
+      <td>389.46</td>
+      <td>50.86</td>
+      <td>12.00</td>
+      <td>68.75</td>
+      <td>11112.50</td>
+      <td>84.25</td>
+      <td>7.00</td>
+      <td>80.00</td>
+      <td>1.50</td>
+      <td>0.0</td>
+      <td>11.50</td>
+      <td>45.00</td>
+      <td>9.75</td>
+      <td>0.00</td>
+      <td>2.25</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>23.00</td>
+      <td>2.00</td>
+      <td>5.00</td>
+      <td>1.75</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>51.25</td>
+      <td>17.00</td>
+      <td>1.25</td>
+      <td>6.00</td>
+      <td>0.0</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <td><a href="http://unsist.com/files/arc/32313_ETS_2017JAN31.PDF">32313</a></td>
+      <td>ARCRES HZ PARKLAND D12-07-081-16</td>
+      <td>12-7-81-16 W6</td>
+      <td>105/13-12-081-17W6/00</td>
+      <td>ARC Resources Ltd.</td>
+      <td>Beaver Drilling Ltd.</td>
+      <td>15AC</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>triple</td>
+      <td>279.0</td>
+      <td>159.0</td>
+      <td>5</td>
+      <td>6</td>
+      <td>3498.0</td>
+      <td>3492.0</td>
+      <td>2129.02</td>
+      <td>1964.20</td>
+      <td>1747.40</td>
+      <td>381.62</td>
+      <td>1368.98</td>
+      <td>2016-12-21</td>
+      <td>30.3</td>
+      <td>15.2</td>
+      <td>0.9</td>
+      <td>0.0</td>
+      <td>17.4</td>
+      <td>7.2</td>
+      <td>8.5</td>
+      <td>9.36</td>
+      <td>372.89</td>
+      <td>51.35</td>
+      <td>10.00</td>
+      <td>70.00</td>
+      <td>10733.33</td>
+      <td>124.45</td>
+      <td>8.75</td>
+      <td>68.00</td>
+      <td>2.00</td>
+      <td>0.0</td>
+      <td>16.25</td>
+      <td>34.25</td>
+      <td>8.25</td>
+      <td>0.00</td>
+      <td>1.50</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>19.00</td>
+      <td>2.00</td>
+      <td>6.00</td>
+      <td>3.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>39.00</td>
+      <td>15.75</td>
+      <td>1.50</td>
+      <td>0.00</td>
+      <td>30.0</td>
+      <td>9.75</td>
+    </tr>
+    <tr>
+      <td><a href="http://unsist.com/files/arc/32314_ETS_2017JAN23.PDF">32314</a></td>
+      <td>ARCRES HZ PARKLAND C12-07-081-16</td>
+      <td>12-7-81-16 W6</td>
+      <td>104/13-12-081-17W6/00</td>
+      <td>ARC Resources Ltd.</td>
+      <td>Beaver Drilling Ltd.</td>
+      <td>15AC</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>triple</td>
+      <td>279.0</td>
+      <td>159.0</td>
+      <td>5</td>
+      <td>6</td>
+      <td>3490.0</td>
+      <td>3484.0</td>
+      <td>2137.03</td>
+      <td>2007.05</td>
+      <td>1796.19</td>
+      <td>340.84</td>
+      <td>1352.97</td>
+      <td>2016-12-29</td>
+      <td>30.0</td>
+      <td>17.8</td>
+      <td>0.4</td>
+      <td>0.0</td>
+      <td>19.7</td>
+      <td>4.9</td>
+      <td>10.6</td>
+      <td>9.52</td>
+      <td>365.93</td>
+      <td>50.86</td>
+      <td>11.50</td>
+      <td>70.00</td>
+      <td>12500.00</td>
+      <td>108.24</td>
+      <td>4.00</td>
+      <td>68.50</td>
+      <td>1.00</td>
+      <td>0.0</td>
+      <td>11.25</td>
+      <td>40.75</td>
+      <td>7.00</td>
+      <td>0.00</td>
+      <td>2.25</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>24.25</td>
+      <td>1.50</td>
+      <td>4.75</td>
+      <td>6.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>45.00</td>
+      <td>15.50</td>
+      <td>1.50</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <td><a href="http://unsist.com/files/arc/32315_ETS_2017JAN16.PDF">32315</a></td>
+      <td>ARCRES HZ PARKLAND B12-07-081-16</td>
+      <td>12-7-81-16 W6</td>
+      <td>103/13-12-081-17W6/00</td>
+      <td>ARC Resources Ltd.</td>
+      <td>Beaver Drilling Ltd.</td>
+      <td>15AC</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>triple</td>
+      <td>279.0</td>
+      <td>159.0</td>
+      <td>6</td>
+      <td>6</td>
+      <td>3391.0</td>
+      <td>3385.0</td>
+      <td>2079.06</td>
+      <td>1961.37</td>
+      <td>1748.20</td>
+      <td>330.86</td>
+      <td>1311.94</td>
+      <td>2016-12-31</td>
+      <td>24.0</td>
+      <td>16.3</td>
+      <td>1.1</td>
+      <td>0.0</td>
+      <td>23.2</td>
+      <td>4.6</td>
+      <td>7.8</td>
+      <td>11.88</td>
+      <td>285.05</td>
+      <td>49.42</td>
+      <td>7.25</td>
+      <td>65.00</td>
+      <td>8525.00</td>
+      <td>84.64</td>
+      <td>13.50</td>
+      <td>68.50</td>
+      <td>3.25</td>
+      <td>0.0</td>
+      <td>13.00</td>
+      <td>46.50</td>
+      <td>11.00</td>
+      <td>0.00</td>
+      <td>2.50</td>
+      <td>0.0</td>
+      <td>6.00</td>
+      <td>22.25</td>
+      <td>2.00</td>
+      <td>16.50</td>
+      <td>5.75</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>66.00</td>
+      <td>20.50</td>
+      <td>2.50</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>1.25</td>
+    </tr>
+    <tr>
+      <td><a href="http://unsist.com/files/arc/32316_ETS_2017MAR27.PDF">32316</a></td>
+      <td>ARCRES HZ PARKLAND A12-07-081-16</td>
+      <td>12-7-81-16 W6</td>
+      <td>104/04-13-081-17W6/00</td>
+      <td>ARC Resources Ltd.</td>
+      <td>Beaver Drilling Ltd.</td>
+      <td>15AC</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>triple</td>
+      <td>279.0</td>
+      <td>159.0</td>
+      <td>4</td>
+      <td>6</td>
+      <td>3520.0</td>
+      <td>3514.0</td>
+      <td>2141.00</td>
+      <td>1998.80</td>
+      <td>1791.27</td>
+      <td>349.73</td>
+      <td>1379.00</td>
+      <td>2017-01-01</td>
+      <td>28.3</td>
+      <td>18.2</td>
+      <td>0.3</td>
+      <td>0.0</td>
+      <td>15.6</td>
+      <td>5.5</td>
+      <td>8.6</td>
+      <td>9.34</td>
+      <td>376.08</td>
+      <td>55.34</td>
+      <td>12.33</td>
+      <td>63.67</td>
+      <td>9500.00</td>
+      <td>88.97</td>
+      <td>8.75</td>
+      <td>63.50</td>
+      <td>0.75</td>
+      <td>0.0</td>
+      <td>12.25</td>
+      <td>40.75</td>
+      <td>7.50</td>
+      <td>0.75</td>
+      <td>1.50</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>19.25</td>
+      <td>2.00</td>
+      <td>19.75</td>
+      <td>2.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>35.00</td>
+      <td>17.25</td>
+      <td>20.00</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>2.00</td>
+    </tr>
+    <tr>
+      <td><a href="http://unsist.com/files/arc/32317_ETS_2017MAR20.PDF">32317</a></td>
+      <td>ARCRES HZ PARKLAND 12-07-081-16</td>
+      <td>12-7-81-16 W6</td>
+      <td>103/04-13-081-17W6/00</td>
+      <td>ARC Resources Ltd.</td>
+      <td>Beaver Drilling Ltd.</td>
+      <td>15AC</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>triple</td>
+      <td>279.0</td>
+      <td>159.0</td>
+      <td>4</td>
+      <td>6</td>
+      <td>3689.0</td>
+      <td>3683.0</td>
+      <td>2123.06</td>
+      <td>1958.72</td>
+      <td>1733.21</td>
+      <td>389.85</td>
+      <td>1565.94</td>
+      <td>2017-01-02</td>
+      <td>35.6</td>
+      <td>13.6</td>
+      <td>0.2</td>
+      <td>0.0</td>
+      <td>17.1</td>
+      <td>5.4</td>
+      <td>8.7</td>
+      <td>9.22</td>
+      <td>399.51</td>
+      <td>46.77</td>
+      <td>10.67</td>
+      <td>70.00</td>
+      <td>9083.33</td>
+      <td>76.39</td>
+      <td>29.00</td>
+      <td>78.75</td>
+      <td>0.50</td>
+      <td>0.0</td>
+      <td>12.00</td>
+      <td>30.00</td>
+      <td>7.75</td>
+      <td>0.00</td>
+      <td>1.50</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>19.25</td>
+      <td>1.50</td>
+      <td>6.25</td>
+      <td>9.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>37.75</td>
+      <td>16.25</td>
+      <td>0.50</td>
+      <td>4.25</td>
+      <td>0.0</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <td><a href="http://unsist.com/files/arc/32574_ETS_2016DEC22.PDF">32574</a></td>
+      <td>ARCRES HZ Septimus H11-34-81-18W6</td>
+      <td>11-34-81-18 W6</td>
+      <td>102/09-35-081-18W5</td>
+      <td>ARC Resources Ltd.</td>
+      <td>Precision Drilling, div of PDC</td>
+      <td>465</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>triple</td>
+      <td>279.0</td>
+      <td>159.0</td>
+      <td>4</td>
+      <td>0</td>
+      <td>4253.0</td>
+      <td>4253.0</td>
+      <td>2125.50</td>
+      <td>1935.41</td>
+      <td>1740.19</td>
+      <td>385.31</td>
+      <td>2127.50</td>
+      <td>2016-12-09</td>
+      <td>38.0</td>
+      <td>12.1</td>
+      <td>0.0</td>
+      <td>3.9</td>
+      <td>5.9</td>
+      <td>13.5</td>
+      <td>9.1</td>
+      <td>11.76</td>
+      <td>361.64</td>
+      <td>39.66</td>
+      <td>11.33</td>
+      <td>50.00</td>
+      <td>11116.67</td>
+      <td>89.58</td>
+      <td>10.25</td>
+      <td>107.25</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>38.00</td>
+      <td>34.25</td>
+      <td>6.00</td>
+      <td>0.00</td>
+      <td>1.50</td>
+      <td>11.0</td>
+      <td>0.00</td>
+      <td>25.75</td>
+      <td>9.75</td>
+      <td>6.25</td>
+      <td>8.50</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>16.75</td>
+      <td>12.25</td>
+      <td>0.00</td>
+      <td>15.50</td>
+      <td>0.0</td>
+      <td>5.00</td>
+    </tr>
+    <tr>
+      <td><a href="http://unsist.com/files/arc/32575_ETS_2016DEC29.PDF">32575</a></td>
+      <td>ARCRES HZ SEPTIMUS I11-34-81-18W6</td>
+      <td>11-34-81-18 W6</td>
+      <td>103/09-35-81-18W6</td>
+      <td>ARC Resources Ltd.</td>
+      <td>Precision Drilling, div of PDC</td>
+      <td>465</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>triple</td>
+      <td>279.0</td>
+      <td>159.0</td>
+      <td>4</td>
+      <td>0</td>
+      <td>4273.0</td>
+      <td>4273.0</td>
+      <td>2051.92</td>
+      <td>1891.35</td>
+      <td>1702.28</td>
+      <td>349.64</td>
+      <td>2221.08</td>
+      <td>2016-12-06</td>
+      <td>38.9</td>
+      <td>13.5</td>
+      <td>0.0</td>
+      <td>11.1</td>
+      <td>7.3</td>
+      <td>7.8</td>
+      <td>9.4</td>
+      <td>10.85</td>
+      <td>393.67</td>
+      <td>42.20</td>
+      <td>12.57</td>
+      <td>70.00</td>
+      <td>12014.29</td>
+      <td>69.96</td>
+      <td>11.00</td>
+      <td>101.25</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>20.25</td>
+      <td>35.25</td>
+      <td>6.25</td>
+      <td>0.00</td>
+      <td>2.25</td>
+      <td>29.0</td>
+      <td>0.00</td>
+      <td>24.50</td>
+      <td>1.00</td>
+      <td>5.75</td>
+      <td>1.75</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>19.00</td>
+      <td>13.50</td>
+      <td>45.00</td>
+      <td>8.50</td>
+      <td>0.0</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <td><a href="http://unsist.com/files/arc/32618_ETS_2017MAR03.PDF">32618</a></td>
+      <td>ARCRES HZ INGA B13-26-84-24</td>
+      <td>13b-26-84-24 W6</td>
+      <td>100/09-23-084-24W6/00</td>
+      <td>ARC Resources Ltd.</td>
+      <td>Precision Drilling, div of PDC</td>
+      <td>529</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>triple</td>
+      <td>279.0</td>
+      <td>159.0</td>
+      <td>6</td>
+      <td>0</td>
+      <td>4355.0</td>
+      <td>4355.0</td>
+      <td>2045.89</td>
+      <td>1896.51</td>
+      <td>1694.36</td>
+      <td>351.53</td>
+      <td>2309.11</td>
+      <td>2017-02-15</td>
+      <td>43.5</td>
+      <td>11.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>18.0</td>
+      <td>6.9</td>
+      <td>7.3</td>
+      <td>13.06</td>
+      <td>333.40</td>
+      <td>31.96</td>
+      <td>11.75</td>
+      <td>55.00</td>
+      <td>9160.88</td>
+      <td>55.98</td>
+      <td>25.50</td>
+      <td>136.25</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>21.75</td>
+      <td>35.00</td>
+      <td>9.25</td>
+      <td>0.00</td>
+      <td>1.50</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>23.00</td>
+      <td>4.00</td>
+      <td>11.00</td>
+      <td>4.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>56.50</td>
+      <td>11.25</td>
+      <td>14.00</td>
+      <td>7.00</td>
+      <td>0.0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td><a href="http://unsist.com/files/arc/32949_ETS_2017APR04.PDF">32949</a></td>
+      <td>ARCRES HZ PARKLAND G11-04-081-16</td>
+      <td>11-4-81-16 W6</td>
+      <td>102/10-34-80-16W6</td>
+      <td>ARC Resources Ltd.</td>
+      <td>Precision Drilling, div of PDC</td>
+      <td>465</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>triple</td>
+      <td>279.0</td>
+      <td>159.0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>4747.0</td>
+      <td>4747.0</td>
+      <td>2172.97</td>
+      <td>2048.80</td>
+      <td>1816.73</td>
+      <td>356.24</td>
+      <td>2574.03</td>
+      <td>2017-03-04</td>
+      <td>41.1</td>
+      <td>11.1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>3.3</td>
+      <td>17.9</td>
+      <td>10.8</td>
+      <td>8.01</td>
+      <td>592.60</td>
+      <td>60.09</td>
+      <td>11.43</td>
+      <td>70.00</td>
+      <td>11171.43</td>
+      <td>83.03</td>
+      <td>37.75</td>
+      <td>79.00</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>34.50</td>
+      <td>21.25</td>
+      <td>4.00</td>
+      <td>0.00</td>
+      <td>2.25</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>20.75</td>
+      <td>0.00</td>
+      <td>9.75</td>
+      <td>2.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>6.25</td>
+      <td>12.50</td>
+      <td>16.50</td>
+      <td>18.50</td>
+      <td>0.0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td><a href="http://unsist.com/files/arc/32950_ETS_2017MAR28.PDF">32950</a></td>
+      <td>ARCRES HZ PARKLAND F11-04-081-16</td>
+      <td>11-4-81-16 W6</td>
+      <td>102/16-34-080-16W6</td>
+      <td>ARC Resources Ltd.</td>
+      <td>Precision Drilling, div of PDC</td>
+      <td>465</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>triple</td>
+      <td>279.0</td>
+      <td>159.0</td>
+      <td>5</td>
+      <td>0</td>
+      <td>4685.0</td>
+      <td>4685.0</td>
+      <td>2332.31</td>
+      <td>2188.09</td>
+      <td>1973.64</td>
+      <td>358.67</td>
+      <td>2352.69</td>
+      <td>2017-03-07</td>
+      <td>43.1</td>
+      <td>12.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>17.3</td>
+      <td>8.0</td>
+      <td>10.42</td>
+      <td>449.76</td>
+      <td>43.48</td>
+      <td>13.29</td>
+      <td>70.00</td>
+      <td>13714.29</td>
+      <td>67.70</td>
+      <td>5.25</td>
+      <td>107.75</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>43.25</td>
+      <td>31.00</td>
+      <td>6.25</td>
+      <td>0.00</td>
+      <td>1.25</td>
+      <td>0.0</td>
+      <td>6.50</td>
+      <td>20.00</td>
+      <td>0.00</td>
+      <td>5.00</td>
+      <td>3.50</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>12.50</td>
+      <td>13.00</td>
+      <td>0.75</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td><a href="http://unsist.com/files/arc/32951_ETS_2017MAR20.PDF">32951</a></td>
+      <td>ARCRES HZ PARKLAND E11-04-081-16</td>
+      <td>11-4-81-16 W6</td>
+      <td>105/16/-06-081-16W6</td>
+      <td>ARC Resources Ltd.</td>
+      <td>Precision Drilling, div of PDC</td>
+      <td>465</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>triple</td>
+      <td>279.0</td>
+      <td>159.0</td>
+      <td>4</td>
+      <td>0</td>
+      <td>4470.0</td>
+      <td>4470.0</td>
+      <td>2130.86</td>
+      <td>2068.35</td>
+      <td>1841.19</td>
+      <td>289.67</td>
+      <td>2339.14</td>
+      <td>2017-03-08</td>
+      <td>36.0</td>
+      <td>18.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.3</td>
+      <td>15.7</td>
+      <td>9.7</td>
+      <td>9.11</td>
+      <td>490.42</td>
+      <td>56.76</td>
+      <td>12.33</td>
+      <td>70.00</td>
+      <td>10166.67</td>
+      <td>84.29</td>
+      <td>5.75</td>
+      <td>78.75</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>34.25</td>
+      <td>39.75</td>
+      <td>5.00</td>
+      <td>0.00</td>
+      <td>1.25</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>21.25</td>
+      <td>0.00</td>
+      <td>9.25</td>
+      <td>6.50</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>11.50</td>
+      <td>11.00</td>
+      <td>1.00</td>
+      <td>5.50</td>
+      <td>0.0</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td><a href="http://unsist.com/files/arc/33114_ETS_2017APR24">33114</a></td>
+      <td>ARCRES HZ DAWSONCREEK F09-21-079-14</td>
+      <td>9-21-79-14 W6</td>
+      <td>NaN</td>
+      <td>ARC Resources Ltd.</td>
+      <td>Precision Drilling, div of PDC</td>
+      <td>542</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>triple</td>
+      <td>251.0</td>
+      <td>159.0</td>
+      <td>5</td>
+      <td>6</td>
+      <td>4915.0</td>
+      <td>4909.0</td>
+      <td>2356.66</td>
+      <td>2146.70</td>
+      <td>1773.89</td>
+      <td>582.77</td>
+      <td>2558.34</td>
+      <td>2017-03-06</td>
+      <td>35.4</td>
+      <td>16.0</td>
+      <td>2.4</td>
+      <td>0.0</td>
+      <td>18.3</td>
+      <td>3.8</td>
+      <td>6.5</td>
+      <td>12.47</td>
+      <td>393.70</td>
+      <td>46.31</td>
+      <td>15.08</td>
+      <td>70.00</td>
+      <td>11961.54</td>
+      <td>51.95</td>
+      <td>32.75</td>
+      <td>106.00</td>
+      <td>7.25</td>
+      <td>0.0</td>
+      <td>11.25</td>
+      <td>47.75</td>
+      <td>8.75</td>
+      <td>0.00</td>
+      <td>1.75</td>
+      <td>0.0</td>
+      <td>14.75</td>
+      <td>19.50</td>
+      <td>0.00</td>
+      <td>3.50</td>
+      <td>1.75</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>54.75</td>
+      <td>18.75</td>
+      <td>70.00</td>
+      <td>24.00</td>
+      <td>0.0</td>
+      <td>3.50</td>
+    </tr>
+                                </tbody>
+                          </table>
+   
+                          
+                          <div class="row">
+                              <div class="col-md-4 col-md-offset-4 text-center">
+                                  <ul class="pagination" id="myPager"></ul>
+                              </div>
+                          </div>
+
+                      </div>
+                      <!--/table-resp-->
+                  </div>
+
+                  <!--/tab-pane-->
+                  <div class="tab-pane" id="completions">
+                    
+                        <p>  Coming Soon!</p>
+                        <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+                    
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="production">
+                          <p>  Coming Soon!</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="financials">
+                          <p>  Coming Soon!</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="custom-data">
+                          <p>  Coming Soon!</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="visualizations">
+                          <p>  Coming Soon!</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>                  
+
+              </div>
+              <!--/tab-pane-->
+          </ul>
+          <!--/tab-content-->
+        </div>
+        <!--/col-9-->          
+                      
+    </div>
+    <!--/row-->
+<hr>
+    <div class="row">
+        <div class="col-xs-6">        
+            <p>*Data accessed from <strong><u>public</u></strong> sources only.</p>
+        </div>
+        <div class="col-xs-6 text-right">        
+            <p>Access this Unsist energy dataset directly and <a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/ARC.csv?alt=media&token=f74565fc-2988-4928-82ca-2ac542e48dc2"><strong>download CSV</strong></a></p>
+            <br>
+        </div> 
+    </div>
+<br>
+    <div class="row" style="background-color: white">
+         <div class="col-lg-6 col-lg-offset-3 text-center">
+            <ul class="list-group">
+                <h3>Enjoying the <span class="text-primary">free</span> insights?</h3>
+                <p>We provide much deeper data &amp; analytics than what you see here.
+                <br>Contact us to learn more.</p>
+                <a class="btn btn-primary" href="../demo.html#contact">Contact Us</a>   
+                <br>      
+            </ul>
+        </div>
+    </div>   
+
+
+    </section> 
+
+    <!-- footer --> 
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Unsist Inc. 2018</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="http://www.linkedin.com/company/unsist" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="http://www.facebook.com/unsist" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>   
+                        <li><a href="http://www.twitter.com/UnsistDS" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://medium.com/unsist" target="_blank"><i class="fa fa-medium"></i></a>
+                        </li> 
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="http://www.unsist.com/privacy-policy">Privacy Policy</a>
+                        </li>
+                        <li><a href="http://www.unsist.com/terms-of-use">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <!-- script src="../vendor/jquery/jquery.min.js" /script -->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="../../js/jqBootstrapValidation.js"></script>
+    <script src="../../js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="../../js/agency.min.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+
+
+    <h2 id="bigOne"></h2>
+
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCqP3WriWOlSZqa1zvg7DY2dzPJM3yOGm8",
+        authDomain: "mockup-1eaa9.firebaseapp.com",
+        databaseURL: "https://mockup-1eaa9.firebaseio.com",
+        projectId: "mockup-1eaa9",
+        storageBucket: "mockup-1eaa9.appspot.com",
+        messagingSenderId: "989389729849"
+      };
+      firebase.initializeApp(config);
+
+
+      var bigOne = document.getElementById('bigOne');
+      var dbRef = firebase.database().ref()
+      dfRef.on('value', snap => bigOne.innerText = snap.val());
+
+    </script>
+
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1520272339512');                    
+      var vizElement = divElement.getElementsByTagName('object')[0];                    
+      vizElement.style.width='520px';vizElement.style.height='300px';                    
+      var scriptElement = document.createElement('script');                    
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+          var table = $('#table_id').DataTable( {
+            "scrollY": "400px",
+            "scrollX": "400px"
+          } );
+        } )
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+          var table = $('#table_id1').DataTable( {
+            "scrollY": "400px",
+            "scrollX": "400px"
+          } );
+        } )
+    </script>
+
+</body>
+
+</html>

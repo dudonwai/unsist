@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="UNSIST Data Science - Creating technology for Oil &amp; Gas that never stops.">
+    <meta name="author" content="Dudon Wai">
+    <meta name="keywords" content="UNSIST Data Science Calgary Alberta Canada Oil Gas Energy Technology NextAI Dudon Wai">
+
+    <meta property="og:site_name" content="UNSIST Data Science">
+    <meta property="og:title" content="UNSIST Data Science">
+    <meta property="og:description" content="UNSIST Data Science - Creating technology for Oil &amp; Gas that never stops.">
+    <meta property="og:url" content="http://www.unsist.com/">
+    <meta property="og:image" content="http://www.unsist.com/img/unsist.jpeg">
+
+    <title>UNSIST Data Science</title>
+
+      <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../../favicon.png?">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="../../css/agency.min.css" rel="stylesheet">
+
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+            
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-85617324-3', 'auto');
+    ga('send', 'pageview');
+</script>
+
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- JQuery Reference
+      If you have added jQuery reference in your master page then ignore, 
+      Else include this too with the below reference -->
+
+<script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+<!-- https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js
+https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js -->
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css">
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="../../index.html#page-top" alt="UNSIST Data Science"><b>UNSIST</b> </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" type="button" data-toggle="dropdown"><b>Energy Data Platform</b></a>
+                        <ul class="dropdown-menu" >                          
+                            <li><a href="../../edp.html"><span class="text-muted"><strong><u>Energy Data Platform</u></strong></span></a></li>                            
+                            <li><a href="arc.html"><span class="text-muted">ARC RESOURCES</span></a></li>                            
+                            <li><a href="blackswan.html"><span class="text-muted">BLACK SWAN</span></a></li>
+                            <li><a href="canbriam.html"><span class="text-muted">CANBRIAM</span></a></li>
+                            <li><a href="cnrl.html"><span class="text-muted">CNRL</span></a></li>
+                            <li><a href="crew.html"><span class="text-muted">CREW</span></a></li>
+                            <li><a href="encana.html"><span class="text-muted">ENCANA</span></a></li>
+                            <li><a href="murphy.html"><span class="text-muted">MURPHY</span></a></li>
+                            <li><a href="paintedpony.html"><span class="text-muted">PAINTED PONY</span></a></li>
+                            <li><a href="progress.html"><span class="text-muted">PROGRESS</span></a></li>
+                            <li><a href="shell.html"><span class="text-muted">SHELL</span></a></li>
+                            <li><a href="storm.html"><span class="text-muted">STORM RESOURCES</span></a></li>
+                            <li><a href="tourmaline.html"><span class="text-muted">TOURMALINE</span></a></li>
+                            <li><a href="all.html"><span class="text-muted"><strong><u>ALL COMPANIES</u></strong></span></a></li>
+                        </ul>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="https://unsist-exchange.myshopify.com"><b>Exchange</b></a>
+                    </li>   
+
+                    <li>
+                        <a class="page-scroll" href="../../blog.html"><b>Blog</b></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="../../about.html"><b>About</b></a>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="../../#contact"><b>Contact</b></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- Header -->
+
+    <section style="background-color: #F2F4F4">
+
+      <div class="container">
+
+        <!-- Top Row -->
+        <div class="row">
+
+            <!-- Company Logo and Info -->
+            <div class="col-sm-3">
+                <ul class="list-group">
+                    <li class="list-group-item text-muted" style ='background-color: #e3e6e8'><img title="profile image" class="img-responsive img-centered" height="110" min-width="110" align="middle" src="../../img/operator/cnrl.png"></li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Company </strong></span> CNRL</li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Market Cap (2017)</strong></span> 
+                        <a target="_blank" href="https://www.bloomberg.com/quote/CNQ:CN"> $48.6B CAD</a></li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Revenue (2017)</strong></span> 
+                        <a target="_blank" href="https://www.bloomberg.com/quote/CNQ:CN"> $17.0B CAD</a></li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Net Income (2017)</strong></span> 
+                        <a target="_blank" href="https://www.bloomberg.com/quote/CNQ:CN"> $2.0B CAD</a></li>
+                </ul>
+            </div>
+
+            <!-- Insights -->
+                <div class="col-lg-9 text-center">
+                    <div class="well" style="background-color: white">
+                        <div style="overflow-x:auto;">
+                            <h3 align="center">Insights &amp; Benchmarks</h3>
+                            <table class="table table-responsive" id="">
+                                <thead>
+                                    <tr>
+                                      <td></td>
+                                      <td class="text-primary"><strong>CNRL</strong></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td class="text-primary"><strong>Group Benchmark</strong></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td></td>
+                                        <td><strong>Avg</strong></td>
+                                        <td><strong>P10</strong></td>
+                                        <td><strong>P50</strong></td>
+                                        <td><strong>P90</strong></td>
+                                        <td><strong>Avg</strong></td>
+                                        <td><strong>P10</strong></td>
+                                        <td><strong>P50</strong></td>
+                                        <td><strong>P90</strong></td></tr>     
+<tr>
+  <td><strong>Operating Days</strong></td>
+  <td>15.37</td>
+  <td>12.92</td>
+  <td>14.83</td>
+  <td>16.59</td>
+  <td>14.51</td>
+  <td>8.41</td>
+  <td>13.82</td>
+  <td>21.68</td>
+</tr>
+<tr>
+  <td><strong>m / Operating Day</strong></td>
+  <td>281.75</td>
+  <td>260.85</td>
+  <td>286.05</td>
+  <td>309.45</td>
+  <td>333.62</td>
+  <td>177.10</td>
+  <td>324.36</td>
+  <td>490.03</td>
+</tr>
+<tr>
+  <td><strong>Drlg %</strong></td>
+  <td>39.84</td>
+  <td>32.47</td>
+  <td>41.30</td>
+  <td>44.08</td>
+  <td>42.70</td>
+  <td>34.28</td>
+  <td>42.50</td>
+  <td>51.56</td>
+</tr>
+<tr>
+  <td><strong>MD</strong></td>
+  <td>4388.08</td>
+  <td>4111.70</td>
+  <td>4240.50</td>
+  <td>4928.70</td>
+  <td>4394.33</td>
+  <td>3576.40</td>
+  <td>4168.00</td>
+  <td>5223.40</td>
+</tr>
+<tr>
+  <td><strong>TVD</strong></td>
+  <td>2076.62</td>
+  <td>2069.49</td>
+  <td>2133.18</td>
+  <td>2194.67</td>
+  <td>2064.53</td>
+  <td>1783.73</td>
+  <td>2075.59</td>
+  <td>2413.70</td>
+</tr>
+<tr>
+  <td><strong>Lateral</strong></td>
+  <td>2190.20</td>
+  <td>1875.67</td>
+  <td>2069.19</td>
+  <td>2643.78</td>
+  <td>1999.09</td>
+  <td>1415.92</td>
+  <td>1936.90</td>
+  <td>2749.56</td>
+</tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>                         
+
+          
+        </div>
+
+        <div class="row">
+            <h3 align="center">Company Data</h3>
+            <div class="col-sm-3">
+                <!--left col-->
+
+                <ul class="list-group">
+                    <li class="list-group-item text-muted">2017 Activity <i class="fa fa-dashboard fa-1x"></i></li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Drilled</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Completed</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Producing</strong></span> Coming Soon</li>
+                </ul>
+
+                <ul class="list-group">
+                    <li class="list-group-item text-muted">Cost and Production Estimates </li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Production (2017)</strong></span> 
+                        <a target="_blank" href="https://www.cnrl.com/investor-information/quarterly-reports.html">893.7 kboe/d</a></li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Netback (2017)</strong></span> 
+                        <a target="_blank" href="https://www.cnrl.com/investor-information/quarterly-reports.html"> $25.64 CAD/boe</a></li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>D&amp;C Cost (2017)</strong></span> Coming Soon</li>
+                    <!-- Cost = fn(TVD, TLL, TPP), where TPP = TLL -->
+                    <li class="list-group-item text-left"> Learn how we calculate this <a href="http://unsist.com/demo/definitions">here</a>.</li>
+                </ul>
+
+                <ul class="list-group">
+                    <li class="list-group-item text-muted">Top Ranks <i class="fa fa-link fa-1x"></i></li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Metric 1</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Metric 2</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Metric 3</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-left">See all company rankings <a href="http://unsist.com/demo/operator/all">here</a>.</li>
+                </ul>
+            </div>
+            <!--/col-3-->
+
+
+            <div class="col-sm-9">
+                <ul class="list-group">
+
+                    <ul class="nav nav-tabs" id="myTab">
+                        <li class="active"><a href="#drilling" data-toggle="tab">Drilling</a></li>
+                        <li><a href="#completions" data-toggle="tab">Completions</a></li>
+                        <li><a href="#production" data-toggle="tab">Production</a></li>
+                        <li><a href="#financials" data-toggle="tab">Financials</a></li>
+                        <li><a href="#custom-data" data-toggle="tab">Custom Data</a></li>
+                        <li><a href="#visualizations" data-toggle="tab">Visualizations</a></li>
+                    </ul>
+                    <br>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="drilling">
+                        <div>
+                            <table class="table table-hover " id= "table_id">
+                                <thead>
+
+    <tr>
+      <th>License No</th>
+      <th>Well Name</th>
+      <th>Surface Location</th>
+      <th>Unique Well Id</th>
+      <th>Operator</th>
+      <th>Contractor</th>
+      <th>Rig No</th>
+      <th>Well Type</th>
+      <th>Prov</th>
+      <th>Loc Type</th>
+      <th>Triple/Double</th>
+      <th>First Bit Size (mm)</th>
+      <th>Last Bit Size (mm)</th>
+      <th>Number of Bits</th>
+      <th>From (m)</th>
+      <th>To (m)</th>
+      <th>Tour Sheet Start Depth to TD (m)</th>
+      <th>Heel (mMD)</th>
+      <th>TD (mTVD)</th>
+      <th>Surface and Vertical Length (m)</th>
+      <th>Tangent and Build Length (m)</th>
+      <th>Lateral Length (m)</th>
+      <th>Tour Sheet Start Date</th>
+      <th>Drilling %</th>
+      <th>Trip %</th>
+      <th>Reaming %</th>
+      <th>Dev Survey and Connections %</th>
+      <th>Directional Work %</th>
+      <th>Cond Mud &amp; Circ %</th>
+      <th>Casing and Cement %</th>
+      <th>Operating Days (d)</th>
+      <th>m / Operating Days (m/d)</th>
+      <th>On Bottom ROP Avg (m/h)</th>
+      <th>Lateral WOB Avg (kDaN)</th>
+      <th>Lateral RPM Avg</th>
+      <th>Lateral Torque Avg</th>
+      <th>Lateral ROP Avg (m/h)</th>
+      <th>Rig Up (h)</th>
+      <th>Drill Actual (h)</th>
+      <th>Reaming (h)</th>
+      <th>Coring (h)</th>
+      <th>Cond Mud &amp; Circ (h)</th>
+      <th>Trips (h)</th>
+      <th>Rig Service (h)</th>
+      <th>Repair Rig (h)</th>
+      <th>Cut Off Drilg Line (h)</th>
+      <th>Dev Survey (h)</th>
+      <th>Wireline Logs (h)</th>
+      <th>Run Csg &amp; Cement (h)</th>
+      <th>Wait On Cement (h)</th>
+      <th>Nipple Up BOP (h)</th>
+      <th>Test BOP (h)</th>
+      <th>Drillstem Test (h)</th>
+      <th>Plug Back (h)</th>
+      <th>Squeeze Cement (h)</th>
+      <th>Fishing (h)</th>
+      <th>Dir Work (h)</th>
+      <th>Safety Meeting (h)</th>
+      <th>Tear Down (h)</th>
+      <th>Waiting On (h)</th>
+      <th>Rig Watch (h)</th>
+      <th>Other (h)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>30087</td>
+      <td>CNRL HZ SEPTIMUS A03-31-081-19</td>
+      <td>03-31-081-19W6</td>
+      <td>100/10-29-081-19W6/06</td>
+      <td>CANADIAN NATURAL RESOURCES LTD.</td>
+      <td>HORIZON DRILLING INC.</td>
+      <td>3</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>156.0</td>
+      <td>7</td>
+      <td>0</td>
+      <td>4127</td>
+      <td>4127</td>
+      <td>2281.96</td>
+      <td>2118.04</td>
+      <td>1929.10</td>
+      <td>352.86</td>
+      <td>1845.04</td>
+      <td>2016-11-01</td>
+      <td>39.6</td>
+      <td>14.5</td>
+      <td>4.6</td>
+      <td>4.3</td>
+      <td>5.0</td>
+      <td>4.9</td>
+      <td>6.8</td>
+      <td>14.40</td>
+      <td>286.68</td>
+      <td>30.18</td>
+      <td>9.00</td>
+      <td>40.00</td>
+      <td>11112.50</td>
+      <td>52.72</td>
+      <td>37.50</td>
+      <td>136.75</td>
+      <td>15.75</td>
+      <td>0.0</td>
+      <td>17.00</td>
+      <td>50.00</td>
+      <td>9.25</td>
+      <td>0.0</td>
+      <td>2.25</td>
+      <td>15.00</td>
+      <td>0.00</td>
+      <td>23.50</td>
+      <td>4.00</td>
+      <td>11.25</td>
+      <td>5.25</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>17.25</td>
+      <td>13.25</td>
+      <td>2.00</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>25.00</td>
+    </tr>
+    <tr>
+      <td>30088</td>
+      <td>CNRL HZ SEPTIMUS B03-31-81-19</td>
+      <td>03-31-081-19W6</td>
+      <td>100/07-29-081-19W6/00</td>
+      <td>CANADIAN NATURAL RESOURCES LTD.</td>
+      <td>HORIZON DRILLING INC.</td>
+      <td>3</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>156.0</td>
+      <td>8</td>
+      <td>0</td>
+      <td>4172</td>
+      <td>4172</td>
+      <td>2200.29</td>
+      <td>2068.80</td>
+      <td>1876.88</td>
+      <td>323.41</td>
+      <td>1971.71</td>
+      <td>2016-11-17</td>
+      <td>42.4</td>
+      <td>16.3</td>
+      <td>3.9</td>
+      <td>4.9</td>
+      <td>2.9</td>
+      <td>4.5</td>
+      <td>5.3</td>
+      <td>16.02</td>
+      <td>260.41</td>
+      <td>25.60</td>
+      <td>9.00</td>
+      <td>32.00</td>
+      <td>9550.00</td>
+      <td>47.80</td>
+      <td>6.25</td>
+      <td>163.00</td>
+      <td>15.00</td>
+      <td>0.0</td>
+      <td>17.25</td>
+      <td>62.50</td>
+      <td>11.00</td>
+      <td>0.0</td>
+      <td>1.75</td>
+      <td>18.75</td>
+      <td>0.00</td>
+      <td>20.50</td>
+      <td>4.00</td>
+      <td>13.25</td>
+      <td>4.75</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.5</td>
+      <td>11.25</td>
+      <td>12.25</td>
+      <td>17.25</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>28.75</td>
+    </tr>
+    <tr>
+      <td>30089</td>
+      <td>CNRL HZ SEPTIMUS C03-31-81-19</td>
+      <td>03-31-081-19W6</td>
+      <td>100/07-29-081-19W6/00</td>
+      <td>CANADIAN NATURAL RESOURCES LTD.</td>
+      <td>HORIZON DRILLING INC.</td>
+      <td>3</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>156.0</td>
+      <td>6</td>
+      <td>0</td>
+      <td>4110</td>
+      <td>4110</td>
+      <td>2237.46</td>
+      <td>2126.81</td>
+      <td>1957.35</td>
+      <td>280.11</td>
+      <td>1872.54</td>
+      <td>2016-12-05</td>
+      <td>39.3</td>
+      <td>15.2</td>
+      <td>5.1</td>
+      <td>5.8</td>
+      <td>2.9</td>
+      <td>6.9</td>
+      <td>5.1</td>
+      <td>14.98</td>
+      <td>274.38</td>
+      <td>29.10</td>
+      <td>9.50</td>
+      <td>40.00</td>
+      <td>9162.50</td>
+      <td>56.32</td>
+      <td>9.00</td>
+      <td>141.25</td>
+      <td>18.25</td>
+      <td>0.0</td>
+      <td>24.75</td>
+      <td>54.50</td>
+      <td>9.75</td>
+      <td>0.0</td>
+      <td>2.00</td>
+      <td>20.75</td>
+      <td>0.00</td>
+      <td>18.50</td>
+      <td>0.00</td>
+      <td>13.75</td>
+      <td>4.50</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>10.50</td>
+      <td>12.50</td>
+      <td>11.75</td>
+      <td>3.75</td>
+      <td>0.0</td>
+      <td>28.50</td>
+    </tr>
+    <tr>
+      <td>30090</td>
+      <td>CNRL HZ SEPTIMUS D03-31-081-19</td>
+      <td>03-31-081-19W6</td>
+      <td>100/07-29-081-19W6/00</td>
+      <td>CANADIAN NATURAL RESOURCES LTD.</td>
+      <td>HORIZON DRILLING INC.</td>
+      <td>3</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>156.0</td>
+      <td>6</td>
+      <td>0</td>
+      <td>4239</td>
+      <td>4239</td>
+      <td>2193.89</td>
+      <td>2075.73</td>
+      <td>1889.50</td>
+      <td>304.39</td>
+      <td>2045.11</td>
+      <td>2017-01-03</td>
+      <td>41.3</td>
+      <td>14.2</td>
+      <td>5.6</td>
+      <td>3.2</td>
+      <td>3.4</td>
+      <td>6.7</td>
+      <td>5.5</td>
+      <td>14.58</td>
+      <td>290.67</td>
+      <td>29.34</td>
+      <td>12.67</td>
+      <td>40.00</td>
+      <td>9377.78</td>
+      <td>52.10</td>
+      <td>3.00</td>
+      <td>144.50</td>
+      <td>19.50</td>
+      <td>0.0</td>
+      <td>23.50</td>
+      <td>49.75</td>
+      <td>9.25</td>
+      <td>1.0</td>
+      <td>2.25</td>
+      <td>11.25</td>
+      <td>0.00</td>
+      <td>19.25</td>
+      <td>4.50</td>
+      <td>8.00</td>
+      <td>3.50</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>12.00</td>
+      <td>12.75</td>
+      <td>0.00</td>
+      <td>7.00</td>
+      <td>0.0</td>
+      <td>29.00</td>
+    </tr>
+    <tr>
+      <td>30420</td>
+      <td>CNRL HZ SEPTIMUS H10-09-081-18</td>
+      <td>10-09-081-18W6</td>
+      <td>100/16-03-081-18W6/00</td>
+      <td>CANADIAN NATURAL RESOURCES LTD.</td>
+      <td>HORIZON DRILLING INC.</td>
+      <td>3</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>159.0</td>
+      <td>9</td>
+      <td>0</td>
+      <td>4522</td>
+      <td>4522</td>
+      <td>2234.05</td>
+      <td>2148.24</td>
+      <td>1976.42</td>
+      <td>257.63</td>
+      <td>2287.95</td>
+      <td>2017-01-20</td>
+      <td>41.5</td>
+      <td>16.3</td>
+      <td>2.8</td>
+      <td>2.2</td>
+      <td>6.1</td>
+      <td>5.1</td>
+      <td>6.9</td>
+      <td>16.65</td>
+      <td>271.66</td>
+      <td>27.28</td>
+      <td>8.23</td>
+      <td>50.00</td>
+      <td>9784.62</td>
+      <td>43.17</td>
+      <td>10.50</td>
+      <td>165.75</td>
+      <td>11.25</td>
+      <td>0.0</td>
+      <td>20.25</td>
+      <td>65.00</td>
+      <td>10.75</td>
+      <td>0.0</td>
+      <td>1.50</td>
+      <td>8.75</td>
+      <td>0.00</td>
+      <td>27.75</td>
+      <td>4.00</td>
+      <td>10.00</td>
+      <td>6.50</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>24.25</td>
+      <td>13.50</td>
+      <td>16.00</td>
+      <td>6.00</td>
+      <td>0.0</td>
+      <td>30.25</td>
+    </tr>
+    <tr>
+      <td>30421</td>
+      <td>CNRL HZ SEPTIMUS I10-09-081-18</td>
+      <td>10-09-081-18W6</td>
+      <td>100/03-17-081-18W6/00</td>
+      <td>CANADIAN NATURAL RESOURCES LTD.</td>
+      <td>HORIZON DRILLING INC.</td>
+      <td>3</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>159.0</td>
+      <td>5</td>
+      <td>0</td>
+      <td>4178</td>
+      <td>4178</td>
+      <td>2274.15</td>
+      <td>2139.55</td>
+      <td>1947.67</td>
+      <td>326.48</td>
+      <td>1903.85</td>
+      <td>2017-02-06</td>
+      <td>44.1</td>
+      <td>12.4</td>
+      <td>2.7</td>
+      <td>3.9</td>
+      <td>3.3</td>
+      <td>4.8</td>
+      <td>7.2</td>
+      <td>12.03</td>
+      <td>347.26</td>
+      <td>32.83</td>
+      <td>7.78</td>
+      <td>47.78</td>
+      <td>7712.11</td>
+      <td>50.10</td>
+      <td>7.00</td>
+      <td>127.25</td>
+      <td>7.75</td>
+      <td>0.0</td>
+      <td>14.00</td>
+      <td>35.75</td>
+      <td>8.00</td>
+      <td>0.0</td>
+      <td>2.25</td>
+      <td>11.25</td>
+      <td>0.00</td>
+      <td>20.75</td>
+      <td>4.00</td>
+      <td>6.00</td>
+      <td>5.25</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>9.50</td>
+      <td>10.50</td>
+      <td>16.25</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>26.50</td>
+    </tr>
+    <tr>
+      <td>30422</td>
+      <td>CNRL HZ SEPTIMUS J10-09-081-18</td>
+      <td>10-09-081-18W6</td>
+      <td>100/16-03-081-18W6/00</td>
+      <td>CANADIAN NATURAL RESOURCES LTD.</td>
+      <td>HORIZON DRILLING INC.</td>
+      <td>3</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>159.0</td>
+      <td>11</td>
+      <td>5</td>
+      <td>4827</td>
+      <td>4822</td>
+      <td>2320.18</td>
+      <td>2203.60</td>
+      <td>2035.23</td>
+      <td>284.95</td>
+      <td>2506.82</td>
+      <td>2017-02-19</td>
+      <td>27.8</td>
+      <td>18.0</td>
+      <td>16.6</td>
+      <td>1.4</td>
+      <td>4.0</td>
+      <td>5.9</td>
+      <td>5.7</td>
+      <td>24.24</td>
+      <td>198.93</td>
+      <td>29.86</td>
+      <td>7.20</td>
+      <td>43.00</td>
+      <td>10571.43</td>
+      <td>39.02</td>
+      <td>9.00</td>
+      <td>161.50</td>
+      <td>96.50</td>
+      <td>0.0</td>
+      <td>34.50</td>
+      <td>104.50</td>
+      <td>16.75</td>
+      <td>0.0</td>
+      <td>4.00</td>
+      <td>8.25</td>
+      <td>10.75</td>
+      <td>33.00</td>
+      <td>3.75</td>
+      <td>8.00</td>
+      <td>10.75</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>23.00</td>
+      <td>20.75</td>
+      <td>14.00</td>
+      <td>18.25</td>
+      <td>0.0</td>
+      <td>45.75</td>
+    </tr>
+    <tr>
+      <td>30423</td>
+      <td>CNRL HZ K10-09-81-18W6</td>
+      <td>10-09-081-18W6</td>
+      <td>100/14-08-081-18W6/00</td>
+      <td>CANADIAN NATURAL RESOURCES LTD.</td>
+      <td>HORIZON DRILLING INC.</td>
+      <td>3</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>159.0</td>
+      <td>8</td>
+      <td>5</td>
+      <td>4242</td>
+      <td>4237</td>
+      <td>2332.84</td>
+      <td>2199.24</td>
+      <td>2027.05</td>
+      <td>305.79</td>
+      <td>2009.16</td>
+      <td>2017-03-17</td>
+      <td>43.9</td>
+      <td>14.7</td>
+      <td>2.3</td>
+      <td>3.1</td>
+      <td>4.4</td>
+      <td>4.1</td>
+      <td>6.8</td>
+      <td>14.83</td>
+      <td>285.64</td>
+      <td>27.12</td>
+      <td>8.80</td>
+      <td>50.00</td>
+      <td>9166.67</td>
+      <td>48.71</td>
+      <td>4.25</td>
+      <td>156.25</td>
+      <td>8.25</td>
+      <td>0.0</td>
+      <td>14.50</td>
+      <td>52.25</td>
+      <td>9.00</td>
+      <td>0.0</td>
+      <td>2.00</td>
+      <td>11.00</td>
+      <td>0.00</td>
+      <td>24.25</td>
+      <td>4.00</td>
+      <td>11.00</td>
+      <td>4.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>15.75</td>
+      <td>20.50</td>
+      <td>23.75</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>23.25</td>
+    </tr>
+    <tr>
+      <td>30424</td>
+      <td>CNRL HZ SEPTIMUS L10-09-81-18 W6</td>
+      <td>10-09-081-18W6</td>
+      <td>100/09-03-081-18W6/00</td>
+      <td>CANADIAN NATURAL RESOURCES LTD.</td>
+      <td>HORIZON DRILLING INC.</td>
+      <td>3</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>159.0</td>
+      <td>7</td>
+      <td>5</td>
+      <td>4940</td>
+      <td>4935</td>
+      <td>2281.00</td>
+      <td>2153.54</td>
+      <td>1961.70</td>
+      <td>319.30</td>
+      <td>2659.00</td>
+      <td>2017-04-02</td>
+      <td>49.0</td>
+      <td>15.1</td>
+      <td>2.6</td>
+      <td>2.4</td>
+      <td>4.2</td>
+      <td>4.5</td>
+      <td>6.7</td>
+      <td>15.92</td>
+      <td>310.05</td>
+      <td>26.36</td>
+      <td>8.94</td>
+      <td>53.13</td>
+      <td>8733.33</td>
+      <td>37.99</td>
+      <td>4.50</td>
+      <td>187.25</td>
+      <td>9.75</td>
+      <td>0.0</td>
+      <td>17.25</td>
+      <td>57.50</td>
+      <td>9.50</td>
+      <td>0.0</td>
+      <td>2.50</td>
+      <td>9.25</td>
+      <td>0.00</td>
+      <td>25.75</td>
+      <td>0.00</td>
+      <td>4.50</td>
+      <td>3.50</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>16.00</td>
+      <td>13.50</td>
+      <td>17.50</td>
+      <td>3.75</td>
+      <td>0.0</td>
+      <td>25.75</td>
+    </tr>
+    <tr>
+      <td>30425</td>
+      <td>CNRL HZ SEPTIMUS M10-09-81-18 W6</td>
+      <td>10-09-081-18W6</td>
+      <td>100/14-08-081-18W6/00</td>
+      <td>CANADIAN NATURAL RESOURCES LTD.</td>
+      <td>HORIZON DRILLING INC.</td>
+      <td>3</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>159.0</td>
+      <td>6</td>
+      <td>12</td>
+      <td>4522</td>
+      <td>4510</td>
+      <td>2275.00</td>
+      <td>2146.72</td>
+      <td>1961.85</td>
+      <td>313.15</td>
+      <td>2247.00</td>
+      <td>2017-04-19</td>
+      <td>41.3</td>
+      <td>12.8</td>
+      <td>2.8</td>
+      <td>2.7</td>
+      <td>4.7</td>
+      <td>4.6</td>
+      <td>5.6</td>
+      <td>14.83</td>
+      <td>304.04</td>
+      <td>30.68</td>
+      <td>10.09</td>
+      <td>50.00</td>
+      <td>9018.18</td>
+      <td>40.49</td>
+      <td>3.75</td>
+      <td>147.00</td>
+      <td>10.00</td>
+      <td>0.0</td>
+      <td>16.25</td>
+      <td>45.50</td>
+      <td>9.00</td>
+      <td>0.0</td>
+      <td>1.25</td>
+      <td>9.50</td>
+      <td>0.00</td>
+      <td>20.00</td>
+      <td>4.00</td>
+      <td>9.75</td>
+      <td>4.75</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>27.5</td>
+      <td>16.75</td>
+      <td>11.75</td>
+      <td>24.25</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>23.00</td>
+    </tr>
+    <tr>
+      <td>31229</td>
+      <td>CNRL HZ PRESPATOU D-51-C/094-H-3</td>
+      <td>d-051-C/094-H-03</td>
+      <td>200/a-058-B/094-H-03/00</td>
+      <td>CANADIAN NATURAL RESOURCES LTD.</td>
+      <td>HORIZON DRILLING INC.</td>
+      <td>3</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>156.0</td>
+      <td>5</td>
+      <td>0</td>
+      <td>3697</td>
+      <td>3697</td>
+      <td>1603.74</td>
+      <td>1461.40</td>
+      <td>1278.60</td>
+      <td>325.14</td>
+      <td>2093.26</td>
+      <td>2015-07-20</td>
+      <td>35.8</td>
+      <td>12.3</td>
+      <td>1.9</td>
+      <td>10.0</td>
+      <td>2.3</td>
+      <td>4.0</td>
+      <td>6.5</td>
+      <td>12.91</td>
+      <td>286.45</td>
+      <td>33.31</td>
+      <td>9.57</td>
+      <td>49.29</td>
+      <td>8735.71</td>
+      <td>35.63</td>
+      <td>29.75</td>
+      <td>111.00</td>
+      <td>5.75</td>
+      <td>0.0</td>
+      <td>12.25</td>
+      <td>38.25</td>
+      <td>7.75</td>
+      <td>1.0</td>
+      <td>1.25</td>
+      <td>31.00</td>
+      <td>7.00</td>
+      <td>20.00</td>
+      <td>4.00</td>
+      <td>4.00</td>
+      <td>6.25</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>7.25</td>
+      <td>14.75</td>
+      <td>24.50</td>
+      <td>12.00</td>
+      <td>0.0</td>
+      <td>38.25</td>
+    </tr>
+    <tr>
+      <td>33113</td>
+      <td>CNRL HZ SEPTIMUS 05-22-081-18</td>
+      <td>05-22-081-18W6</td>
+      <td>100/01-23-081-18W6/00</td>
+      <td>CANADIAN NATURAL RESOURCES LTD.</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>420</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>double</td>
+      <td>200.0</td>
+      <td>159.0</td>
+      <td>2</td>
+      <td>1638</td>
+      <td>5081</td>
+      <td>3443</td>
+      <td>2240.03</td>
+      <td>2077.81</td>
+      <td>1812.87</td>
+      <td>427.16</td>
+      <td>2840.97</td>
+      <td>2017-12-10</td>
+      <td>32.1</td>
+      <td>23.1</td>
+      <td>0.3</td>
+      <td>0.0</td>
+      <td>14.1</td>
+      <td>16.3</td>
+      <td>7.0</td>
+      <td>13.00</td>
+      <td>264.85</td>
+      <td>34.34</td>
+      <td>10.88</td>
+      <td>75.00</td>
+      <td>8875.00</td>
+      <td>59.50</td>
+      <td>0.00</td>
+      <td>100.25</td>
+      <td>1.00</td>
+      <td>0.0</td>
+      <td>50.75</td>
+      <td>72.00</td>
+      <td>6.25</td>
+      <td>0.0</td>
+      <td>2.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>21.75</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>0.25</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>44.00</td>
+      <td>11.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>1.75</td>
+    </tr> 
+
+                                </tbody>
+                          </table>
+   
+                          
+                          <div class="row">
+                              <div class="col-md-4 col-md-offset-4 text-center">
+                                  <ul class="pagination" id="myPager"></ul>
+                              </div>
+                          </div>
+
+                      </div>
+                      <!--/table-resp-->
+                  </div>
+
+                  <!--/tab-pane-->
+                  <div class="tab-pane" id="completions">
+                    
+                        <p>  Coming Soon!</p>
+                        <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+                    
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="production">
+                          <p>  Coming Soon!</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="financials">
+                          <p>  Coming Soon!</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="custom-data">
+                          <p>  Coming Soon!</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="visualizations">
+                          <p>  Coming Soon!</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>                  
+
+              </div>
+              <!--/tab-pane-->
+          </ul>
+          <!--/tab-content-->
+        </div>
+        <!--/col-9-->          
+                      
+    </div>
+    <!--/row-->
+
+    <div class="row">
+        <div class="col-xs-6">        
+            <p>*Data accessed from <strong><u>public</u></strong> sources only.</p>
+        </div>
+        <div class="col-xs-6 text-right">        
+            <p>Access this Unsist energy dataset directly and <a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/CNRL.csv?alt=media&token=dbd9276d-05ee-4bbd-aed1-ab0b925c068d"><strong>download CSV</strong></a></p>
+            <br>
+        </div> 
+    </div>
+
+    <div class="row" style="background-color: white">
+         <div class="col-lg-6 col-lg-offset-3 text-center">
+            <ul class="list-group">
+                <h3>Enjoying the <span class="text-primary">free</span> insights?</h3>
+                <p>We provide much deeper data &amp; analytics than what you see here.
+                <br>Contact us to learn more.</p>
+                <a class="btn btn-primary" href="../demo.html#contact">Contact Us</a>   
+                <br>      
+            </ul>
+        </div>
+    </div>   
+
+
+    </section> 
+
+    <!-- footer --> 
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Unsist Inc. 2018</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="http://www.linkedin.com/company/unsist" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="http://www.facebook.com/unsist" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>   
+                        <li><a href="http://www.twitter.com/UnsistDS" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://medium.com/unsist" target="_blank"><i class="fa fa-medium"></i></a>
+                        </li> 
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="http://www.unsist.com/privacy-policy">Privacy Policy</a>
+                        </li>
+                        <li><a href="http://www.unsist.com/terms-of-use">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <!-- script src="../vendor/jquery/jquery.min.js" /script -->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="../../js/jqBootstrapValidation.js"></script>
+    <script src="../../js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="../../js/agency.min.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+
+
+<h2 id="bigOne"></h2>
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCqP3WriWOlSZqa1zvg7DY2dzPJM3yOGm8",
+    authDomain: "mockup-1eaa9.firebaseapp.com",
+    databaseURL: "https://mockup-1eaa9.firebaseio.com",
+    projectId: "mockup-1eaa9",
+    storageBucket: "mockup-1eaa9.appspot.com",
+    messagingSenderId: "989389729849"
+  };
+  firebase.initializeApp(config);
+
+
+  var bigOne = document.getElementById('bigOne');
+  var dbRef = firebase.database().ref()
+  dfRef.on('value', snap => bigOne.innerText = snap.val());
+
+</script>
+
+<script type='text/javascript'>
+  var divElement = document.getElementById('viz1520272339512');                    
+  var vizElement = divElement.getElementsByTagName('object')[0];                    
+  vizElement.style.width='520px';vizElement.style.height='300px';                    
+  var scriptElement = document.createElement('script');                    
+  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+  vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+      var table = $('#table_id').DataTable( {
+        "scrollY": "400px",
+        "scrollX": "400px"
+      } );
+    } )
+</script>
+
+</body>
+
+</html>

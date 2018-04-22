@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="UNSIST Data Science - Creating technology for Oil &amp; Gas that never stops.">
+    <meta name="author" content="Dudon Wai">
+    <meta name="keywords" content="UNSIST Data Science Calgary Alberta Canada Oil Gas Energy Technology NextAI Dudon Wai">
+
+    <meta property="og:site_name" content="UNSIST Data Science">
+    <meta property="og:title" content="UNSIST Data Science">
+    <meta property="og:description" content="UNSIST Data Science - Creating technology for Oil &amp; Gas that never stops.">
+    <meta property="og:url" content="http://www.unsist.com/">
+    <meta property="og:image" content="http://www.unsist.com/img/unsist.jpeg">
+
+    <title>UNSIST Data Science</title>
+
+      <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../../favicon.png?">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="../../css/agency.min.css" rel="stylesheet">
+
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+            
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-85617324-3', 'auto');
+    ga('send', 'pageview');
+</script>
+
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- JQuery Reference
+      If you have added jQuery reference in your master page then ignore, 
+      Else include this too with the below reference -->
+
+<script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+<!-- https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js
+https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js -->
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css">
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="../../index.html#page-top" alt="UNSIST Data Science"><b>UNSIST</b> </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" type="button" data-toggle="dropdown"><b>Energy Data Platform</b></a>
+                        <ul class="dropdown-menu" >                          
+                            <li><a href="../../edp.html"><span class="text-muted"><strong><u>Energy Data Platform</u></strong></span></a></li>                            
+                            <li><a href="arc.html"><span class="text-muted">ARC RESOURCES</span></a></li>                            
+                            <li><a href="blackswan.html"><span class="text-muted">BLACK SWAN</span></a></li>
+                            <li><a href="canbriam.html"><span class="text-muted">CANBRIAM</span></a></li>
+                            <li><a href="cnrl.html"><span class="text-muted">CNRL</span></a></li>
+                            <li><a href="crew.html"><span class="text-muted">CREW</span></a></li>
+                            <li><a href="encana.html"><span class="text-muted">ENCANA</span></a></li>
+                            <li><a href="murphy.html"><span class="text-muted">MURPHY</span></a></li>
+                            <li><a href="paintedpony.html"><span class="text-muted">PAINTED PONY</span></a></li>
+                            <li><a href="progress.html"><span class="text-muted">PROGRESS</span></a></li>
+                            <li><a href="shell.html"><span class="text-muted">SHELL</span></a></li>
+                            <li><a href="storm.html"><span class="text-muted">STORM RESOURCES</span></a></li>
+                            <li><a href="tourmaline.html"><span class="text-muted">TOURMALINE</span></a></li>
+                            <li><a href="all.html"><span class="text-muted"><strong><u>ALL COMPANIES</u></strong></span></a></li>
+                        </ul>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="https://unsist-exchange.myshopify.com"><b>Exchange</b></a>
+                    </li>   
+
+                    <li>
+                        <a class="page-scroll" href="../../blog.html"><b>Blog</b></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="../../about.html"><b>About</b></a>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="../../#contact"><b>Contact</b></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- Header -->
+
+    <section style="background-color: #F2F4F4">
+
+      <div class="container">
+
+        <!-- Top Row -->
+        <div class="row">
+
+            <!-- Company Logo and Info -->
+            <div class="col-sm-3">
+                <ul class="list-group">
+                    <li class="list-group-item text-muted" style ='background-color: #e3e6e8'><img title="profile image" class="img-responsive img-centered" height="110" min-width="110" align="middle" src="../../img/operator/blackswan.png"></li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Company</strong></span> Black Swan Energy</li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Market Cap (2017)</strong></span> 
+                        <a target="_blank" href="https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=228171808">N/A</a></li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Revenue (2017)</strong></span> 
+                        <a target="_blank" href="https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=228171808">N/A</a></li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Net Income (2017)</strong></span> 
+                        <a target="_blank" href="https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=228171808">N/A</a></li>
+                </ul>
+            </div>
+
+            <!-- Insights -->
+                <div class="col-lg-9 text-center">
+                    <div class="well" style="background-color: white">
+                        <div style="overflow-x:auto;">
+                            <h3 align="center">Insights &amp; Benchmarks</h3>
+                            <table class="table table-responsive" id="">
+                                <thead>
+                                    <tr>
+                                      <td></td>
+                                      <td class="text-primary"><strong>Black Swan Energy</strong></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td class="text-primary"><strong>Group Benchmark</strong></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td></td>
+                                        <td><strong>Avg</strong></td>
+                                        <td><strong>P10</strong></td>
+                                        <td><strong>P50</strong></td>
+                                        <td><strong>P90</strong></td>
+                                        <td><strong>Avg</strong></td>
+                                        <td><strong>P10</strong></td>
+                                        <td><strong>P50</strong></td>
+                                        <td><strong>P90</strong></td></tr>     
+<tr>
+  <td><strong>Operating Days</strong></td>
+  <td>12.94</td>
+  <td>10.10</td>
+  <td>11.69</td>
+  <td>18.04</td>
+  <td>14.51</td>
+  <td>8.41</td>
+  <td>13.82</td>
+  <td>21.68</td>
+</tr>
+<tr>
+  <td><strong>m / Operating Day</strong></td>
+  <td>318.64</td>
+  <td>247.75</td>
+  <td>332.55</td>
+  <td>364.35</td>
+  <td>333.62</td>
+  <td>177.10</td>
+  <td>324.36</td>
+  <td>490.03</td>
+</tr>
+<tr>
+  <td><strong>Drlg %</strong></td>
+  <td>37.74</td>
+  <td>34.54</td>
+  <td>38.20</td>
+  <td>40.28</td>
+  <td>42.70</td>
+  <td>34.28</td>
+  <td>42.50</td>
+  <td>51.56</td>
+</tr>
+<tr>
+  <td><strong><strong>MD</strong></td>
+  <td>3970.77</td>
+  <td>3635.60</td>
+  <td>3840.00</td>
+  <td>4553.40</td>
+  <td>4394.33</td>
+  <td>3576.40</td>
+  <td>4168.00</td>
+  <td>5223.40</td>
+</tr>
+<tr>
+  <td><strong><strong>TVD</strong></td>
+  <td>1708.28</td>
+  <td>1695.98</td>
+  <td>1716.23</td>
+  <td>1727.32</td>
+  <td>2064.53</td>
+  <td>1783.73</td>
+  <td>2075.59</td>
+  <td>2413.70</td>
+</tr>
+<tr>
+  <td><strong><strong>Lateral</strong></td>
+  <td>2126.65</td>
+  <td>1786.70</td>
+  <td>1994.22</td>
+  <td>2698.81</td>
+  <td>1999.09</td>
+  <td>1415.92</td>
+  <td>1936.90</td>
+  <td>2749.56</td>
+</tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>                         
+
+          
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <!--left col-->
+
+                <ul class="list-group">
+                    <li class="list-group-item text-muted">2017 Activity <i class="fa fa-dashboard fa-1x"></i></li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Drilled</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Completed</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Producing</strong></span> Coming Soon</li>
+                </ul>
+
+                <ul class="list-group">
+                    <li class="list-group-item text-muted">Cost and Production Estimates </li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Production (2017)</strong></span> 
+                        <a target="_blank" href="https://www.blackswanenergy.com/news-and-presentations/"> 27.0 kboe/d</a></li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Netback (2017)</strong></span> 
+                        <a target="_blank" href="https://www.blackswanenergy.com/news-and-presentations/"> $13.87 CAD/boe</a></li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>D&amp;C Cost (2017)</strong></span> Coming Soon</li>
+                    <!-- Cost = fn(TVD, TLL, TPP), where TPP = TLL -->                        
+                    <li class="list-group-item text-left"> Learn how we calculate this <a href="http://unsist.com/demo/definitions">here</a>.</li>
+                </ul>
+
+                <ul class="list-group">
+                    <li class="list-group-item text-muted">Top Ranks <i class="fa fa-link fa-1x"></i></li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Metric 1</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Metric 2</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Metric 3</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-left">See all company rankings <a href="http://unsist.com/demo/operator/all">here</a>.</li>
+                </ul>
+            </div>
+            <!--/col-3-->
+
+
+            <div class="col-sm-9">
+                <h3 align="center">Company Data</h3>
+                <ul class="list-group">
+
+                    <ul class="nav nav-tabs" id="myTab">
+                        <li class="active"><a href="#drilling" data-toggle="tab">Drilling</a></li>
+                        <li><a href="#completions" data-toggle="tab">Completions</a></li>
+                        <li><a href="#production" data-toggle="tab">Production</a></li>
+                        <li><a href="#financials" data-toggle="tab">Financials</a></li>
+                        <li><a href="#custom-data" data-toggle="tab">Custom Data</a></li>
+                        <li><a href="#visualizations" data-toggle="tab">Visualizations</a></li>
+                    </ul>
+                    <br>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="drilling">
+                        <div>
+                            <table class="table table-hover " id= "table_id">
+                                <thead>
+    <tr>
+      <th>License No</th>
+      <th>Well Name</th>
+      <th>Surface Location</th>
+      <th>Unique Well Id</th>
+      <th>Operator</th>
+      <th>Contractor</th>
+      <th>Rig No</th>
+      <th>Well Type</th>
+      <th>Prov</th>
+      <th>Loc Type</th>
+      <th>Triple/Double</th>
+      <th>First Bit Size (mm)</th>
+      <th>Last Bit Size (mm)</th>
+      <th>Number of Bits</th>
+      <th>From (m)</th>
+      <th>To (m)</th>
+      <th>Tour Sheet Start Depth to TD (m)</th>
+      <th>Heel (mMD)</th>
+      <th>TD (mTVD)</th>
+      <th>Surface and Vertical Length (m)</th>
+      <th>Tangent and Build Length (m)</th>
+      <th>Lateral Length (m)</th>
+      <th>Tour Sheet Start Date</th>
+      <th>Drilling %</th>
+      <th>Trip %</th>
+      <th>Reaming %</th>
+      <th>Dev Survey and Connections %</th>
+      <th>Directional Work %</th>
+      <th>Cond Mud &amp; Circ %</th>
+      <th>Casing and Cement %</th>
+      <th>Operating Days (d)</th>
+      <th>m / Operating Days (m/d)</th>
+      <th>On Bottom ROP Avg (m/h)</th>
+      <th>Lateral WOB Avg (kDaN)</th>
+      <th>Lateral RPM Avg</th>
+      <th>Lateral Torque Avg</th>
+      <th>Lateral ROP Avg (m/h)</th>
+      <th>Rig Up (h)</th>
+      <th>Drill Actual (h)</th>
+      <th>Reaming (h)</th>
+      <th>Coring (h)</th>
+      <th>Cond Mud &amp; Circ (h)</th>
+      <th>Trips (h)</th>
+      <th>Rig Service (h)</th>
+      <th>Repair Rig (h)</th>
+      <th>Cut Off Drilg Line (h)</th>
+      <th>Dev Survey (h)</th>
+      <th>Wireline Logs (h)</th>
+      <th>Run Csg &amp; Cement (h)</th>
+      <th>Wait On Cement (h)</th>
+      <th>Nipple Up BOP (h)</th>
+      <th>Test BOP (h)</th>
+      <th>Drillstem Test (h)</th>
+      <th>Plug Back (h)</th>
+      <th>Squeeze Cement (h)</th>
+      <th>Fishing (h)</th>
+      <th>Dir Work (h)</th>
+      <th>Safety Meeting (h)</th>
+      <th>Tear Down (h)</th>
+      <th>Waiting On (h)</th>
+      <th>Rig Watch (h)</th>
+      <th>Other (h)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>31968</td>
+      <td>BLACKSWAN HZ NIG C-002-C/94-H-4</td>
+      <td>c-002-C/094-H-04</td>
+      <td>200/a-035-C/094-H-04/00</td>
+      <td>BLACK SWAN ENERGY LTD.</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>437</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>159.0</td>
+      <td>10</td>
+      <td>0</td>
+      <td>4573</td>
+      <td>4573</td>
+      <td>1861.95</td>
+      <td>1710.31</td>
+      <td>1466.23</td>
+      <td>395.72</td>
+      <td>2711.05</td>
+      <td>2016-09-02</td>
+      <td>37.0</td>
+      <td>18.1</td>
+      <td>0.0</td>
+      <td>12.7</td>
+      <td>3.9</td>
+      <td>3.4</td>
+      <td>5.1</td>
+      <td>19.08</td>
+      <td>239.63</td>
+      <td>26.98</td>
+      <td>10.06</td>
+      <td>43.53</td>
+      <td>11562.50</td>
+      <td>38.87</td>
+      <td>65.50</td>
+      <td>169.50</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>15.50</td>
+      <td>83.00</td>
+      <td>11.50</td>
+      <td>1.00</td>
+      <td>2.50</td>
+      <td>58.00</td>
+      <td>5.75</td>
+      <td>23.25</td>
+      <td>0.00</td>
+      <td>11.75</td>
+      <td>7.25</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>18.00</td>
+      <td>18.00</td>
+      <td>3.00</td>
+      <td>140.50</td>
+      <td>0.0</td>
+      <td>33.00</td>
+    </tr>
+    <tr>
+      <td>31969</td>
+      <td>BLACK SWAN HZ NIG C-A002-C/094-H-04</td>
+      <td>c-002-C/094-H-04</td>
+      <td>200/b-035-C/094-H-04/00</td>
+      <td>BLACK SWAN ENERGY LTD.</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>437</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>159.0</td>
+      <td>10</td>
+      <td>0</td>
+      <td>4604</td>
+      <td>4604</td>
+      <td>1826.19</td>
+      <td>1694.40</td>
+      <td>1466.65</td>
+      <td>359.54</td>
+      <td>2777.81</td>
+      <td>2016-12-04</td>
+      <td>36.8</td>
+      <td>17.2</td>
+      <td>0.0</td>
+      <td>16.0</td>
+      <td>2.9</td>
+      <td>4.7</td>
+      <td>7.3</td>
+      <td>14.82</td>
+      <td>310.60</td>
+      <td>35.21</td>
+      <td>11.00</td>
+      <td>51.67</td>
+      <td>12037.50</td>
+      <td>52.41</td>
+      <td>23.00</td>
+      <td>130.75</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>16.75</td>
+      <td>61.25</td>
+      <td>8.25</td>
+      <td>1.75</td>
+      <td>1.50</td>
+      <td>57.00</td>
+      <td>0.00</td>
+      <td>26.00</td>
+      <td>4.00</td>
+      <td>17.25</td>
+      <td>5.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>10.25</td>
+      <td>13.50</td>
+      <td>17.25</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>2.50</td>
+    </tr>
+    <tr>
+      <td>31970</td>
+      <td>BLACK SWAN HZ NIG C-B002-C/094-H-04</td>
+      <td>c-002-C/094-H-04</td>
+      <td>200/c-025-C/094-H-04/00</td>
+      <td>BLACK SWAN ENERGY LTD.</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>437</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>156.0</td>
+      <td>9</td>
+      <td>0</td>
+      <td>4475</td>
+      <td>4475</td>
+      <td>1825.17</td>
+      <td>1719.67</td>
+      <td>1467.95</td>
+      <td>357.22</td>
+      <td>2649.83</td>
+      <td>2016-12-07</td>
+      <td>31.6</td>
+      <td>25.0</td>
+      <td>0.0</td>
+      <td>15.3</td>
+      <td>3.4</td>
+      <td>4.4</td>
+      <td>7.8</td>
+      <td>15.97</td>
+      <td>280.23</td>
+      <td>36.91</td>
+      <td>12.73</td>
+      <td>49.33</td>
+      <td>12900.00</td>
+      <td>48.84</td>
+      <td>8.25</td>
+      <td>121.25</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>17.00</td>
+      <td>96.00</td>
+      <td>10.75</td>
+      <td>0.00</td>
+      <td>3.00</td>
+      <td>58.75</td>
+      <td>0.00</td>
+      <td>29.75</td>
+      <td>0.00</td>
+      <td>14.00</td>
+      <td>4.25</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>13.00</td>
+      <td>13.75</td>
+      <td>7.75</td>
+      <td>20.75</td>
+      <td>0.0</td>
+      <td>1.75</td>
+    </tr>
+    <tr>
+      <td>31971</td>
+      <td>BLACK SWAN HZ NIG C-C2-C/094-H-04</td>
+      <td>c-002-C/094-H-04</td>
+      <td>200/a-100-J/094-A-13/00</td>
+      <td>BLACK SWAN ENERGY LTD.</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>437</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>159.0</td>
+      <td>6</td>
+      <td>0</td>
+      <td>4091</td>
+      <td>4091</td>
+      <td>1841.00</td>
+      <td>1702.97</td>
+      <td>1457.84</td>
+      <td>383.16</td>
+      <td>2250.00</td>
+      <td>2016-12-09</td>
+      <td>35.9</td>
+      <td>17.6</td>
+      <td>0.0</td>
+      <td>14.2</td>
+      <td>3.6</td>
+      <td>8.0</td>
+      <td>9.0</td>
+      <td>12.30</td>
+      <td>332.55</td>
+      <td>38.59</td>
+      <td>13.56</td>
+      <td>51.67</td>
+      <td>10944.44</td>
+      <td>66.67</td>
+      <td>21.50</td>
+      <td>106.00</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>23.75</td>
+      <td>52.00</td>
+      <td>7.00</td>
+      <td>0.00</td>
+      <td>2.25</td>
+      <td>42.00</td>
+      <td>0.00</td>
+      <td>26.50</td>
+      <td>0.00</td>
+      <td>5.50</td>
+      <td>5.25</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>10.50</td>
+      <td>11.50</td>
+      <td>15.25</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>3.00</td>
+    </tr>
+    <tr>
+      <td>31972</td>
+      <td>BLACK SWAN HZ NIG C-D2-C/094-H-04</td>
+      <td>c-002-C/094-H-04</td>
+      <td>200/b-100-J/094-A-13/00</td>
+      <td>BLACK SWAN ENERGY LTD.</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>437</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>159.0</td>
+      <td>5</td>
+      <td>0</td>
+      <td>3791</td>
+      <td>3791</td>
+      <td>1863.31</td>
+      <td>1716.84</td>
+      <td>1467.33</td>
+      <td>395.98</td>
+      <td>1927.69</td>
+      <td>2016-12-11</td>
+      <td>38.4</td>
+      <td>17.9</td>
+      <td>0.0</td>
+      <td>15.3</td>
+      <td>2.9</td>
+      <td>4.9</td>
+      <td>8.1</td>
+      <td>11.69</td>
+      <td>324.36</td>
+      <td>35.18</td>
+      <td>12.86</td>
+      <td>50.71</td>
+      <td>10666.67</td>
+      <td>64.26</td>
+      <td>16.00</td>
+      <td>107.75</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>13.75</td>
+      <td>50.25</td>
+      <td>5.50</td>
+      <td>0.00</td>
+      <td>1.25</td>
+      <td>43.00</td>
+      <td>0.00</td>
+      <td>22.75</td>
+      <td>3.25</td>
+      <td>9.75</td>
+      <td>4.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>8.00</td>
+      <td>11.00</td>
+      <td>3.50</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>31973</td>
+      <td>BLACK SWAN HZ NIG C-E2-C/094-H-04</td>
+      <td>c-002-C/094-H-04</td>
+      <td>200/b-091-K/094-A-13/00</td>
+      <td>BLACK SWAN ENERGY LTD.</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>437</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>159.0</td>
+      <td>5</td>
+      <td>0</td>
+      <td>3629</td>
+      <td>3629</td>
+      <td>1835.49</td>
+      <td>1702.31</td>
+      <td>1457.89</td>
+      <td>377.60</td>
+      <td>1793.51</td>
+      <td>2016-12-14</td>
+      <td>38.5</td>
+      <td>15.2</td>
+      <td>0.0</td>
+      <td>14.5</td>
+      <td>3.5</td>
+      <td>3.9</td>
+      <td>10.4</td>
+      <td>10.14</td>
+      <td>358.05</td>
+      <td>38.71</td>
+      <td>15.17</td>
+      <td>50.00</td>
+      <td>11600.00</td>
+      <td>73.96</td>
+      <td>14.00</td>
+      <td>93.75</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>9.50</td>
+      <td>37.00</td>
+      <td>7.25</td>
+      <td>1.75</td>
+      <td>1.50</td>
+      <td>35.25</td>
+      <td>0.00</td>
+      <td>25.25</td>
+      <td>0.00</td>
+      <td>8.00</td>
+      <td>3.25</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>8.50</td>
+      <td>11.25</td>
+      <td>17.50</td>
+      <td>17.25</td>
+      <td>0.0</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>32569</td>
+      <td>BLACK SWAN HZ LAPRICE CREEK A-97-A/94-G-8</td>
+      <td>a-097-A/094-G-08</td>
+      <td>200/a-076-A/094-G-08/00</td>
+      <td>BLACK SWAN ENERGY LTD.</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>437</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>159.0</td>
+      <td>10</td>
+      <td>0</td>
+      <td>3486</td>
+      <td>3486</td>
+      <td>1737.83</td>
+      <td>1622.66</td>
+      <td>1399.83</td>
+      <td>338.00</td>
+      <td>1748.17</td>
+      <td>2017-03-28</td>
+      <td>42.1</td>
+      <td>18.0</td>
+      <td>0.0</td>
+      <td>7.6</td>
+      <td>3.5</td>
+      <td>7.1</td>
+      <td>4.1</td>
+      <td>18.56</td>
+      <td>187.80</td>
+      <td>18.57</td>
+      <td>11.04</td>
+      <td>37.20</td>
+      <td>6459.09</td>
+      <td>14.60</td>
+      <td>42.75</td>
+      <td>187.75</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>31.75</td>
+      <td>80.25</td>
+      <td>9.75</td>
+      <td>0.00</td>
+      <td>3.00</td>
+      <td>33.75</td>
+      <td>6.00</td>
+      <td>18.25</td>
+      <td>21.50</td>
+      <td>5.75</td>
+      <td>4.75</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>15.50</td>
+      <td>21.75</td>
+      <td>25.75</td>
+      <td>43.00</td>
+      <td>1284.0</td>
+      <td>5.75</td>
+    </tr>
+    <tr>
+      <td>32586</td>
+      <td>BLACK SWAN HZ NIG CREEK A-032-C/094-H-04</td>
+      <td>a-032-C/094-H-04</td>
+      <td>200/a-020-B/094-H-04/00</td>
+      <td>BLACK SWAN ENERGY LTD.</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>437</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>159.0</td>
+      <td>6</td>
+      <td>0</td>
+      <td>4164</td>
+      <td>4164</td>
+      <td>1869.00</td>
+      <td>1722.67</td>
+      <td>1504.85</td>
+      <td>364.15</td>
+      <td>2295.00</td>
+      <td>2017-07-08</td>
+      <td>38.2</td>
+      <td>17.6</td>
+      <td>0.2</td>
+      <td>14.1</td>
+      <td>3.1</td>
+      <td>4.3</td>
+      <td>6.2</td>
+      <td>12.98</td>
+      <td>320.82</td>
+      <td>34.99</td>
+      <td>14.10</td>
+      <td>54.50</td>
+      <td>14077.78</td>
+      <td>58.47</td>
+      <td>19.50</td>
+      <td>119.00</td>
+      <td>0.75</td>
+      <td>0.0</td>
+      <td>13.25</td>
+      <td>54.75</td>
+      <td>8.25</td>
+      <td>1.50</td>
+      <td>1.00</td>
+      <td>44.00</td>
+      <td>6.00</td>
+      <td>19.25</td>
+      <td>3.75</td>
+      <td>7.00</td>
+      <td>4.25</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>9.75</td>
+      <td>18.00</td>
+      <td>5.00</td>
+      <td>5.00</td>
+      <td>415.0</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>32587</td>
+      <td>BLACK SWAN HZ NIG CREEK A-A32-C/94-H-4</td>
+      <td>a-032-C/094-H-04</td>
+      <td>200/d-020-B/094-H-04/00</td>
+      <td>BLACK SWAN ENERGY LTD.</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>437</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>159.0</td>
+      <td>7</td>
+      <td>0</td>
+      <td>3840</td>
+      <td>3840</td>
+      <td>1843.47</td>
+      <td>1732.12</td>
+      <td>1505.57</td>
+      <td>337.90</td>
+      <td>1996.53</td>
+      <td>2017-07-28</td>
+      <td>40.3</td>
+      <td>18.8</td>
+      <td>0.5</td>
+      <td>12.7</td>
+      <td>4.0</td>
+      <td>3.8</td>
+      <td>6.6</td>
+      <td>11.36</td>
+      <td>337.89</td>
+      <td>34.91</td>
+      <td>14.43</td>
+      <td>555.00</td>
+      <td>11071.43</td>
+      <td>70.05</td>
+      <td>6.75</td>
+      <td>110.00</td>
+      <td>1.50</td>
+      <td>0.0</td>
+      <td>10.50</td>
+      <td>51.25</td>
+      <td>6.50</td>
+      <td>0.50</td>
+      <td>3.00</td>
+      <td>34.75</td>
+      <td>0.00</td>
+      <td>18.00</td>
+      <td>1.75</td>
+      <td>5.50</td>
+      <td>4.75</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>11.00</td>
+      <td>13.75</td>
+      <td>17.00</td>
+      <td>2.50</td>
+      <td>0.0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>32588</td>
+      <td>BLACK SWAN HZ NIG CREEK A-B32-C/94-H-4</td>
+      <td>a-032-C/094-H-04</td>
+      <td>200/a-030-B/094-H-04/00</td>
+      <td>BLACK SWAN ENERGY LTD.</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>437</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>159.0</td>
+      <td>5</td>
+      <td>0</td>
+      <td>3662</td>
+      <td>3662</td>
+      <td>1877.00</td>
+      <td>1716.23</td>
+      <td>1505.80</td>
+      <td>371.20</td>
+      <td>1785.00</td>
+      <td>2017-07-29</td>
+      <td>37.7</td>
+      <td>18.8</td>
+      <td>0.0</td>
+      <td>13.1</td>
+      <td>4.1</td>
+      <td>5.1</td>
+      <td>7.5</td>
+      <td>10.09</td>
+      <td>362.80</td>
+      <td>40.13</td>
+      <td>13.83</td>
+      <td>51.67</td>
+      <td>10833.33</td>
+      <td>68.65</td>
+      <td>12.25</td>
+      <td>91.25</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>12.25</td>
+      <td>45.50</td>
+      <td>6.00</td>
+      <td>1.00</td>
+      <td>1.25</td>
+      <td>31.75</td>
+      <td>0.00</td>
+      <td>18.25</td>
+      <td>3.75</td>
+      <td>5.25</td>
+      <td>3.50</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>10.00</td>
+      <td>12.50</td>
+      <td>3.00</td>
+      <td>3.50</td>
+      <td>0.0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>32589</td>
+      <td>BLACK SWAN HZ NIG CREEK A-C32-C/94-H-4</td>
+      <td>a-032-C/094-H-04</td>
+      <td>200/b-053-C/094-H-04/00</td>
+      <td>BLACK SWAN ENERGY LTD.</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>437</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>159.0</td>
+      <td>6</td>
+      <td>0</td>
+      <td>3857</td>
+      <td>3857</td>
+      <td>1862.78</td>
+      <td>1725.58</td>
+      <td>1485.68</td>
+      <td>377.10</td>
+      <td>1994.22</td>
+      <td>2017-08-01</td>
+      <td>40.2</td>
+      <td>16.5</td>
+      <td>0.5</td>
+      <td>13.3</td>
+      <td>4.0</td>
+      <td>4.2</td>
+      <td>7.2</td>
+      <td>11.08</td>
+      <td>348.00</td>
+      <td>36.05</td>
+      <td>14.11</td>
+      <td>48.89</td>
+      <td>11611.11</td>
+      <td>56.57</td>
+      <td>9.00</td>
+      <td>107.00</td>
+      <td>1.25</td>
+      <td>0.0</td>
+      <td>11.25</td>
+      <td>44.00</td>
+      <td>6.75</td>
+      <td>0.00</td>
+      <td>2.00</td>
+      <td>35.25</td>
+      <td>0.00</td>
+      <td>19.25</td>
+      <td>4.00</td>
+      <td>6.25</td>
+      <td>4.25</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>10.75</td>
+      <td>14.00</td>
+      <td>2.00</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>32590</td>
+      <td>BLACK SWAN HZ NIG CREEK A-D32-C/94-H-4</td>
+      <td>a-032-C/094-H-04</td>
+      <td>200/a-054-C/094-H-04/00</td>
+      <td>BLACK SWAN ENERGY LTD.</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>437</td>
+      <td>DIR</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>159.0</td>
+      <td>6</td>
+      <td>0</td>
+      <td>3717</td>
+      <td>3717</td>
+      <td>1852.26</td>
+      <td>1714.11</td>
+      <td>1475.83</td>
+      <td>376.43</td>
+      <td>1864.74</td>
+      <td>2017-08-02</td>
+      <td>34.2</td>
+      <td>17.6</td>
+      <td>0.3</td>
+      <td>16.9</td>
+      <td>4.5</td>
+      <td>4.0</td>
+      <td>7.9</td>
+      <td>9.92</td>
+      <td>374.82</td>
+      <td>45.61</td>
+      <td>14.83</td>
+      <td>60.00</td>
+      <td>11650.00</td>
+      <td>76.11</td>
+      <td>9.00</td>
+      <td>81.50</td>
+      <td>0.75</td>
+      <td>0.0</td>
+      <td>9.50</td>
+      <td>42.00</td>
+      <td>5.75</td>
+      <td>0.50</td>
+      <td>1.00</td>
+      <td>40.25</td>
+      <td>0.00</td>
+      <td>18.75</td>
+      <td>4.00</td>
+      <td>6.75</td>
+      <td>4.75</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>10.75</td>
+      <td>11.25</td>
+      <td>3.00</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td>32591</td>
+      <td>BLACK SWAN HZ NIG CREEK A-E32-C/94-H-4</td>
+      <td>a-032-C/094-H-04</td>
+      <td>200/c-044-C/094-H-04/00</td>
+      <td>BLACK SWAN ENERGY LTD.</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>437</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>159.0</td>
+      <td>6</td>
+      <td>0</td>
+      <td>3731</td>
+      <td>3731</td>
+      <td>1878.14</td>
+      <td>1727.76</td>
+      <td>1495.50</td>
+      <td>382.64</td>
+      <td>1852.86</td>
+      <td>2017-08-03</td>
+      <td>39.7</td>
+      <td>14.8</td>
+      <td>0.0</td>
+      <td>13.0</td>
+      <td>3.3</td>
+      <td>4.4</td>
+      <td>7.4</td>
+      <td>10.23</td>
+      <td>364.74</td>
+      <td>38.27</td>
+      <td>12.40</td>
+      <td>60.00</td>
+      <td>12500.00</td>
+      <td>85.19</td>
+      <td>7.00</td>
+      <td>97.50</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>10.75</td>
+      <td>36.25</td>
+      <td>6.00</td>
+      <td>4.75</td>
+      <td>2.25</td>
+      <td>32.00</td>
+      <td>0.00</td>
+      <td>18.25</td>
+      <td>5.25</td>
+      <td>6.00</td>
+      <td>3.25</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>8.00</td>
+      <td>13.25</td>
+      <td>16.50</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>2.00</td>
+    </tr>                                    
+                                </tbody>
+                          </table>
+   
+                          
+                          <div class="row">
+                              <div class="col-md-4 col-md-offset-4 text-center">
+                                  <ul class="pagination" id="myPager"></ul>
+                              </div>
+                          </div>
+
+                      </div>
+                      <!--/table-resp-->
+                  </div>
+
+                  <!--/tab-pane-->
+                  <div class="tab-pane" id="completions">
+                    
+                        <p>  Coming Soon!</p>
+                        <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+                    
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="production">
+                          <p>  Coming Soon!</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="financials">
+                          <p>  Coming Soon!</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="custom-data">
+                          <p>  Coming Soon!</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="visualizations">
+                          <p>  Coming Soon!</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>                  
+
+              </div>
+              <!--/tab-pane-->
+          </ul>
+          <!--/tab-content-->
+        </div>
+        <!--/col-9-->          
+                      
+    </div>
+    <!--/row-->
+
+    <div class="row">
+        <div class="col-xs-6">        
+            <p>*Data accessed from <strong><u>public</u></strong> sources only.</p>
+        </div>
+        <div class="col-xs-6 text-right">        
+            <p>Access this Unsist energy dataset directly and <a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/BLACK%20SWAN.csv?alt=media&token=0e1f62fd-e566-44cb-bd12-039686f426e0"><strong>download CSV</strong></a></p>
+            <br>
+        </div> 
+    </div>
+
+    <div class="row" style="background-color: white">
+         <div class="col-lg-6 col-lg-offset-3 text-center">
+            <ul class="list-group">
+                <h3>Enjoying the <span class="text-primary">free</span> insights?</h3>
+                <p>We provide much deeper data &amp; analytics than what you see here.
+                <br>Contact us to learn more.</p>
+                <a class="btn btn-primary" href="../demo.html#contact">Contact Us</a>   
+                <br>      
+            </ul>
+        </div>
+    </div>   
+
+
+    </section> 
+
+    <!-- footer --> 
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Unsist Inc. 2018</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="http://www.linkedin.com/company/unsist" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="http://www.facebook.com/unsist" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>   
+                        <li><a href="http://www.twitter.com/UnsistDS" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://medium.com/unsist" target="_blank"><i class="fa fa-medium"></i></a>
+                        </li> 
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="http://www.unsist.com/privacy-policy">Privacy Policy</a>
+                        </li>
+                        <li><a href="http://www.unsist.com/terms-of-use">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <!-- script src="../vendor/jquery/jquery.min.js" /script -->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="../../js/jqBootstrapValidation.js"></script>
+    <script src="../../js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="../../js/agency.min.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+
+
+<h2 id="bigOne"></h2>
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCqP3WriWOlSZqa1zvg7DY2dzPJM3yOGm8",
+    authDomain: "mockup-1eaa9.firebaseapp.com",
+    databaseURL: "https://mockup-1eaa9.firebaseio.com",
+    projectId: "mockup-1eaa9",
+    storageBucket: "mockup-1eaa9.appspot.com",
+    messagingSenderId: "989389729849"
+  };
+  firebase.initializeApp(config);
+
+
+  var bigOne = document.getElementById('bigOne');
+  var dbRef = firebase.database().ref()
+  dfRef.on('value', snap => bigOne.innerText = snap.val());
+
+</script>
+
+<script type='text/javascript'>
+  var divElement = document.getElementById('viz1520272339512');                    
+  var vizElement = divElement.getElementsByTagName('object')[0];                    
+  vizElement.style.width='520px';vizElement.style.height='300px';                    
+  var scriptElement = document.createElement('script');                    
+  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+  vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+      var table = $('#table_id').DataTable( {
+        "scrollY": "400px",
+        "scrollX": "400px"
+      } );
+    } )
+</script>
+
+</body>
+
+</html>

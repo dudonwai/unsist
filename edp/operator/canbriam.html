@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="UNSIST Data Science - Creating technology for Oil &amp; Gas that never stops.">
+    <meta name="author" content="Dudon Wai">
+    <meta name="keywords" content="UNSIST Data Science Calgary Alberta Canada Oil Gas Energy Technology NextAI Dudon Wai">
+
+    <meta property="og:site_name" content="UNSIST Data Science">
+    <meta property="og:title" content="UNSIST Data Science">
+    <meta property="og:description" content="UNSIST Data Science - Creating technology for Oil &amp; Gas that never stops.">
+    <meta property="og:url" content="http://www.unsist.com/">
+    <meta property="og:image" content="http://www.unsist.com/img/unsist.jpeg">
+
+    <title>UNSIST Data Science</title>
+
+      <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../../favicon.png?">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="../../css/agency.min.css" rel="stylesheet">
+
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+            
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-85617324-3', 'auto');
+    ga('send', 'pageview');
+</script>
+
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- JQuery Reference
+      If you have added jQuery reference in your master page then ignore, 
+      Else include this too with the below reference -->
+
+<script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+<!-- https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js
+https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js -->
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css">
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="../../index.html#page-top" alt="UNSIST Data Science"><b>UNSIST</b> </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" type="button" data-toggle="dropdown"><b>Energy Data Platform</b></a>
+                        <ul class="dropdown-menu" >                          
+                            <li><a href="../../edp.html"><span class="text-muted"><strong><u>Energy Data Platform</u></strong></span></a></li>                            
+                            <li><a href="arc.html"><span class="text-muted">ARC RESOURCES</span></a></li>                            
+                            <li><a href="blackswan.html"><span class="text-muted">BLACK SWAN</span></a></li>
+                            <li><a href="canbriam.html"><span class="text-muted">CANBRIAM</span></a></li>
+                            <li><a href="cnrl.html"><span class="text-muted">CNRL</span></a></li>
+                            <li><a href="crew.html"><span class="text-muted">CREW</span></a></li>
+                            <li><a href="encana.html"><span class="text-muted">ENCANA</span></a></li>
+                            <li><a href="murphy.html"><span class="text-muted">MURPHY</span></a></li>
+                            <li><a href="paintedpony.html"><span class="text-muted">PAINTED PONY</span></a></li>
+                            <li><a href="progress.html"><span class="text-muted">PROGRESS</span></a></li>
+                            <li><a href="shell.html"><span class="text-muted">SHELL</span></a></li>
+                            <li><a href="storm.html"><span class="text-muted">STORM RESOURCES</span></a></li>
+                            <li><a href="tourmaline.html"><span class="text-muted">TOURMALINE</span></a></li>
+                            <li><a href="all.html"><span class="text-muted"><strong><u>ALL COMPANIES</u></strong></span></a></li>
+                        </ul>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="https://unsist-exchange.myshopify.com"><b>Exchange</b></a>
+                    </li>   
+
+                    <li>
+                        <a class="page-scroll" href="../../blog.html"><b>Blog</b></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="../../about.html"><b>About</b></a>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="../../#contact"><b>Contact</b></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+
+    <section style="background-color: #F2F4F4">
+
+      <div class="container">
+
+        <!-- Top Row -->
+        <div class="row">
+
+            <!-- Company Logo and Info -->
+            <div class="col-sm-3">
+                <ul class="list-group">
+                    <li class="list-group-item text-muted" style ='background-color: #e3e6e8'><img title="profile image" class="img-responsive img-centered" height="110" min-width="110" align="middle" src="../../img/operator/canbriam.png"></li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Company</strong></span> Canbriam Energy</li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Market Cap (2017)</strong></span> 
+                        <a target="_blank" href="https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=41389799">N/A</a></li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Revenue (2017)</strong></span> 
+                        <a target="_blank" href="https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=41389799">N/A</a></li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Net Income (2017)</strong></span> 
+                        <a target="_blank" href="https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=41389799">N/A</a></li>
+                </ul>
+            </div>
+
+            <!-- Insights -->
+                <div class="col-lg-9 text-center">
+                    <div class="well" style="background-color: white">
+                        <div style="overflow-x:auto;">
+                            <h3 align="center">Insights &amp; Benchmarks</h3>
+                            <table class="table table-responsive" id="">
+                                <thead>
+                                    <tr>
+                                      <td></td>
+                                      <td class="text-primary"><strong>Canbriam Energy</strong></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td class="text-primary"><strong>Group Benchmark</strong></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td></td>
+                                        <td><strong>Avg</strong></td>
+                                        <td><strong>P10</strong></td>
+                                        <td><strong>P50</strong></td>
+                                        <td><strong>P90</strong></td>
+                                        <td><strong>Avg</strong></td>
+                                        <td><strong>P10</strong></td>
+                                        <td><strong>P50</strong></td>
+                                        <td><strong>P90</strong></td></tr>     
+<tr>
+  <td><strong>Operating Day</strong></td>
+  <td>23.74</td>
+  <td>20.57</td>
+  <td>23.30</td>
+  <td>27.44</td>
+  <td>14.51</td>
+  <td>8.41</td>
+  <td>13.82</td>
+  <td>21.68</td>
+</tr>
+<tr>
+  <td><strong>m / Operating Day</strong></td>
+  <td>198.24</td>
+  <td>165.21</td>
+  <td>197.26</td>
+  <td>228.07</td>
+  <td>333.62</td>
+  <td>177.10</td>
+  <td>324.36</td>
+  <td>490.03</td>
+</tr>
+<tr>
+  <td><strong>Drlg %</strong></td>
+  <td>45.11</td>
+  <td>41.30</td>
+  <td>44.70</td>
+  <td>47.70</td>
+  <td>42.70</td>
+  <td>34.28</td>
+  <td>42.50</td>
+  <td>51.56</td>
+</tr>
+<tr>
+  <td><strong>MD</strong></td>
+  <td>4646.18</td>
+  <td>4270.00</td>
+  <td>4541.00</td>
+  <td>5080.00</td>
+  <td>4394.33</td>
+  <td>3576.40</td>
+  <td>4168.00</td>
+  <td>5223.40</td>
+</tr>
+<tr>
+  <td><strong>TVD</strong></td>
+  <td>2168.02</td>
+  <td>2151.26</td>
+  <td>2168.02</td>
+  <td>2184.77</td>
+  <td>2064.53</td>
+  <td>1783.73</td>
+  <td>2075.59</td>
+  <td>2413.70</td>
+</tr>
+<tr>
+  <td><strong>Lateral</strong></td>
+  <td>2212.69</td>
+  <td>1868.70</td>
+  <td>2208.00</td>
+  <td>2595.41</td>
+  <td>1999.09</td>
+  <td>1415.92</td>
+  <td>1936.90</td>
+  <td>2749.56</td>
+</tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>                         
+
+          
+        </div>
+
+        <div class="row">
+            <h3 align="center">Company Data</h3>
+            <div class="col-sm-3">
+                <!--left col-->
+
+                <ul class="list-group">
+                    <li class="list-group-item text-muted">2017 Activity <i class="fa fa-dashboard fa-1x"></i></li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Drilled</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Completed</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Producing</strong></span> Coming Soon</li>
+                </ul>
+
+                <ul class="list-group">
+                    <li class="list-group-item text-muted">Cost and Production Estimates </li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Production (2017)</strong></span> 
+                        <a target="_blank" href="http://canbriam.com/investors/"> 35.0 kboe/d</a></li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Netback (2017)</strong></span> 
+                        <a target="_blank" href="http://canbriam.com/investors/"> $16.31 CAD/boe</a></li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>D&amp;C Cost (2017)</strong></span> Coming Soon</li>
+                    <!-- Cost = fn(TVD, TLL, TPP), where TPP = TLL -->
+                    <li class="list-group-item text-left"> Learn how we calculate this <a href="http://unsist.com/demo/definitions">here</a>.</li>
+                </ul>
+
+                <ul class="list-group">
+                    <li class="list-group-item text-muted">Top Ranks <i class="fa fa-link fa-1x"></i></li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Metric 1</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Metric 2</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Metric 3</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-left">See all company rankings <a href="http://unsist.com/demo/operator/all">here</a>.</li>
+                </ul>
+            </div>
+            <!--/col-3-->
+
+
+            <div class="col-sm-9">
+                <ul class="list-group">
+
+                    <ul class="nav nav-tabs" id="myTab">
+                        <li class="active"><a href="#drilling" data-toggle="tab">Drilling</a></li>
+                        <li><a href="#completions" data-toggle="tab">Completions</a></li>
+                        <li><a href="#production" data-toggle="tab">Production</a></li>
+                        <li><a href="#financials" data-toggle="tab">Financials</a></li>
+                        <li><a href="#custom-data" data-toggle="tab">Custom Data</a></li>
+                        <li><a href="#visualizations" data-toggle="tab">Visualizations</a></li>
+                    </ul>
+                    <br>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="drilling">
+                        <div>
+                            <table class="table table-hover " id= "table_id">
+                                <thead>
+    <tr>
+      <th>License No</th>
+      <th>Well Name</th>
+      <th>Surface Location</th>
+      <th>Unique Well Id</th>
+      <th>Operator</th>
+      <th>Contractor</th>
+      <th>Rig No</th>
+      <th>Well Type</th>
+      <th>Prov</th>
+      <th>Loc Type</th>
+      <th>Triple/Double</th>
+      <th>First Bit Size (mm)</th>
+      <th>Last Bit Size (mm)</th>
+      <th>Number of Bits</th>
+      <th>From (m)</th>
+      <th>To (m)</th>
+      <th>Tour Sheet Start Depth to TD (m)</th>
+      <th>Heel (mMD)</th>
+      <th>TD (mTVD)</th>
+      <th>Surface and Vertical Length (m)</th>
+      <th>Tangent and Build Length (m)</th>
+      <th>Lateral Length (m)</th>
+      <th>Tour Sheet Start Date</th>
+      <th>Drilling %</th>
+      <th>Trip %</th>
+      <th>Reaming %</th>
+      <th>Dev Survey and Connections %</th>
+      <th>Directional Work %</th>
+      <th>Cond Mud &amp; Circ %</th>
+      <th>Casing and Cement %</th>
+      <th>Operating Days (d)</th>
+      <th>m / Operating Days (m/d)</th>
+      <th>On Bottom ROP Avg (m/h)</th>
+      <th>Lateral WOB Avg (kDaN)</th>
+      <th>Lateral RPM Avg</th>
+      <th>Lateral Torque Avg</th>
+      <th>Lateral ROP Avg (m/h)</th>
+      <th>Rig Up (h)</th>
+      <th>Drill Actual (h)</th>
+      <th>Reaming (h)</th>
+      <th>Coring (h)</th>
+      <th>Cond Mud &amp; Circ (h)</th>
+      <th>Trips (h)</th>
+      <th>Rig Service (h)</th>
+      <th>Repair Rig (h)</th>
+      <th>Cut Off Drilg Line (h)</th>
+      <th>Dev Survey (h)</th>
+      <th>Wireline Logs (h)</th>
+      <th>Run Csg &amp; Cement (h)</th>
+      <th>Wait On Cement (h)</th>
+      <th>Nipple Up BOP (h)</th>
+      <th>Test BOP (h)</th>
+      <th>Drillstem Test (h)</th>
+      <th>Plug Back (h)</th>
+      <th>Squeeze Cement (h)</th>
+      <th>Fishing (h)</th>
+      <th>Dir Work (h)</th>
+      <th>Safety Meeting (h)</th>
+      <th>Tear Down (h)</th>
+      <th>Waiting On (h)</th>
+      <th>Rig Watch (h)</th>
+      <th>Other (h)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>31453</td>
+      <td>CANBRIAM HZ ALTARES B-A95-H/094-B-08</td>
+      <td>b-095-H/094-B-08</td>
+      <td>202/c-064-H/094-B-08/00</td>
+      <td>CANBRIAM ENERGY INC</td>
+      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+      <td>382</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>171.0</td>
+      <td>9</td>
+      <td>0</td>
+      <td>4541</td>
+      <td>4541</td>
+      <td>2333.00</td>
+      <td>NaN</td>
+      <td>1993.87</td>
+      <td>339.13</td>
+      <td>2208.00</td>
+      <td>2017-03-01</td>
+      <td>40.8</td>
+      <td>16.5</td>
+      <td>0.0</td>
+      <td>3.3</td>
+      <td>8.8</td>
+      <td>4.7</td>
+      <td>5.5</td>
+      <td>23.02</td>
+      <td>197.26</td>
+      <td>20.14</td>
+      <td>11.69</td>
+      <td>50.31</td>
+      <td>8114.67</td>
+      <td>28.49</td>
+      <td>35.00</td>
+      <td>225.50</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>25.75</td>
+      <td>91.00</td>
+      <td>12.50</td>
+      <td>0.00</td>
+      <td>2.25</td>
+      <td>18.00</td>
+      <td>5.5</td>
+      <td>30.50</td>
+      <td>10.00</td>
+      <td>18.50</td>
+      <td>7.75</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>24.0</td>
+      <td>48.75</td>
+      <td>27.25</td>
+      <td>24.50</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>5.25</td>
+    </tr>
+    <tr>
+      <td>31627</td>
+      <td>CANBRIAM HZ ALTARES C-H4-H/94-B-8</td>
+      <td>c-004-H/094-B-08</td>
+      <td>200/B-035-H/094-B-08/00</td>
+      <td>CANBRIAM ENERGY INC</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>46</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>171.0</td>
+      <td>13</td>
+      <td>0</td>
+      <td>5010</td>
+      <td>5010</td>
+      <td>2539.90</td>
+      <td>NaN</td>
+      <td>2163.10</td>
+      <td>376.80</td>
+      <td>2470.10</td>
+      <td>2016-10-28</td>
+      <td>44.7</td>
+      <td>18.7</td>
+      <td>0.3</td>
+      <td>11.9</td>
+      <td>4.2</td>
+      <td>4.6</td>
+      <td>5.0</td>
+      <td>28.79</td>
+      <td>174.01</td>
+      <td>16.23</td>
+      <td>10.72</td>
+      <td>53.20</td>
+      <td>10984.00</td>
+      <td>20.58</td>
+      <td>13.25</td>
+      <td>308.75</td>
+      <td>2.25</td>
+      <td>0.0</td>
+      <td>31.50</td>
+      <td>129.00</td>
+      <td>14.50</td>
+      <td>0.00</td>
+      <td>4.25</td>
+      <td>82.25</td>
+      <td>0.0</td>
+      <td>34.25</td>
+      <td>10.00</td>
+      <td>23.75</td>
+      <td>6.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>29.25</td>
+      <td>14.00</td>
+      <td>4.50</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>1.25</td>
+    </tr>
+    <tr>
+      <td>31815</td>
+      <td>Canbriam HZ Altares D15-1-85-26</td>
+      <td>15-01-085-26W6</td>
+      <td>100/03-06-085-25W6/00</td>
+      <td>CANBRIAM ENERGY INC</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>444</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>DLS</td>
+      <td>double</td>
+      <td>171.0</td>
+      <td>159.0</td>
+      <td>14</td>
+      <td>0</td>
+      <td>3934</td>
+      <td>3934</td>
+      <td>2322.07</td>
+      <td>2147.07</td>
+      <td>687.67</td>
+      <td>1634.40</td>
+      <td>1611.93</td>
+      <td>2017-02-10</td>
+      <td>47.5</td>
+      <td>16.5</td>
+      <td>0.0</td>
+      <td>7.5</td>
+      <td>4.2</td>
+      <td>4.0</td>
+      <td>6.6</td>
+      <td>20.59</td>
+      <td>191.03</td>
+      <td>16.76</td>
+      <td>16.67</td>
+      <td>43.33</td>
+      <td>10143.67</td>
+      <td>52.85</td>
+      <td>14.75</td>
+      <td>234.75</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>19.75</td>
+      <td>81.50</td>
+      <td>9.75</td>
+      <td>0.00</td>
+      <td>5.00</td>
+      <td>37.00</td>
+      <td>0.0</td>
+      <td>32.75</td>
+      <td>6.75</td>
+      <td>15.25</td>
+      <td>7.75</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>20.75</td>
+      <td>21.75</td>
+      <td>15.00</td>
+      <td>4.00</td>
+      <td>0.0</td>
+      <td>1.50</td>
+    </tr>
+    <tr>
+      <td>31816</td>
+      <td>Canbriam HZ Altares E15-1-85-26</td>
+      <td>15-01-085-26W6</td>
+      <td>200/C-030-E/094-A-05/00</td>
+      <td>CANBRIAM ENERGY INC</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>444</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>159.0</td>
+      <td>8</td>
+      <td>0</td>
+      <td>4762</td>
+      <td>4762</td>
+      <td>2306.93</td>
+      <td>2188.96</td>
+      <td>1967.78</td>
+      <td>339.15</td>
+      <td>2455.07</td>
+      <td>2017-03-04</td>
+      <td>46.8</td>
+      <td>11.8</td>
+      <td>0.0</td>
+      <td>10.1</td>
+      <td>3.7</td>
+      <td>4.8</td>
+      <td>6.1</td>
+      <td>17.57</td>
+      <td>270.99</td>
+      <td>24.14</td>
+      <td>18.07</td>
+      <td>49.29</td>
+      <td>10005.58</td>
+      <td>36.37</td>
+      <td>15.00</td>
+      <td>197.25</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>20.25</td>
+      <td>49.75</td>
+      <td>10.75</td>
+      <td>0.00</td>
+      <td>2.75</td>
+      <td>42.50</td>
+      <td>0.0</td>
+      <td>25.75</td>
+      <td>9.50</td>
+      <td>16.50</td>
+      <td>7.25</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>15.75</td>
+      <td>19.00</td>
+      <td>18.25</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>4.75</td>
+    </tr>
+    <tr>
+      <td>32843</td>
+      <td>CANBRIAM HZ ALTARES C-D54-A/94-B-8</td>
+      <td>c-054-A/094-B-08</td>
+      <td>200/A-043-A/094-B-08/00</td>
+      <td>CANBRIAM ENERGY INC</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>46</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>171.0</td>
+      <td>10</td>
+      <td>0</td>
+      <td>4270</td>
+      <td>4270</td>
+      <td>2401.30</td>
+      <td>NaN</td>
+      <td>2065.00</td>
+      <td>336.30</td>
+      <td>1868.70</td>
+      <td>2017-03-09</td>
+      <td>45.7</td>
+      <td>15.4</td>
+      <td>0.0</td>
+      <td>11.0</td>
+      <td>3.3</td>
+      <td>5.8</td>
+      <td>6.3</td>
+      <td>24.48</td>
+      <td>174.43</td>
+      <td>15.90</td>
+      <td>13.08</td>
+      <td>52.69</td>
+      <td>10053.85</td>
+      <td>31.02</td>
+      <td>33.50</td>
+      <td>268.50</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>34.00</td>
+      <td>90.50</td>
+      <td>11.25</td>
+      <td>0.00</td>
+      <td>3.25</td>
+      <td>64.50</td>
+      <td>0.0</td>
+      <td>37.25</td>
+      <td>5.75</td>
+      <td>24.75</td>
+      <td>8.50</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>19.25</td>
+      <td>13.00</td>
+      <td>21.50</td>
+      <td>4.50</td>
+      <td>0.0</td>
+      <td>7.00</td>
+    </tr>
+    <tr>
+      <td>32846</td>
+      <td>CANBRIAM HZ ALTARES C-E54-A/94-B-8</td>
+      <td>c-054-A/094-B-08</td>
+      <td>202/b-042-A/094-B-08/00</td>
+      <td>CANBRIAM ENERGY INC</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>46</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>171.0</td>
+      <td>8</td>
+      <td>0</td>
+      <td>4433</td>
+      <td>4433</td>
+      <td>2463.70</td>
+      <td>NaN</td>
+      <td>2121.30</td>
+      <td>342.40</td>
+      <td>1969.30</td>
+      <td>2017-03-16</td>
+      <td>44.6</td>
+      <td>12.7</td>
+      <td>0.0</td>
+      <td>10.0</td>
+      <td>1.9</td>
+      <td>15.2</td>
+      <td>4.3</td>
+      <td>27.10</td>
+      <td>163.55</td>
+      <td>15.27</td>
+      <td>15.29</td>
+      <td>52.62</td>
+      <td>10580.95</td>
+      <td>19.03</td>
+      <td>16.75</td>
+      <td>290.25</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>98.75</td>
+      <td>82.75</td>
+      <td>12.75</td>
+      <td>0.00</td>
+      <td>3.00</td>
+      <td>64.75</td>
+      <td>0.0</td>
+      <td>27.75</td>
+      <td>17.50</td>
+      <td>21.00</td>
+      <td>5.75</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>12.50</td>
+      <td>13.25</td>
+      <td>20.75</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td>33161</td>
+      <td>CANBRIAM HZ ALTARES D-A076-H/094-B-08</td>
+      <td>d-076-H/094-B-08</td>
+      <td>200/a-054-H/094-B-08/00</td>
+      <td>CANBRIAM ENERGY INC</td>
+      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+      <td>382</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>171.0</td>
+      <td>9</td>
+      <td>0</td>
+      <td>5080</td>
+      <td>5080</td>
+      <td>2484.59</td>
+      <td>NaN</td>
+      <td>2140.42</td>
+      <td>344.17</td>
+      <td>2595.41</td>
+      <td>2017-03-18</td>
+      <td>41.3</td>
+      <td>14.5</td>
+      <td>0.0</td>
+      <td>1.7</td>
+      <td>14.3</td>
+      <td>4.2</td>
+      <td>6.7</td>
+      <td>25.68</td>
+      <td>197.84</td>
+      <td>19.98</td>
+      <td>14.13</td>
+      <td>267.74</td>
+      <td>10731.43</td>
+      <td>25.26</td>
+      <td>33.00</td>
+      <td>254.25</td>
+      <td>0.25</td>
+      <td>0.0</td>
+      <td>25.75</td>
+      <td>89.25</td>
+      <td>15.00</td>
+      <td>1.00</td>
+      <td>4.25</td>
+      <td>10.50</td>
+      <td>9.0</td>
+      <td>41.50</td>
+      <td>4.00</td>
+      <td>14.50</td>
+      <td>12.50</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>88.00</td>
+      <td>27.00</td>
+      <td>15.75</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>19.50</td>
+    </tr>
+    <tr>
+      <td>33162</td>
+      <td>CANBRIAM HZ ALTARES D-B076-H/094-B-08</td>
+      <td>d-076-H/094-B-08</td>
+      <td>202/a-054-H/094-B-08/00</td>
+      <td>CANBRIAM ENERGY INC</td>
+      <td>PRECISION DRILLING, DIV OF PDCLP</td>
+      <td>382</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>171.0</td>
+      <td>7</td>
+      <td>243</td>
+      <td>4935</td>
+      <td>4692</td>
+      <td>2368.14</td>
+      <td>NaN</td>
+      <td>2012.01</td>
+      <td>356.13</td>
+      <td>2566.86</td>
+      <td>2017-03-24</td>
+      <td>44.6</td>
+      <td>12.3</td>
+      <td>0.1</td>
+      <td>5.8</td>
+      <td>9.7</td>
+      <td>3.5</td>
+      <td>7.4</td>
+      <td>20.57</td>
+      <td>228.07</td>
+      <td>21.33</td>
+      <td>13.14</td>
+      <td>88.64</td>
+      <td>9926.64</td>
+      <td>36.80</td>
+      <td>17.75</td>
+      <td>220.00</td>
+      <td>0.25</td>
+      <td>0.0</td>
+      <td>17.50</td>
+      <td>60.50</td>
+      <td>11.50</td>
+      <td>6.25</td>
+      <td>3.25</td>
+      <td>28.50</td>
+      <td>0.0</td>
+      <td>36.50</td>
+      <td>8.00</td>
+      <td>13.75</td>
+      <td>8.75</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>47.75</td>
+      <td>21.00</td>
+      <td>16.50</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>10.25</td>
+    </tr>
+    <tr>
+      <td>33638</td>
+      <td>Canbriam HZ Altares C-37-H/94-B-8</td>
+      <td>c-037-H/094-B-08</td>
+      <td>200/b-015-H/094-B-08/00</td>
+      <td>CANBRIAM ENERGY INC</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>46</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>171.0</td>
+      <td>9</td>
+      <td>0</td>
+      <td>5145</td>
+      <td>5145</td>
+      <td>2533.80</td>
+      <td>NaN</td>
+      <td>2179.10</td>
+      <td>354.70</td>
+      <td>2611.20</td>
+      <td>2017-11-22</td>
+      <td>48.1</td>
+      <td>12.7</td>
+      <td>1.0</td>
+      <td>12.0</td>
+      <td>2.7</td>
+      <td>4.6</td>
+      <td>5.7</td>
+      <td>23.30</td>
+      <td>220.80</td>
+      <td>19.14</td>
+      <td>13.61</td>
+      <td>51.39</td>
+      <td>11961.11</td>
+      <td>36.02</td>
+      <td>27.50</td>
+      <td>268.75</td>
+      <td>5.75</td>
+      <td>0.0</td>
+      <td>26.00</td>
+      <td>71.25</td>
+      <td>14.50</td>
+      <td>0.00</td>
+      <td>3.25</td>
+      <td>67.00</td>
+      <td>15.0</td>
+      <td>31.75</td>
+      <td>9.25</td>
+      <td>11.50</td>
+      <td>4.50</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>15.25</td>
+      <td>12.25</td>
+      <td>20.00</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>3.25</td>
+    </tr>
+    <tr>
+      <td>33947</td>
+      <td>CANBRIAM HZ ALTARES C-I84-A/94-B-8</td>
+      <td>c-084-A/094-B-08</td>
+      <td>203/c-005-H/094-B-08/00</td>
+      <td>CANBRIAM ENERGY INC</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>46</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>171.0</td>
+      <td>8</td>
+      <td>0</td>
+      <td>4465</td>
+      <td>4465</td>
+      <td>2478.40</td>
+      <td>NaN</td>
+      <td>562.10</td>
+      <td>1916.30</td>
+      <td>1986.60</td>
+      <td>2017-10-29</td>
+      <td>47.7</td>
+      <td>12.9</td>
+      <td>0.0</td>
+      <td>13.3</td>
+      <td>2.3</td>
+      <td>6.2</td>
+      <td>5.6</td>
+      <td>22.61</td>
+      <td>197.44</td>
+      <td>17.26</td>
+      <td>11.47</td>
+      <td>51.00</td>
+      <td>11126.67</td>
+      <td>25.97</td>
+      <td>8.75</td>
+      <td>258.75</td>
+      <td>0.00</td>
+      <td>4.0</td>
+      <td>33.75</td>
+      <td>70.00</td>
+      <td>12.50</td>
+      <td>0.00</td>
+      <td>2.75</td>
+      <td>72.00</td>
+      <td>0.0</td>
+      <td>30.25</td>
+      <td>8.00</td>
+      <td>15.00</td>
+      <td>4.50</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>12.75</td>
+      <td>11.50</td>
+      <td>6.50</td>
+      <td>11.00</td>
+      <td>0.0</td>
+      <td>7.00</td>
+    </tr>
+    <tr>
+      <td>33957</td>
+      <td>CANBRIAM HZ Altares C-74-A/94-B-8</td>
+      <td>c-074-A/094-B-08</td>
+      <td>200/c-095-A/094-B-08/00</td>
+      <td>CANBRIAM ENERGY INC</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>444</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>171.0</td>
+      <td>10</td>
+      <td>0</td>
+      <td>4533</td>
+      <td>4533</td>
+      <td>2536.58</td>
+      <td>NaN</td>
+      <td>2183.13</td>
+      <td>353.45</td>
+      <td>1996.42</td>
+      <td>2017-10-15</td>
+      <td>44.4</td>
+      <td>17.2</td>
+      <td>0.3</td>
+      <td>3.2</td>
+      <td>6.5</td>
+      <td>4.7</td>
+      <td>4.6</td>
+      <td>27.44</td>
+      <td>165.21</td>
+      <td>15.50</td>
+      <td>11.29</td>
+      <td>47.06</td>
+      <td>8910.00</td>
+      <td>22.62</td>
+      <td>15.75</td>
+      <td>292.50</td>
+      <td>2.00</td>
+      <td>0.0</td>
+      <td>30.75</td>
+      <td>113.50</td>
+      <td>13.50</td>
+      <td>11.00</td>
+      <td>4.00</td>
+      <td>21.25</td>
+      <td>16.0</td>
+      <td>30.00</td>
+      <td>12.50</td>
+      <td>22.50</td>
+      <td>9.25</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>43.00</td>
+      <td>25.75</td>
+      <td>19.50</td>
+      <td>3.25</td>
+      <td>0.0</td>
+      <td>11.00</td>
+    </tr>
+
+                                </tbody>
+                          </table>
+   
+                          
+                          <div class="row">
+                              <div class="col-md-4 col-md-offset-4 text-center">
+                                  <ul class="pagination" id="myPager"></ul>
+                              </div>
+                          </div>
+
+                      </div>
+                      <!--/table-resp-->
+                  </div>
+
+                  <!--/tab-pane-->
+                  <div class="tab-pane" id="completions">
+                    
+                        <p>  Coming Soon!</p>
+                        <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+                    
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="production">
+                          <p>  Coming Soon!</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="financials">
+                          <p>  Coming Soon!</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="custom-data">
+                          <p>  Coming Soon!</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="visualizations">
+                          <p>  Coming Soon!</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>                  
+
+              </div>
+              <!--/tab-pane-->
+          </ul>
+          <!--/tab-content-->
+        </div>
+        <!--/col-9-->          
+                      
+    </div>
+    <!--/row-->
+
+    <div class="row">
+        <div class="col-xs-6">        
+            <p>*Data accessed from <strong><u>public</u></strong> sources only.</p>
+        </div>
+        <div class="col-xs-6 text-right">        
+            <p>Access this Unsist energy dataset directly and <a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/CANBRIAM.csv?alt=media&token=1b5f391f-7c17-4b46-85ff-93c6076682f4"><strong>download CSV</strong></a></p>
+            <br>
+        </div> 
+    </div>
+
+    <div class="row" style="background-color: white">
+         <div class="col-lg-6 col-lg-offset-3 text-center">
+            <ul class="list-group">
+                <h3>Enjoying the <span class="text-primary">free</span> insights?</h3>
+                <p>We provide much deeper data &amp; analytics than what you see here.
+                <br>Contact us to learn more.</p>
+                <a class="btn btn-primary" href="../demo.html#contact">Contact Us</a>   
+                <br>      
+            </ul>
+        </div>
+    </div>   
+
+
+    </section> 
+
+    <!-- footer --> 
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Unsist Inc. 2018</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="http://www.linkedin.com/company/unsist" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="http://www.facebook.com/unsist" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>   
+                        <li><a href="http://www.twitter.com/UnsistDS" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://medium.com/unsist" target="_blank"><i class="fa fa-medium"></i></a>
+                        </li> 
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="http://www.unsist.com/privacy-policy">Privacy Policy</a>
+                        </li>
+                        <li><a href="http://www.unsist.com/terms-of-use">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <!-- script src="../vendor/jquery/jquery.min.js" /script -->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="../../js/jqBootstrapValidation.js"></script>
+    <script src="../../js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="../../js/agency.min.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+
+
+<h2 id="bigOne"></h2>
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCqP3WriWOlSZqa1zvg7DY2dzPJM3yOGm8",
+    authDomain: "mockup-1eaa9.firebaseapp.com",
+    databaseURL: "https://mockup-1eaa9.firebaseio.com",
+    projectId: "mockup-1eaa9",
+    storageBucket: "mockup-1eaa9.appspot.com",
+    messagingSenderId: "989389729849"
+  };
+  firebase.initializeApp(config);
+
+
+  var bigOne = document.getElementById('bigOne');
+  var dbRef = firebase.database().ref()
+  dfRef.on('value', snap => bigOne.innerText = snap.val());
+
+</script>
+
+<script type='text/javascript'>
+  var divElement = document.getElementById('viz1520272339512');                    
+  var vizElement = divElement.getElementsByTagName('object')[0];                    
+  vizElement.style.width='520px';vizElement.style.height='300px';                    
+  var scriptElement = document.createElement('script');                    
+  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+  vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+      var table = $('#table_id').DataTable( {
+        "scrollY": "400px",
+        "scrollX": "400px"
+      } );
+    } )
+</script>
+
+</body>
+
+</html>

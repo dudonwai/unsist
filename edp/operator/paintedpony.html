@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="UNSIST Data Science - Creating technology for Oil &amp; Gas that never stops.">
+    <meta name="author" content="Dudon Wai">
+    <meta name="keywords" content="UNSIST Data Science Calgary Alberta Canada Oil Gas Energy Technology NextAI Dudon Wai">
+
+    <meta property="og:site_name" content="UNSIST Data Science">
+    <meta property="og:title" content="UNSIST Data Science">
+    <meta property="og:description" content="UNSIST Data Science - Creating technology for Oil &amp; Gas that never stops.">
+    <meta property="og:url" content="http://www.unsist.com/">
+    <meta property="og:image" content="http://www.unsist.com/img/unsist.jpeg">
+
+    <title>UNSIST Data Science</title>
+
+      <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../../favicon.png?">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="../../css/agency.min.css" rel="stylesheet">
+
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+            
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-85617324-3', 'auto');
+    ga('send', 'pageview');
+</script>
+
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- JQuery Reference
+      If you have added jQuery reference in your master page then ignore, 
+      Else include this too with the below reference -->
+
+<script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+<!-- https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js
+https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js -->
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css">
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="../../index.html#page-top" alt="UNSIST Data Science"><b>UNSIST</b> </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" type="button" data-toggle="dropdown"><b>Energy Data Platform</b></a>
+                        <ul class="dropdown-menu" >                          
+                            <li><a href="../../edp.html"><span class="text-muted"><strong><u>Energy Data Platform</u></strong></span></a></li>                            
+                            <li><a href="arc.html"><span class="text-muted">ARC RESOURCES</span></a></li>                            
+                            <li><a href="blackswan.html"><span class="text-muted">BLACK SWAN</span></a></li>
+                            <li><a href="canbriam.html"><span class="text-muted">CANBRIAM</span></a></li>
+                            <li><a href="cnrl.html"><span class="text-muted">CNRL</span></a></li>
+                            <li><a href="crew.html"><span class="text-muted">CREW</span></a></li>
+                            <li><a href="encana.html"><span class="text-muted">ENCANA</span></a></li>
+                            <li><a href="murphy.html"><span class="text-muted">MURPHY</span></a></li>
+                            <li><a href="paintedpony.html"><span class="text-muted">PAINTED PONY</span></a></li>
+                            <li><a href="progress.html"><span class="text-muted">PROGRESS</span></a></li>
+                            <li><a href="shell.html"><span class="text-muted">SHELL</span></a></li>
+                            <li><a href="storm.html"><span class="text-muted">STORM RESOURCES</span></a></li>
+                            <li><a href="tourmaline.html"><span class="text-muted">TOURMALINE</span></a></li>
+                            <li><a href="all.html"><span class="text-muted"><strong><u>ALL COMPANIES</u></strong></span></a></li>
+                        </ul>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="https://unsist-exchange.myshopify.com"><b>Exchange</b></a>
+                    </li>   
+
+                    <li>
+                        <a class="page-scroll" href="../../blog.html"><b>Blog</b></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="../../about.html"><b>About</b></a>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="../../#contact"><b>Contact</b></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- Header -->
+
+    <section style="background-color: #F2F4F4">
+
+      <div class="container">
+
+        <!-- Top Row -->
+        <div class="row">
+
+            <!-- Company Logo and Info -->
+            <div class="col-sm-3">
+                <ul class="list-group">
+                    <li class="list-group-item text-muted" style ='background-color: #e3e6e8'><img title="profile image" class="img-responsive img-centered" height="110" min-width="110" align="middle" src="../../img/operator/paintedpony.png"></li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Company </strong></span> Painted Pony Energy</li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Market Cap (2017)</strong></span> 
+                        <a target="_blank" href="https://www.bloomberg.com/quote/PONY:CN"> $318.8M CAD</a></li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Revenue (2017)</strong></span> 
+                        <a target="_blank" href="https://www.bloomberg.com/quote/PONY:CN"> $288.3M CAD</a></li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Net Income (2017)</strong></span> 
+                        <a target="_blank" href="https://www.bloomberg.com/quote/PONY:CN"> $122.4M CAD</a></li>
+                </ul>
+            </div>
+
+            <!-- Insights -->
+                <div class="col-lg-9 text-center">
+                    <div class="well" style="background-color: white">
+                        <div style="overflow-x:auto;">
+                            <h3 align="center">Insights &amp; Benchmarks</h3>
+                            <table class="table table-responsive" id="">
+                                <thead>
+                                    <tr>
+                                      <td></td>
+                                      <td class="text-primary"><strong>Painted Pony Energy</strong></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td class="text-primary"><strong>Group Benchmark</strong></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td></td>
+                                        <td><strong>Avg</strong></td>
+                                        <td><strong>P10</strong></td>
+                                        <td><strong>P50</strong></td>
+                                        <td><strong>P90</strong></td>
+                                        <td><strong>Avg</strong></td>
+                                        <td><strong>P10</strong></td>
+                                        <td><strong>P50</strong></td>
+                                        <td><strong>P90</strong></td></tr>     
+<tr>
+  <td><strong>Operating Days</strong></td>
+  <td>17.27</td>
+  <td>12.27</td>
+  <td>15.47</td>
+  <td>24.30</td>
+  <td>14.51</td>
+  <td>8.41</td>
+  <td>13.82</td>
+  <td>21.68</td>
+</tr>
+<tr>
+  <td><strong>m / Operating Day</strong></td>
+  <td>260.30</td>
+  <td>168.03</td>
+  <td>243.46</td>
+  <td>390.40</td>
+  <td>333.62</td>
+  <td>177.10</td>
+  <td>324.36</td>
+  <td>490.03</td>
+</tr>
+<tr>
+  <td><strong>Drlg %</strong></td>
+  <td>48.49</td>
+  <td>41.36</td>
+  <td>48.70</td>
+  <td>54.46</td>
+  <td>42.70</td>
+  <td>34.28</td>
+  <td>42.50</td>
+  <td>51.56</td>
+</tr>
+<tr>
+  <td><strong>MD</strong></td>
+  <td>4149.85</td>
+  <td>3783.80</td>
+  <td>4020.00</td>
+  <td>4560.60</td>
+  <td>4394.33</td>
+  <td>3576.40</td>
+  <td>4168.00</td>
+  <td>5223.40</td>
+</tr>
+<tr>
+  <td><strong>TVD</strong></td>
+  <td>2075.20</td>
+  <td>2021.33</td>
+  <td>2076.82</td>
+  <td>2146.31</td>
+  <td>2064.53</td>
+  <td>1783.73</td>
+  <td>2075.59</td>
+  <td>2413.70</td>
+</tr>
+<tr>
+  <td><strong>Lateral</strong></td>
+  <td>1919.68</td>
+  <td>1611.94</td>
+  <td>1774.48</td>
+  <td>2194.96</td>
+  <td>1999.09</td>
+  <td>1415.92</td>
+  <td>1936.90</td>
+  <td>2749.56</td>
+</tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>                         
+
+          
+        </div>
+
+        <div class="row">
+            
+            <div class="col-sm-3">
+                <!--left col-->
+
+                <ul class="list-group">
+                    <li class="list-group-item text-muted">2017 Activity <i class="fa fa-dashboard fa-1x"></i></li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Drilled</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Completed</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Wells Producing</strong></span> Coming Soon</li>
+                </ul>
+
+                <ul class="list-group">
+                    <li class="list-group-item text-muted">Cost and Production Estimates </li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Production (2017)</strong></span> 
+                        <a target="_blank" href="http://paintedpony.ca/investors/financial-reports/default.aspx"> 257.3 MMcfe/d</a></li>
+                    <li class="list-group-item text-right">
+                        <span class="pull-left"><strong>Netback (2017)</strong></span> 
+                        <a target="_blank" href="http://paintedpony.ca/investors/financial-reports/default.aspx"> $2.01 CAD/Mcfe</a></li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>D&amp;C Cost (2017)</strong></span> Coming Soon</li>
+                    <!-- Cost = fn(TVD, TLL, TPP), where TPP = TLL -->
+                    <li class="list-group-item text-left"> Learn how we calculate this <a href="http://unsist.com/demo/definitions">here</a>.</li>
+                </ul>
+
+                <ul class="list-group">
+                    <li class="list-group-item text-muted">Top Ranks <i class="fa fa-link fa-1x"></i></li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Metric 1</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Metric 2</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Metric 3</strong></span> Coming Soon</li>
+                    <li class="list-group-item text-left">See all company rankings <a href="http://unsist.com/demo/operator/all">here</a>.</li>
+                </ul>
+            </div>
+            <!--/col-3-->
+
+
+            <div class="col-sm-9">
+                <h3 align="center">Company Data</h3>
+                <ul class="list-group">
+
+                    <ul class="nav nav-tabs" id="myTab">
+                        <li class="active"><a href="#drilling" data-toggle="tab">Drilling</a></li>
+                        <li><a href="#completions" data-toggle="tab">Completions</a></li>
+                        <li><a href="#production" data-toggle="tab">Production</a></li>
+                        <li><a href="#financials" data-toggle="tab">Financials</a></li>
+                        <li><a href="#custom-data" data-toggle="tab">Custom Data</a></li>
+                        <li><a href="#visualizations" data-toggle="tab">Visualizations</a></li>
+                    </ul>
+                    <br>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="drilling">
+                        <div>
+                            <table class="table table-hover " id= "table_id">
+                                <thead>
+
+    <tr>
+      <th>License No</th>
+      <th>Well Name</th>
+      <th>Surface Location</th>
+      <th>Unique Well Id</th>
+      <th>Operator</th>
+      <th>Contractor</th>
+      <th>Rig No</th>
+      <th>Well Type</th>
+      <th>Prov</th>
+      <th>Loc Type</th>
+      <th>Triple/Double</th>
+      <th>First Bit Size (mm)</th>
+      <th>Last Bit Size (mm)</th>
+      <th>Number of Bits</th>
+      <th>From (m)</th>
+      <th>To (m)</th>
+      <th>Tour Sheet Start Depth to TD (m)</th>
+      <th>Heel (mMD)</th>
+      <th>TD (mTVD)</th>
+      <th>Surface and Vertical Length (m)</th>
+      <th>Tangent and Build Length (m)</th>
+      <th>Lateral Length (m)</th>
+      <th>Tour Sheet Start Date</th>
+      <th>Drilling %</th>
+      <th>Trip %</th>
+      <th>Reaming %</th>
+      <th>Dev Survey and Connections %</th>
+      <th>Directional Work %</th>
+      <th>Cond Mud &amp; Circ %</th>
+      <th>Casing and Cement %</th>
+      <th>Operating Days (d)</th>
+      <th>m / Operating Days (m/d)</th>
+      <th>On Bottom ROP Avg (m/h)</th>
+      <th>Lateral WOB Avg (kDaN)</th>
+      <th>Lateral RPM Avg</th>
+      <th>Lateral Torque Avg</th>
+      <th>Lateral ROP Avg (m/h)</th>
+      <th>Rig Up (h)</th>
+      <th>Drill Actual (h)</th>
+      <th>Reaming (h)</th>
+      <th>Coring (h)</th>
+      <th>Cond Mud &amp; Circ (h)</th>
+      <th>Trips (h)</th>
+      <th>Rig Service (h)</th>
+      <th>Repair Rig (h)</th>
+      <th>Cut Off Drilg Line (h)</th>
+      <th>Dev Survey (h)</th>
+      <th>Wireline Logs (h)</th>
+      <th>Run Csg &amp; Cement (h)</th>
+      <th>Wait On Cement (h)</th>
+      <th>Nipple Up BOP (h)</th>
+      <th>Test BOP (h)</th>
+      <th>Drillstem Test (h)</th>
+      <th>Plug Back (h)</th>
+      <th>Squeeze Cement (h)</th>
+      <th>Fishing (h)</th>
+      <th>Dir Work (h)</th>
+      <th>Safety Meeting (h)</th>
+      <th>Tear Down (h)</th>
+      <th>Waiting On (h)</th>
+      <th>Rig Watch (h)</th>
+      <th>Other (h)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>33293</td>
+      <td>Painted Pony HZ Town d-A9-G/94-B-16</td>
+      <td>d-009-G/094-B-16</td>
+      <td>200/a-098-B/094-B-16/00</td>
+      <td>PAINTED PONY ENERGY LTD.</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>40</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>156.0</td>
+      <td>5</td>
+      <td>0</td>
+      <td>3748</td>
+      <td>3748</td>
+      <td>2209.15</td>
+      <td>2077.22</td>
+      <td>1832.74</td>
+      <td>376.41</td>
+      <td>1538.85</td>
+      <td>2017-11-02</td>
+      <td>40.6</td>
+      <td>16.3</td>
+      <td>0.0</td>
+      <td>4.5</td>
+      <td>3.4</td>
+      <td>5.9</td>
+      <td>10.9</td>
+      <td>9.23</td>
+      <td>406.10</td>
+      <td>41.64</td>
+      <td>10.00</td>
+      <td>53.75</td>
+      <td>7950.00</td>
+      <td>64.79</td>
+      <td>6.75</td>
+      <td>90.00</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>13.00</td>
+      <td>36.00</td>
+      <td>3.75</td>
+      <td>0.00</td>
+      <td>2.00</td>
+      <td>10.00</td>
+      <td>0.00</td>
+      <td>24.25</td>
+      <td>0.50</td>
+      <td>4.75</td>
+      <td>2.75</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>7.50</td>
+      <td>10.00</td>
+      <td>12.75</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>17.00</td>
+    </tr>
+    <tr>
+      <td>33294</td>
+      <td>Painted Pony HZ Town d-B9-G/94-B-16</td>
+      <td>d-009-G/094-B-16</td>
+      <td>200/d-088-B/094-B-16/00</td>
+      <td>PAINTED PONY ENERGY LTD.</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>40</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>156.0</td>
+      <td>7</td>
+      <td>0</td>
+      <td>4020</td>
+      <td>4020</td>
+      <td>2251.88</td>
+      <td>2087.68</td>
+      <td>1843.16</td>
+      <td>408.72</td>
+      <td>1768.12</td>
+      <td>2017-11-12</td>
+      <td>41.3</td>
+      <td>18.1</td>
+      <td>0.0</td>
+      <td>5.2</td>
+      <td>4.8</td>
+      <td>5.4</td>
+      <td>9.2</td>
+      <td>12.27</td>
+      <td>327.61</td>
+      <td>33.02</td>
+      <td>10.17</td>
+      <td>53.33</td>
+      <td>7200.00</td>
+      <td>55.25</td>
+      <td>8.50</td>
+      <td>121.75</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>16.00</td>
+      <td>53.25</td>
+      <td>4.50</td>
+      <td>0.00</td>
+      <td>2.00</td>
+      <td>15.25</td>
+      <td>0.00</td>
+      <td>27.00</td>
+      <td>0.00</td>
+      <td>6.75</td>
+      <td>4.25</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>14.00</td>
+      <td>13.50</td>
+      <td>23.50</td>
+      <td>9.50</td>
+      <td>0.0</td>
+      <td>16.25</td>
+    </tr>
+    <tr>
+      <td>33295</td>
+      <td>Painted Pony HZ Town d-C9-G/94-B-16</td>
+      <td>d-009-G/094-B-16</td>
+      <td>200/d-078-B/094-B-16/00</td>
+      <td>PAINTED PONY ENERGY LTD.</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>40</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>156.0</td>
+      <td>5</td>
+      <td>0</td>
+      <td>5223</td>
+      <td>5223</td>
+      <td>2253.00</td>
+      <td>2097.57</td>
+      <td>1842.14</td>
+      <td>410.86</td>
+      <td>2970.00</td>
+      <td>2017-11-26</td>
+      <td>45.6</td>
+      <td>14.9</td>
+      <td>0.0</td>
+      <td>4.5</td>
+      <td>2.4</td>
+      <td>4.2</td>
+      <td>8.8</td>
+      <td>12.28</td>
+      <td>425.28</td>
+      <td>38.83</td>
+      <td>8.75</td>
+      <td>48.75</td>
+      <td>8375.00</td>
+      <td>51.21</td>
+      <td>6.50</td>
+      <td>134.50</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>12.50</td>
+      <td>44.00</td>
+      <td>5.00</td>
+      <td>0.00</td>
+      <td>2.25</td>
+      <td>13.25</td>
+      <td>0.00</td>
+      <td>26.00</td>
+      <td>3.75</td>
+      <td>4.25</td>
+      <td>3.50</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>7.00</td>
+      <td>12.75</td>
+      <td>31.50</td>
+      <td>3.25</td>
+      <td>0.0</td>
+      <td>26.00</td>
+    </tr>
+    <tr>
+      <td>33345</td>
+      <td>PAINTED PONY HZ TOWNSEND D-b57-H/94-B-9</td>
+      <td>d-057-H/094-B-09</td>
+      <td>200/d-078-H/094-B-09/00</td>
+      <td>PAINTED PONY ENERGY LTD.</td>
+      <td>EXCALIBUR DRILLING LTD.</td>
+      <td>10</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>156.0</td>
+      <td>5</td>
+      <td>0</td>
+      <td>3855</td>
+      <td>3855</td>
+      <td>2080.52</td>
+      <td>1910.09</td>
+      <td>1674.47</td>
+      <td>406.05</td>
+      <td>1774.48</td>
+      <td>2017-06-28</td>
+      <td>52.3</td>
+      <td>11.6</td>
+      <td>0.0</td>
+      <td>8.1</td>
+      <td>2.7</td>
+      <td>7.1</td>
+      <td>5.6</td>
+      <td>15.34</td>
+      <td>251.24</td>
+      <td>20.00</td>
+      <td>7.88</td>
+      <td>46.25</td>
+      <td>6581.25</td>
+      <td>47.32</td>
+      <td>10.25</td>
+      <td>192.75</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>26.25</td>
+      <td>42.75</td>
+      <td>8.50</td>
+      <td>0.00</td>
+      <td>1.25</td>
+      <td>30.00</td>
+      <td>0.00</td>
+      <td>20.50</td>
+      <td>3.75</td>
+      <td>5.00</td>
+      <td>3.50</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>10.00</td>
+      <td>15.75</td>
+      <td>28.50</td>
+      <td>12.00</td>
+      <td>0.0</td>
+      <td>8.25</td>
+    </tr>
+    <tr>
+      <td>33346</td>
+      <td>PAINTED PONY HZ TOWNSEND d-C57-H/94-B-9</td>
+      <td>d-057-H/094-B-09</td>
+      <td>200/d-078-H/094-B-09/00</td>
+      <td>PAINTED PONY ENERGY LTD.</td>
+      <td>EXCALIBUR DRILLING LTD.</td>
+      <td>10</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>156.0</td>
+      <td>7</td>
+      <td>0</td>
+      <td>4065</td>
+      <td>4065</td>
+      <td>2323.74</td>
+      <td>2153.63</td>
+      <td>1921.85</td>
+      <td>401.89</td>
+      <td>1741.26</td>
+      <td>2017-07-15</td>
+      <td>44.3</td>
+      <td>14.5</td>
+      <td>0.2</td>
+      <td>8.9</td>
+      <td>1.8</td>
+      <td>7.2</td>
+      <td>3.7</td>
+      <td>22.52</td>
+      <td>180.50</td>
+      <td>16.97</td>
+      <td>7.71</td>
+      <td>40.65</td>
+      <td>8605.88</td>
+      <td>21.63</td>
+      <td>7.75</td>
+      <td>239.50</td>
+      <td>1.25</td>
+      <td>0.0</td>
+      <td>39.00</td>
+      <td>78.50</td>
+      <td>12.75</td>
+      <td>10.75</td>
+      <td>5.75</td>
+      <td>48.00</td>
+      <td>0.25</td>
+      <td>19.75</td>
+      <td>0.00</td>
+      <td>6.00</td>
+      <td>5.75</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>9.75</td>
+      <td>17.25</td>
+      <td>11.75</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>46.25</td>
+    </tr>
+    <tr>
+      <td>33347</td>
+      <td>PAINTED PONY HZ TOWNSEND d-DO57-H/094-B-09</td>
+      <td>d-057-H/094-B-09</td>
+      <td>200/b-078-H/094-B-09/00</td>
+      <td>PAINTED PONY ENERGY LTD.</td>
+      <td>EXCALIBUR DRILLING LTD.</td>
+      <td>10</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>156.0</td>
+      <td>8</td>
+      <td>0</td>
+      <td>4200</td>
+      <td>4200</td>
+      <td>2271.23</td>
+      <td>2117.04</td>
+      <td>1865.23</td>
+      <td>406.00</td>
+      <td>1928.77</td>
+      <td>2017-08-07</td>
+      <td>46.5</td>
+      <td>16.8</td>
+      <td>0.3</td>
+      <td>9.5</td>
+      <td>2.0</td>
+      <td>6.1</td>
+      <td>3.3</td>
+      <td>25.47</td>
+      <td>164.91</td>
+      <td>14.78</td>
+      <td>8.08</td>
+      <td>44.84</td>
+      <td>7944.00</td>
+      <td>14.70</td>
+      <td>8.25</td>
+      <td>284.25</td>
+      <td>2.00</td>
+      <td>0.0</td>
+      <td>37.25</td>
+      <td>102.50</td>
+      <td>12.50</td>
+      <td>0.00</td>
+      <td>3.25</td>
+      <td>58.25</td>
+      <td>0.00</td>
+      <td>20.00</td>
+      <td>6.00</td>
+      <td>7.00</td>
+      <td>4.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>17.75</td>
+      <td>12.25</td>
+      <td>23.25</td>
+      <td>105.00</td>
+      <td>15.50</td>
+      <td>0.0</td>
+      <td>21.00</td>
+    </tr>
+    <tr>
+      <td>33754</td>
+      <td>Painted Pony HZ Town a-D92-F/94/B-16</td>
+      <td>a-092-F/094-B-16</td>
+      <td>202/c-012-K/094-B-16/00</td>
+      <td>PAINTED PONY ENERGY LTD.</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>40</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>156.0</td>
+      <td>6</td>
+      <td>0</td>
+      <td>4265</td>
+      <td>4265</td>
+      <td>2201.00</td>
+      <td>2021.05</td>
+      <td>1737.52</td>
+      <td>463.48</td>
+      <td>2064.00</td>
+      <td>2017-07-31</td>
+      <td>48.7</td>
+      <td>14.9</td>
+      <td>0.0</td>
+      <td>2.9</td>
+      <td>2.8</td>
+      <td>6.9</td>
+      <td>6.3</td>
+      <td>15.34</td>
+      <td>277.96</td>
+      <td>23.76</td>
+      <td>10.33</td>
+      <td>49.17</td>
+      <td>8483.33</td>
+      <td>46.38</td>
+      <td>17.00</td>
+      <td>179.50</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>25.50</td>
+      <td>54.75</td>
+      <td>6.50</td>
+      <td>0.00</td>
+      <td>3.00</td>
+      <td>10.50</td>
+      <td>8.50</td>
+      <td>23.25</td>
+      <td>4.00</td>
+      <td>5.50</td>
+      <td>5.25</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>10.25</td>
+      <td>16.75</td>
+      <td>14.75</td>
+      <td>8.00</td>
+      <td>0.0</td>
+      <td>15.00</td>
+    </tr>
+    <tr>
+      <td>33746</td>
+      <td>Painted Pony HZ Town a-E92-F/94-B-16</td>
+      <td>a-092-F/094-B-16</td>
+      <td>200/d-013-K/094-B-16/00</td>
+      <td>PAINTED PONY ENERGY LTD.</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>40</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>156.0</td>
+      <td>7</td>
+      <td>0</td>
+      <td>4020</td>
+      <td>4020</td>
+      <td>2200.00</td>
+      <td>2022.45</td>
+      <td>1765.42</td>
+      <td>434.58</td>
+      <td>1820.00</td>
+      <td>2017-08-17</td>
+      <td>52.1</td>
+      <td>14.5</td>
+      <td>0.0</td>
+      <td>4.1</td>
+      <td>3.2</td>
+      <td>5.9</td>
+      <td>5.9</td>
+      <td>15.11</td>
+      <td>265.97</td>
+      <td>21.27</td>
+      <td>10.13</td>
+      <td>53.13</td>
+      <td>6500.00</td>
+      <td>37.14</td>
+      <td>7.00</td>
+      <td>189.00</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>21.50</td>
+      <td>52.75</td>
+      <td>5.50</td>
+      <td>0.50</td>
+      <td>2.75</td>
+      <td>14.75</td>
+      <td>0.00</td>
+      <td>21.50</td>
+      <td>4.00</td>
+      <td>5.00</td>
+      <td>3.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>11.75</td>
+      <td>14.00</td>
+      <td>14.25</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>16.75</td>
+    </tr>
+    <tr>
+      <td>33747</td>
+      <td>Painted Pony HZ Town a-F92-F/94-B-16</td>
+      <td>a-092-F/094-B-16</td>
+      <td>200/d-071-F/094-B-16/00</td>
+      <td>PAINTED PONY ENERGY LTD.</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>40</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>156.0</td>
+      <td>13</td>
+      <td>0</td>
+      <td>3871</td>
+      <td>3871</td>
+      <td>2201.08</td>
+      <td>2054.29</td>
+      <td>1815.14</td>
+      <td>385.94</td>
+      <td>1669.92</td>
+      <td>2017-09-02</td>
+      <td>41.6</td>
+      <td>21.6</td>
+      <td>7.7</td>
+      <td>1.9</td>
+      <td>2.3</td>
+      <td>6.7</td>
+      <td>4.3</td>
+      <td>24.74</td>
+      <td>156.47</td>
+      <td>15.67</td>
+      <td>10.29</td>
+      <td>57.14</td>
+      <td>8671.43</td>
+      <td>35.91</td>
+      <td>5.25</td>
+      <td>247.00</td>
+      <td>45.75</td>
+      <td>0.0</td>
+      <td>40.00</td>
+      <td>128.25</td>
+      <td>9.25</td>
+      <td>0.00</td>
+      <td>4.25</td>
+      <td>11.25</td>
+      <td>0.00</td>
+      <td>25.50</td>
+      <td>14.75</td>
+      <td>6.00</td>
+      <td>3.25</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>13.75</td>
+      <td>22.50</td>
+      <td>21.00</td>
+      <td>4.00</td>
+      <td>0.0</td>
+      <td>22.25</td>
+    </tr>
+    <tr>
+      <td>33748</td>
+      <td>Painted Pony HZ Town a-G92-F/94-B-16</td>
+      <td>a-092-F/094-B-16</td>
+      <td>200/b-071-F/094-B-16/00</td>
+      <td>PAINTED PONY ENERGY LTD.</td>
+      <td>TRINIDAD DRILLING LTD.</td>
+      <td>40</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>156.0</td>
+      <td>9</td>
+      <td>0</td>
+      <td>3957</td>
+      <td>3957</td>
+      <td>2220.09</td>
+      <td>2076.82</td>
+      <td>1833.06</td>
+      <td>387.03</td>
+      <td>1736.91</td>
+      <td>2017-09-28</td>
+      <td>52.3</td>
+      <td>17.3</td>
+      <td>0.3</td>
+      <td>2.8</td>
+      <td>2.8</td>
+      <td>6.3</td>
+      <td>4.8</td>
+      <td>17.64</td>
+      <td>224.38</td>
+      <td>17.88</td>
+      <td>9.86</td>
+      <td>50.71</td>
+      <td>7085.71</td>
+      <td>39.93</td>
+      <td>5.50</td>
+      <td>221.25</td>
+      <td>1.25</td>
+      <td>0.0</td>
+      <td>26.75</td>
+      <td>73.25</td>
+      <td>8.25</td>
+      <td>0.25</td>
+      <td>2.75</td>
+      <td>11.75</td>
+      <td>0.00</td>
+      <td>20.25</td>
+      <td>4.00</td>
+      <td>4.50</td>
+      <td>3.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.75</td>
+      <td>11.75</td>
+      <td>15.75</td>
+      <td>27.25</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>16.75</td>
+    </tr>
+    <tr>
+      <td>34240</td>
+      <td>PAINTED PONY HZ KOBES D-A075-H/094-B-09</td>
+      <td>d-075-H/094-B-09</td>
+      <td>202/d-054-H/094-B-09/00</td>
+      <td>PAINTED PONY ENERGY LTD.</td>
+      <td>EXCALIBUR DRILLING LTD.</td>
+      <td>11</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>156.0</td>
+      <td>5</td>
+      <td>0</td>
+      <td>3766</td>
+      <td>3766</td>
+      <td>2168.56</td>
+      <td>2040.14</td>
+      <td>1753.94</td>
+      <td>414.62</td>
+      <td>1597.44</td>
+      <td>2017-08-28</td>
+      <td>54.5</td>
+      <td>10.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>12.5</td>
+      <td>3.5</td>
+      <td>5.2</td>
+      <td>15.47</td>
+      <td>243.46</td>
+      <td>18.60</td>
+      <td>10.25</td>
+      <td>56.88</td>
+      <td>12214.29</td>
+      <td>37.37</td>
+      <td>8.75</td>
+      <td>202.50</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>13.00</td>
+      <td>40.50</td>
+      <td>7.50</td>
+      <td>2.00</td>
+      <td>5.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>19.25</td>
+      <td>4.00</td>
+      <td>6.25</td>
+      <td>2.50</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>46.25</td>
+      <td>12.25</td>
+      <td>15.75</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>10.25</td>
+    </tr>
+    <tr>
+      <td>34241</td>
+      <td>PAINTED PONY HZ KOBES d-B75-H/94-B-9</td>
+      <td>d-075-H/094-B-09</td>
+      <td>200/a-054-H/094-B-09/00</td>
+      <td>PAINTED PONY ENERGY LTD.</td>
+      <td>EXCALIBUR DRILLING LTD.</td>
+      <td>11</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>156.0</td>
+      <td>5</td>
+      <td>0</td>
+      <td>4343</td>
+      <td>4343</td>
+      <td>2206.54</td>
+      <td>2063.55</td>
+      <td>1791.67</td>
+      <td>414.87</td>
+      <td>2136.46</td>
+      <td>2017-09-14</td>
+      <td>56.3</td>
+      <td>10.6</td>
+      <td>0.1</td>
+      <td>0.1</td>
+      <td>11.9</td>
+      <td>3.7</td>
+      <td>5.2</td>
+      <td>17.96</td>
+      <td>241.84</td>
+      <td>17.89</td>
+      <td>9.45</td>
+      <td>48.64</td>
+      <td>11314.29</td>
+      <td>38.49</td>
+      <td>7.50</td>
+      <td>242.75</td>
+      <td>0.50</td>
+      <td>0.0</td>
+      <td>16.00</td>
+      <td>45.75</td>
+      <td>9.75</td>
+      <td>1.50</td>
+      <td>3.25</td>
+      <td>0.25</td>
+      <td>0.00</td>
+      <td>22.50</td>
+      <td>4.00</td>
+      <td>7.25</td>
+      <td>5.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>51.50</td>
+      <td>13.50</td>
+      <td>21.75</td>
+      <td>7.50</td>
+      <td>0.0</td>
+      <td>7.50</td>
+    </tr>
+    <tr>
+      <td>34242</td>
+      <td>PAINTED PONY HZ KOBES D-C075-H/094-B-09</td>
+      <td>d-075-H/094-B-09</td>
+      <td>200/d-044-H/094-B-09/00</td>
+      <td>PAINTED PONY ENERGY LTD.</td>
+      <td>EXCALIBUR DRILLING LTD.</td>
+      <td>11</td>
+      <td>HORIZ</td>
+      <td>BC</td>
+      <td>NTS</td>
+      <td>double</td>
+      <td>311.0</td>
+      <td>156.0</td>
+      <td>8</td>
+      <td>0</td>
+      <td>4615</td>
+      <td>4615</td>
+      <td>2405.41</td>
+      <td>2256.12</td>
+      <td>1980.55</td>
+      <td>424.86</td>
+      <td>2209.59</td>
+      <td>2017-10-03</td>
+      <td>54.3</td>
+      <td>13.7</td>
+      <td>0.1</td>
+      <td>0.0</td>
+      <td>11.2</td>
+      <td>4.0</td>
+      <td>4.2</td>
+      <td>21.16</td>
+      <td>218.14</td>
+      <td>16.75</td>
+      <td>9.69</td>
+      <td>49.69</td>
+      <td>10320.00</td>
+      <td>28.79</td>
+      <td>9.75</td>
+      <td>275.50</td>
+      <td>0.75</td>
+      <td>0.0</td>
+      <td>20.50</td>
+      <td>69.50</td>
+      <td>12.50</td>
+      <td>0.75</td>
+      <td>5.25</td>
+      <td>0.25</td>
+      <td>0.00</td>
+      <td>21.25</td>
+      <td>4.00</td>
+      <td>10.50</td>
+      <td>5.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>56.75</td>
+      <td>16.25</td>
+      <td>40.50</td>
+      <td>2.00</td>
+      <td>100.0</td>
+      <td>9.00</td>
+    </tr>
+
+                                </tbody>
+                          </table>
+   
+                          
+                          <div class="row">
+                              <div class="col-md-4 col-md-offset-4 text-center">
+                                  <ul class="pagination" id="myPager"></ul>
+                              </div>
+                          </div>
+
+                      </div>
+                      <!--/table-resp-->
+                  </div>
+
+                  <!--/tab-pane-->
+                  <div class="tab-pane" id="completions">
+                    
+                        <p>  Coming Soon!</p>
+                        <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+                    
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="production">
+                          <p>  Coming Soon!</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="financials">
+                          <p>  Coming Soon!</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="custom-data">
+                          <p>  Coming Soon!</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>
+
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="visualizations">
+                          <p>  Coming Soon!</p>
+                          <p>  <a href="www.unsist.com"><strong>Contact us</strong></a> for requests and get instant updates by joining our <a href="www.unsist.com"><strong>newsletter</strong></a>.</p>
+                    </div>                  
+
+              </div>
+              <!--/tab-pane-->
+          </ul>
+          <!--/tab-content-->
+        </div>
+        <!--/col-9-->          
+                      
+    </div>
+    <!--/row-->
+
+    <div class="row">
+        <div class="col-xs-6">        
+            <p>*Data accessed from <strong><u>public</u></strong> sources only.</p>
+        </div>
+        <div class="col-xs-6 text-right">        
+            <p>Access this Unsist energy dataset directly and <a href="https://firebasestorage.googleapis.com/v0/b/mockup-1eaa9.appspot.com/o/PAINTED%20PONY.csv?alt=media&token=7e8d0a20-ccd4-4869-95cd-ea4341096560"><strong>download CSV</strong></a></p>
+            <br>
+        </div> 
+    </div>
+
+    <div class="row" style="background-color: white">
+         <div class="col-lg-6 col-lg-offset-3 text-center">
+            <ul class="list-group">
+                <h3>Enjoying the <span class="text-primary">free</span> insights?</h3>
+                <p>We provide much deeper data &amp; analytics than what you see here.
+                <br>Contact us to learn more.</p>
+                <a class="btn btn-primary" href="../demo.html#contact">Contact Us</a>   
+                <br>      
+            </ul>
+        </div>
+    </div>   
+
+
+    </section> 
+
+    <!-- footer --> 
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Unsist Inc. 2018</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="http://www.linkedin.com/company/unsist" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="http://www.facebook.com/unsist" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>   
+                        <li><a href="http://www.twitter.com/UnsistDS" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://medium.com/unsist" target="_blank"><i class="fa fa-medium"></i></a>
+                        </li> 
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="http://www.unsist.com/privacy-policy">Privacy Policy</a>
+                        </li>
+                        <li><a href="http://www.unsist.com/terms-of-use">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <!-- script src="../vendor/jquery/jquery.min.js" /script -->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="../../js/jqBootstrapValidation.js"></script>
+    <script src="../../js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="../../js/agency.min.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+
+
+<h2 id="bigOne"></h2>
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCqP3WriWOlSZqa1zvg7DY2dzPJM3yOGm8",
+    authDomain: "mockup-1eaa9.firebaseapp.com",
+    databaseURL: "https://mockup-1eaa9.firebaseio.com",
+    projectId: "mockup-1eaa9",
+    storageBucket: "mockup-1eaa9.appspot.com",
+    messagingSenderId: "989389729849"
+  };
+  firebase.initializeApp(config);
+
+
+  var bigOne = document.getElementById('bigOne');
+  var dbRef = firebase.database().ref()
+  dfRef.on('value', snap => bigOne.innerText = snap.val());
+
+</script>
+
+<script type='text/javascript'>
+  var divElement = document.getElementById('viz1520272339512');                    
+  var vizElement = divElement.getElementsByTagName('object')[0];                    
+  vizElement.style.width='520px';vizElement.style.height='300px';                    
+  var scriptElement = document.createElement('script');                    
+  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+  vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+      var table = $('#table_id').DataTable( {
+        "scrollY": "400px",
+        "scrollX": "400px"
+      } );
+    } )
+</script>
+
+</body>
+
+</html>
