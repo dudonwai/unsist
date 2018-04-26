@@ -498,8 +498,9 @@
     <script src="js/agency.min.js"></script>
 
 
-<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
-  <script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+    
+    <script>
     // Initialize Firebase
     var config = {
       apiKey: "AIzaSyCqP3WriWOlSZqa1zvg7DY2dzPJM3yOGm8",
@@ -543,25 +544,30 @@
       firebase.database().ref('sample/' + name).set(message);
       return false;
     }
-  </script>
+    </script>
 
-<script type='text/javascript'>                    
-  var divElement = document.getElementById('viz1519757390638');                    
-  var vizElement = divElement.getElementsByTagName('object')[0];                    
-  vizElement.style.width='500px';vizElement.style.height='300px';                    
-  var scriptElement = document.createElement('script');                    
-  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-  vizElement.parentNode.insertBefore(scriptElement, vizElement);               
-</script>
+    <script type='text/javascript'>                    
+      var divElement = document.getElementById('viz1519757390638');                    
+      var vizElement = divElement.getElementsByTagName('object')[0];                    
+      vizElement.style.width='500px';vizElement.style.height='300px';                    
+      var scriptElement = document.createElement('script');                    
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);               
+    </script>
 
-<script type="text/javascript">
-    $(document).ready(function() {
-      var table = $('#table_id').DataTable( {
-        "scrollY": "400px",
-        "scrollX": "400px"
-      } );
-    } )
-</script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+          var table = $('#table_id').DataTable( {
+            "scrollY": "400px",
+            "scrollX": "400px"
+          } );
+        } )
+    </script>
+
+    <!-- Start of HubSpot Embed Code -->
+      <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4514730.js"></script>
+    <!-- End of HubSpot Embed Code -->
+
 
 </body>
 
